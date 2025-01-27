@@ -1,8 +1,6 @@
 public class Task {
-    /** Description of the task */
-    protected String description;
-    /** Indicator to check if the task is marked as done or not done */
-    protected boolean isDone;
+    protected String description; // Description of the task
+    protected boolean isDone; // Check if the task is marked as done or not done
 
     public Task(String description) {
         setDescription(description);

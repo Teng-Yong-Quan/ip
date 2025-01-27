@@ -13,14 +13,12 @@ public class Yq {
         System.out.println();
         System.out.println("Hello! I'm Yq.");
         System.out.println("What can I do for you?");
-
         String line;
-        // Create an empty main list
+        // Create an empty main list.
         Task[] list = new Task[0];
-
         Scanner userInput = new Scanner(System.in);
         while (true) {
-            // Process for 1 second after receiving command from the user
+            // Process for 1 second after receiving command from the user.
             processForOneSecond();
             System.out.println("    Please key in one of the following options:");
             System.out.println("        list   - to show the list of tasks");
@@ -107,7 +105,6 @@ public class Yq {
         System.out.println("    Ok. Processing...");
         processForOneSecond();
         System.out.println();
-
         if (list.length == 0) {
             System.out.println("    The list is empty. There is nothing to show.");
         } else {
@@ -132,19 +129,15 @@ public class Yq {
         System.out.println("    Ok. Processing...");
         processForOneSecond();
         System.out.println();
-
-        //Create a new task
+        // Create a new task.
         Task newTask = new Task(line);
-        // Create a new list that is longer than the main list by 1
+        // Create a new empty list that is longer than the main list by 1.
         Task[] newList = new Task[list.length + 1];
-
-        // Transfer all tasks in the main list into the new list
+        // Transfer all tasks in the main list into the new list.
         System.arraycopy(list, 0, newList, 0, list.length);
-
-        // Add latest task into the new list
+        // Add latest task into the new list.
         newList[newList.length - 1] = newTask;
-
-        // Set new list as the main list
+        // Set new list as the main list.
         list = newList;
         System.out.println("    added: " + line);
         return list;
@@ -163,23 +156,25 @@ public class Yq {
             System.out.println();
             System.out.println("    There is nothing in the task list to mark as done.");
         } else {
-            // Check whether the number input by the user is a valid index to extract the
-            // respective task from the task list
+            /* Check whether the number input by the user is a valid index to extract
+             * the respective task from the task list.
+             */
             try {
                 Task selectedTask = list[num - 1];
                 System.out.println();
                 selectedTask.markAsDone();
             } catch (ArrayIndexOutOfBoundsException exception) {
-                // Catch exception and print error message if the number input is either
-                // less than or equals to 0 or larger than the length of the task list
+                /* Catch exception and print error message if the number input is either
+                 * less than or equals to 0 or larger than the length of the task list.
+                 */
                 System.out.println();
                 System.out.println("    Invalid number is either too small or too large.");
                 if (list.length == 1) {
-                    // Print error message when there is only 1 task in the task list
+                    // Print error message when there is only 1 task in the task list.
                     System.out.println("    Please try again by entering the number 1 as there is only "
                             + "1 task in the task list.");
                 } else {
-                    // Print error message when there are more than 1 tasks in the task list
+                    // Print error message when there are more than 1 tasks in the task list.
                     System.out.println("    Please try again by entering a valid number "
                             + "ranging from 1 to " + list.length + ".");
                 }
@@ -201,22 +196,24 @@ public class Yq {
             System.out.println("    There is nothing in the task list to mark as not done.");
         } else {
             try {
-                // Check whether the number input by the user is a valid index to extract the
-                // respective task from the task list
+                /* Check whether the number input by the user is a valid index to extract the
+                 * respective task from the task list.
+                 */
                 Task selectedTask = list[num - 1];
                 System.out.println();
                 selectedTask.markAsNotDone();
             } catch (ArrayIndexOutOfBoundsException exception) {
-                // Catch exception and print error message if the number input is either
-                // less than or equals to 0 or larger than the length of the task list
+                /* Catch exception and print error message if the number input is either
+                 * less than or equals to 0 or larger than the length of the task list.
+                 */
                 System.out.println();
                 System.out.println("    Invalid number is either too small or too large.");
                 if (list.length == 1) {
-                    // Print error message when there is only 1 task in the task list
+                    // Print error message when there is only 1 task in the task list.
                     System.out.println("    Please try again by entering the number 1 as there is only "
                             + "1 task in the task list.");
                 } else {
-                    // Print error message when there are more than 1 tasks in the task list
+                    // Print error message when there are more than 1 tasks in the task list.
                     System.out.println("    Please try again by entering a valid number "
                             + "ranging from 1 to " + list.length + ".");
                 }
