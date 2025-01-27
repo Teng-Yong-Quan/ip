@@ -22,21 +22,63 @@ public class Yq {
         while (true) {
             // Process for 1 second after receiving command from the user
             processForOneSecond();
+            System.out.println("    Please key in one of the following options:");
+            System.out.println("        list   - to show the list of tasks");
+            System.out.println("        unmark - to choose a task that you want to mark as not done");
+            System.out.println("        mark   - to choose a task that you want to mark as done");
+            System.out.println("        add    - to add a task to the list ");
+            System.out.println("        bye    - to quit ");
             line = userInput.nextLine();
+            line = line.trim();
             if (line.equalsIgnoreCase("bye")) {
                 break;
             } else if (line.equalsIgnoreCase("list")) {
                 printList(list);
-            } else if (line.contains("unmark")) {
-                int spacingPosition = line.indexOf(' ');
-                int chosenUnmarkIndex = Integer.parseInt(line.substring(spacingPosition + 1));
-                unmarkTask(chosenUnmarkIndex, list);
-            } else if (line.contains("mark")) {
-                int spacingPosition = line.indexOf(' ');
-                int chosenMarkIndex = Integer.parseInt(line.substring(spacingPosition + 1));
-                markTask(chosenMarkIndex, list);
+            } else if (line.equalsIgnoreCase("unmark")) {
+                if (list.length == 0) {
+                    System.out.println();
+                    System.out.println("    There is nothing in the task list to mark as not done.");
+                } else {
+                    printList(list);
+                    System.out.println();
+                    processForOneSecond();
+                    if (list.length == 1) {
+                        System.out.println("    Please enter the number 1 as there is only "
+                                + "1 task in the task list.");
+                    } else {
+                        System.out.println("    Please enter a valid number "
+                                + "ranging from 1 to " + list.length + ".");
+                    }
+                    int chosenUnmarkIndex = userInput.nextInt();
+                    userInput.nextLine();
+                    unmarkTask(chosenUnmarkIndex, list);
+                }
+            } else if (line.equalsIgnoreCase("mark")) {
+                if (list.length == 0) {
+                    System.out.println();
+                    System.out.println("    There is nothing in the task list to mark as done.");
+                } else {
+                    printList(list);
+                    System.out.println();
+                    processForOneSecond();
+                    if (list.length == 1) {
+                        System.out.println("    Please enter the number 1 as there is only "
+                                + "1 task in the task list.");
+                    } else {
+                        System.out.println("    Please enter a valid number "
+                                + "ranging from 1 to " + list.length + ".");
+                    }
+                    int chosenMarkIndex = userInput.nextInt();
+                    userInput.nextLine();
+                    markTask(chosenMarkIndex, list);
+                }
+            } else if (line.equalsIgnoreCase("add")) {
+                System.out.println("    Please key in the task that you want to add:");
+                String taskDescription = userInput.nextLine();
+                list = addTask(taskDescription, list);
             } else {
-                list = addTask(line, list);
+                System.out.println("    Unknown option: " + line);
+                System.out.println("    Please enter a valid option.");
             }
             processForOneSecond();
             System.out.println();
@@ -134,7 +176,7 @@ public class Yq {
                 System.out.println("    Invalid number is either too small or too large.");
                 if (list.length == 1) {
                     // Print error message when there is only 1 task in the task list
-                    System.out.println("    Please try again by entering 1 as there is only "
+                    System.out.println("    Please try again by entering the number 1 as there is only "
                             + "1 task in the task list.");
                 } else {
                     // Print error message when there are more than 1 tasks in the task list
@@ -171,7 +213,7 @@ public class Yq {
                 System.out.println("    Invalid number is either too small or too large.");
                 if (list.length == 1) {
                     // Print error message when there is only 1 task in the task list
-                    System.out.println("    Please try again by entering 1 as there is only "
+                    System.out.println("    Please try again by entering the number 1 as there is only "
                             + "1 task in the task list.");
                 } else {
                     // Print error message when there are more than 1 tasks in the task list
