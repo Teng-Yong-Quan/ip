@@ -4,11 +4,11 @@ public class Task {
 
     public Task(String description) {
         setDescription(description);
-        setIsDone(false);
+        setDone(false);
     }
 
     public String getStatusIcon() {
-        return (getIsDone() ? "X" : " "); // mark done task with X
+        return (isDone() ? "X" : " "); // mark done task with X
     }
 
     public String getDescription() {
@@ -19,11 +19,11 @@ public class Task {
         this.description = description;
     }
 
-    public boolean getIsDone() {
+    public boolean isDone() {
         return this.isDone;
     }
 
-    public void setIsDone(boolean isDone) {
+    public void setDone(boolean isDone) {
         this.isDone = isDone;
     }
 
@@ -31,8 +31,8 @@ public class Task {
      * Marks the selected task as done.
      */
     public void markAsDone() {
-        if (!getIsDone()) {
-            setIsDone(true);
+        if (!isDone()) {
+            setDone(true);
             System.out.println("    Nice! I've marked this task as done:");
             System.out.println("        [" + getStatusIcon() + "] "
                     + getDescription());
@@ -46,8 +46,8 @@ public class Task {
      * Marks the selected task as not done.
      */
     public void markAsNotDone() {
-        if (getIsDone()) {
-            setIsDone(false);
+        if (isDone()) {
+            setDone(false);
             System.out.println("     OK, I've marked this task as not done yet:");
             System.out.println("        [" + getStatusIcon() + "] "
                     + getDescription());
