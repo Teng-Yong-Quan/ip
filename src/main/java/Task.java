@@ -34,8 +34,7 @@ public class Task {
         if (!isDone()) {
             setDone(true);
             System.out.println("    Nice! I've marked this task as done:");
-            System.out.println("        [" + getStatusIcon() + "] "
-                    + getDescription());
+            System.out.println("        " + toString());
         } else {
             System.out.println("    The task \"" + getDescription()
                     + "\" has already been marked as done.");
@@ -48,12 +47,16 @@ public class Task {
     public void markAsNotDone() {
         if (isDone()) {
             setDone(false);
-            System.out.println("     OK, I've marked this task as not done yet:");
-            System.out.println("        [" + getStatusIcon() + "] "
-                    + getDescription());
+            System.out.println("    OK, I've marked this task as not done yet:");
+            System.out.println("        " + toString());
         } else {
             System.out.println("    The task \"" + getDescription()
                     + "\" has already been marked as not done.");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "[" + getStatusIcon() + "] " + getDescription();
     }
 }
