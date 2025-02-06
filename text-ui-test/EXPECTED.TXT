@@ -30,7 +30,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -98,7 +98,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -132,7 +132,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -166,7 +166,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -200,7 +200,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -234,7 +234,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -268,7 +268,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -302,7 +302,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -336,7 +336,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -370,7 +370,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -404,7 +404,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -445,7 +445,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -486,7 +486,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -527,7 +527,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -564,7 +564,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -599,7 +599,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -635,7 +635,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -671,7 +671,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -707,7 +707,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -743,7 +743,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -783,7 +783,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -822,7 +822,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -862,7 +862,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -902,7 +902,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -939,7 +939,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -974,7 +974,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1010,7 +1010,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1046,7 +1046,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1082,7 +1082,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1122,7 +1122,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1161,7 +1161,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1201,7 +1201,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1241,7 +1241,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1276,7 +1276,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1311,7 +1311,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1346,7 +1346,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1387,7 +1387,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1428,7 +1428,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1586,7 +1586,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1620,7 +1620,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1654,7 +1654,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1689,7 +1689,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1723,7 +1723,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1757,7 +1757,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1791,7 +1791,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1825,7 +1825,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1859,7 +1859,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1893,7 +1893,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
@@ -1928,7 +1928,7 @@ What can I do for you?
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
             Example:                 event project meeting /from Mon 2pm /to 4pm
 
-        bye    - to quit 
+        bye    - to quit
             Example: bye
 ----------------------------------------------------------------------------------------
     Bye. Hope to see you again soon!

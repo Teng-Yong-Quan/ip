@@ -6,17 +6,17 @@ public class Yq {
         printWelcomeMessage();
         String userCommand;
         String lowerCaseUserCommand;
-        // Create an empty main list.
-        Task[] list = new Task[0];
+        Task[] list = new Task[0]; // Create an empty main list.
         Scanner userInput = new Scanner(System.in);
         while (true) {
             printCommandOptions();
             userCommand = userInput.nextLine();
             userCommand = userCommand.trim();
+            // Standardise the user inputs to lower case, so it is easier to check for the command keywords.
             lowerCaseUserCommand = userCommand.toLowerCase();
-            if (userCommand.equalsIgnoreCase("bye")) {
+            if (lowerCaseUserCommand.contains("bye")) {
                 break;
-            } else if (userCommand.equalsIgnoreCase("list")) {
+            } else if (lowerCaseUserCommand.contains("list")) {
                 printList(list);
             } else if (lowerCaseUserCommand.contains("unmark")) {
                 printStraightLine();
@@ -129,7 +129,7 @@ public class Yq {
     }
 
     private static void printInstructionToExit() {
-        System.out.println("        bye    - to quit ");
+        System.out.println("        bye    - to quit");
         System.out.println("            Example: bye");
     }
 
@@ -167,14 +167,26 @@ public class Yq {
             System.out.println("    Here are the tasks in your list:");
             for (int i = 0; i < list.length; i++) {
                 Task selectedTask = list[i];
-                System.out.println("    " + (i + 1) + ". "
-                        + selectedTask.toString());
+                System.out.println("    " + (i + 1) + ". " + selectedTask.toString());
             }
         } else {
             System.out.println("    The list is empty. There is nothing to show.");
         }
     }
 
+    /**
+     * Checks whether the substring of the 'unmark' command inputted by the user is valid by detecting
+     * integers without neighbouring characters. An exception message is printed when the substring of the
+     * 'unmark' command do not contain integers without neighbouring characters.
+     * It also checks whether the integer stated in the command is out of range or valid by comparing with
+     * the length of the list. An error message is printed when the integer detected is out of range.
+     * Prints a reminder to input a valid 'unmark' command.
+     *
+     * @param list                     The task list which allows the extraction of its length.
+     * @param substringOfUnmarkCommand The substring of the 'unmark' command inputted by the user after
+     *                                 the 'unmark' word is being verified and removed from the command.
+     * @return The validity of the substring of 'unmark' command.
+     */
     private static boolean isValidUnmarkCommand(String substringOfUnmarkCommand, Task[] list) {
         printStraightLine();
         if (!substringOfUnmarkCommand.isEmpty()) {
@@ -194,6 +206,19 @@ public class Yq {
         return false;
     }
 
+    /**
+     * Checks whether the substring of the 'mark' command inputted by the user is valid by detecting
+     * integers without neighbouring characters. An exception message is printed when the substring of the
+     * 'mark' command do not contain integers without neighbouring characters.
+     * It also checks whether the integer stated in the command is out of range or valid by comparing with
+     * the length of the list. An error message is printed when the integer detected is out of range.
+     * Prints a reminder to input a valid 'mark' command.
+     *
+     * @param list                   The task list which allows the extraction of its length.
+     * @param substringOfMarkCommand The substring of the 'mark' command inputted by the user after
+     *                               the 'mark' word is being verified and removed from the command.
+     * @return The validity of the substring of 'mark' command.
+     */
     private static boolean isValidMarkCommand(String substringOfMarkCommand, Task[] list) {
         printStraightLine();
         if (!substringOfMarkCommand.isEmpty()) {
@@ -239,60 +264,109 @@ public class Yq {
         selectedTask.markAsDone();
     }
 
+    /**
+     * Checks whether the substring of the 'todo' command inputted by the user is empty.
+     * Prints a message that indicates whether the 'todo' command is valid or it does not
+     * contain the todo task.
+     *
+     * @param substringOfTodoCommand The substring of the 'todo' command inputted by the user after
+     *                               the 'todo' word is being verified and removed from the command.
+     * @return The validity of the substring of 'todo' command.
+     */
     private static boolean isValidTodoCommand(String substringOfTodoCommand) {
-        if (!substringOfTodoCommand.isEmpty()) {
-            System.out.println("    'Todo' command is valid." + "\n");
-            return true;
+        if (substringOfTodoCommand.isEmpty()) {
+            System.out.println("    No todo task is being detected.");
+            System.out.println("    Please enter a valid 'todo' command.");
+            return false;
         }
-        System.out.println("    No todo task is being detected.");
-        System.out.println("    Please enter a valid 'todo' command.");
-        return false;
+        System.out.println("    'Todo' command is valid." + "\n");
+        return true;
     }
 
+    /**
+     * Checks whether the substring of the 'deadline' command inputted by the user is valid. A duplicate of the
+     * substring of the 'deadline' command in lower case is formed. This substring would act as a medium to check for
+     * the presence of the '/by' keyword and extract the index of the '/by' keyword in the original substring if
+     * present. Based on the index of the '/by' keyword, the deadline task description and the deadline datetime ('by')
+     * could be partitioned and extracted. The substring of the 'deadline' is valid only if it contains both the
+     * deadline task description and the deadline datetime. Else, an error message and a remainder to input a valid
+     * deadline command is printed.
+     *
+     * @param substringOfDeadlineCommand The substring of the 'deadline' command inputted by the user after
+     *                                   the 'deadline' word is being verified and removed from the command.
+     * @return The validity of the substring of 'deadline' command.
+     */
     private static boolean isValidDeadlineCommand(String substringOfDeadlineCommand) {
-        if (!substringOfDeadlineCommand.isEmpty()) {
-            String lowerCaseSubstringOfDlCommand = substringOfDeadlineCommand.toLowerCase();
-            if (lowerCaseSubstringOfDlCommand.contains("/by")) {
-                int byIndex = lowerCaseSubstringOfDlCommand.indexOf("/by");
-                String dlDescription = substringOfDeadlineCommand.substring(0, byIndex).trim();
-                String by = substringOfDeadlineCommand.substring(byIndex + "/by".length()).trim();
-                if (!dlDescription.isEmpty() && !by.isEmpty()) {
-                    System.out.println("    'Deadline' command is valid." + "\n");
-                    return true;
-                }
+        String lowerCaseSubstringOfDeadlineCommand = substringOfDeadlineCommand.toLowerCase();
+        if (lowerCaseSubstringOfDeadlineCommand.contains("/by")) {
+            int byIndex = lowerCaseSubstringOfDeadlineCommand.indexOf("/by");
+            String deadlineDescription = substringOfDeadlineCommand.substring(0, byIndex).trim();
+            String by = substringOfDeadlineCommand.substring(byIndex + "/by".length()).trim();
+            if (!deadlineDescription.isEmpty() && !by.isEmpty()) {
+                System.out.println("    'Deadline' command is valid." + "\n");
+                return true;
             }
-        } else {
+        } else if (substringOfDeadlineCommand.isEmpty()) {
             System.out.println("    No deadline task is being detected");
         }
         System.out.println("    Please enter a valid 'deadline' command.");
         return false;
     }
 
+    /**
+     * Checks whether the substring of the 'event' command inputted by the user is valid. A duplicate of the
+     * substring of the 'event' command in lower case is formed. This substring would act as a medium to check for
+     * the presence of the '/from' and '/to' keywords and extract the indexes of the keywords in the original substring
+     * if present. Based on the indexes of '/from' and '/to' keywords, the event task description, the event start
+     * datetime and end datetime could be partitioned and extracted. The substring of the 'event' command is valid only
+     * if it contains the event description, start datetime and end datetime. Else, an error message and a remainder to
+     * input a valid deadline command is printed.
+     *
+     * @param substringOfEventCommand The substring of the 'event' command inputted by the user after
+     *                                the 'event' word is being verified and removed from the command.
+     * @return The validity of the substring of 'event' command.
+     */
     private static boolean isValidEventCommand(String substringOfEventCommand) {
-        if (!substringOfEventCommand.isEmpty()) {
-            String lowerCaseSubstringOfEventCommand = substringOfEventCommand.toLowerCase();
-            if (lowerCaseSubstringOfEventCommand.contains("/from")
-                    && lowerCaseSubstringOfEventCommand.contains("/to")) {
-                int fromIndex = lowerCaseSubstringOfEventCommand.indexOf("/from");
-                int toIndex = lowerCaseSubstringOfEventCommand.indexOf("/to");
-                String eventDescription = substringOfEventCommand.substring(0, fromIndex).trim();
-                String from = substringOfEventCommand.substring(fromIndex + "/from".length(), toIndex).trim();
-                String to = substringOfEventCommand.substring(toIndex + "/to".length()).trim();
-                if (!eventDescription.isEmpty() && !from.isEmpty() && !to.isEmpty()) {
-                    System.out.println("    'Event' command is valid." + "\n");
-                    return true;
-                }
+        String lowerCaseSubstringOfEventCommand = substringOfEventCommand.toLowerCase();
+        if (lowerCaseSubstringOfEventCommand.contains("/from")
+                && lowerCaseSubstringOfEventCommand.contains("/to")) {
+            int fromIndex = lowerCaseSubstringOfEventCommand.indexOf("/from");
+            int toIndex = lowerCaseSubstringOfEventCommand.indexOf("/to");
+            String eventDescription = substringOfEventCommand.substring(0, fromIndex).trim();
+            String from = substringOfEventCommand.substring(fromIndex + "/from".length(), toIndex).trim();
+            String to = substringOfEventCommand.substring(toIndex + "/to".length()).trim();
+            if (!eventDescription.isEmpty() && !from.isEmpty() && !to.isEmpty()) {
+                System.out.println("    'Event' command is valid." + "\n");
+                return true;
             }
-        } else {
+        } else if (substringOfEventCommand.isEmpty()) {
             System.out.println("    No event task is being detected");
         }
         System.out.println("    Please enter a valid 'event' command.");
         return false;
     }
 
+    /**
+     * Creates a Todo task from the substring of the 'todo' command.
+     *
+     * @param substringOfTodoCommand The substring of the 'todo' command inputted by the user.
+     * @return A new Todo Task.
+     */
+
     private static Task createTodo(String substringOfTodoCommand) {
         return new ToDo(substringOfTodoCommand);
     }
+
+    /**
+     * Creates a Deadline task from the substring of the 'deadline' command. A duplicate of the substring of the
+     * 'deadline' command in lower case is formed. This substring would act as a medium to check for the presence of the
+     * '/by' keyword and extract the index of the keyword in the original substring if present. Based on the index of
+     * '/by' keyword, the deadline task description and the deadline datetime could be partitioned and extracted.
+     *
+     * @param substringOfDeadlineCommand The substring of the 'deadline' command inputted by the user.
+     * @return A new Deadline Task.
+     */
+
 
     private static Task createDeadline(String substringOfDeadlineCommand) {
         String lowerCaseSubstringOfDeadlineCommand = substringOfDeadlineCommand.toLowerCase();
@@ -301,6 +375,17 @@ public class Yq {
         String by = substringOfDeadlineCommand.substring(byIndex + "/by".length()).trim();
         return new Deadline(deadlineDescription, by);
     }
+
+    /**
+     * Creates an Event task from the substring of the 'event' command. A duplicate of the substring of the 'event'
+     * command in lower case is formed. This substring would act as a medium to check for the presence of the
+     * '/from' and '/to' keywords and extract the indexes of the keywords in the original substring if present. Based on
+     * the indexes of both '/from' and '/to' keywords, the event task description, start datetime and end datetime could
+     * be partitioned and extracted.
+     *
+     * @param substringOfEventCommand The substring of the 'event' command inputted by the user.
+     * @return A new Deadline Task.
+     */
 
     private static Task createEvent(String substringOfEventCommand) {
         String lowerCaseSubstringOfEventCommand = substringOfEventCommand.toLowerCase();
@@ -313,7 +398,7 @@ public class Yq {
     }
 
     /**
-     * Returns the updated list with the latest task being added.
+     * Adds the newly formed task into the task list and returns the updated list with the latest task being added.
      *
      * @param newTask The task description input by the user.
      * @param list    The task list.
