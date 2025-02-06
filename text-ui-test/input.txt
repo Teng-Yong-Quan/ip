@@ -1,0 +1,53 @@
+list
+mark
+unmark
+mark 1
+OOmark -1
+psidmArK 2
+wdhwimaRK 0
+uNmaRK 0
+OOuNmark -1
+psidUNmArK 2
+wdhwiunmaRK 0
+todo add todo task
+deadline add deadline task /by today
+event add event tasks /from Tomorrow 5pm /to Next Week 5pm
+list
+mark
+mark ss
+mArk -1
+hihsMARk -1
+mark 100
+mark 1
+mark 1
+maRK 2
+DSMArk 3
+list
+unmark
+unmark ss
+hihsunMARk -1
+unmark 100
+unmark 1
+unmark 1
+unmaRK 2
+DSunMArk 3
+giwegi
+lsit
+ybe
+dsihTodo CS2113 A level-4 increment
+dihifdeaDLINEText-ui-test/bYTonight 8pm
+hfesiuhDeaDLINE Finish A-CodeQuality/BYTonight 9pm
+hodhaeeVEnTGrinding more CS2113/FRom6pm/tOEternity :-(
+tODOGET AN INTERNSHIP!!!
+todo
+deadline no by /by
+deadline /by no task assigned
+event
+event /from
+event/to
+event/from/to
+event no to/from
+event no from /to
+event/fromno/totask
+faoeih
+bye

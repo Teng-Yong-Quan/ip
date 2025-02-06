@@ -19,6 +19,7 @@ public class Yq {
             } else if (userCommand.equalsIgnoreCase("list")) {
                 printList(list);
             } else if (lowerCaseUserCommand.contains("unmark")) {
+                printStraightLine();
                 processForOneSecond();
                 String substringOfUnmarkCommand = userCommand.substring(
                         lowerCaseUserCommand.indexOf("unmark") + "unmark".length()).trim();
@@ -30,6 +31,7 @@ public class Yq {
                     System.out.println("    The task list is empty.");
                 }
             } else if (lowerCaseUserCommand.contains("mark")) {
+                printStraightLine();
                 processForOneSecond();
                 String substringOfMarkCommand = userCommand.substring(
                         lowerCaseUserCommand.indexOf("mark") + "mark".length()).trim();
@@ -43,6 +45,7 @@ public class Yq {
             } else if (lowerCaseUserCommand.contains("todo") ||
                     lowerCaseUserCommand.contains("deadline") || lowerCaseUserCommand.contains("event")) {
                 Task newTask = null;
+                printStraightLine();
                 processForOneSecond();
                 if (lowerCaseUserCommand.contains("todo")) {
                     String substringOfTodoCommand = userCommand.substring(
@@ -67,11 +70,13 @@ public class Yq {
                     list = addTask(list, newTask);
                 }
             } else {
+                printStraightLine();
                 processForOneSecond();
                 System.out.println("    Unknown option: " + userCommand);
                 System.out.println("    Please enter a valid option.");
             }
             System.out.println();
+            printStraightLine();
             processForOneSecond();
             System.out.println("    Is there anything else I can do for you?" + "\n");
         }
@@ -91,16 +96,28 @@ public class Yq {
         System.out.println("What can I do for you?");
     }
 
-    private static void printCommandOptions() {
-        System.out.println("    Please key in one of the following options:");
+    private static void printStraightLine() {
+        System.out.println("----------------------------------------------------------------------------------------");
+    }
+
+    private static void printInstructionToPrintList() {
         System.out.println("        list   - to show the list of tasks");
         System.out.println("            Example: list" + "\n");
+    }
+
+    private static void printInstructionToUnmarkTask() {
         System.out.println("        unmark - to choose a task that you want to mark as not done");
         System.out.println("            Parameters: KEYWORD [POSITIVE INTEGER]");
         System.out.println("            Example:    unmark 2" + "\n");
+    }
+
+    private static void printInstructionToMarkTask() {
         System.out.println("        mark   - to choose a task that you want to mark as done");
         System.out.println("            Parameters: KEYWORD [POSITIVE INTEGER]");
         System.out.println("            Example:    mark 1" + "\n");
+    }
+
+    private static void printInstructionToAddTask() {
         System.out.println("        Task type: todo/deadline/event - to add a task to the list");
         System.out.println("            Parameters for todo:     KEYWORD [TASK DESCRIPTION]");
         System.out.println("            Example:                 todo read book");
@@ -109,8 +126,22 @@ public class Yq {
         System.out.println("            Parameters for event:    KEYWORD [TASK DESCRIPTION] " +
                 "/from [DAY/DATE/TIME] /to [DAY/DATE/TIME]");
         System.out.println("            Example:                 event project meeting /from Mon 2pm /to 4pm" + "\n");
+    }
+
+    private static void printInstructionToExit() {
         System.out.println("        bye    - to quit ");
         System.out.println("            Example: bye");
+    }
+
+    private static void printCommandOptions() {
+        printStraightLine();
+        System.out.println("    Please key in one of the following options:");
+        printInstructionToPrintList();
+        printInstructionToUnmarkTask();
+        printInstructionToMarkTask();
+        printInstructionToAddTask();
+        printInstructionToExit();
+        printStraightLine();
     }
 
     /**
@@ -130,6 +161,7 @@ public class Yq {
      * @param list The task list.
      */
     private static void printList(Task[] list) {
+        printStraightLine();
         processForOneSecond();
         if (list.length > 0) {
             System.out.println("    Here are the tasks in your list:");
@@ -144,6 +176,7 @@ public class Yq {
     }
 
     private static boolean isValidUnmarkCommand(String substringOfUnmarkCommand, Task[] list) {
+        printStraightLine();
         if (!substringOfUnmarkCommand.isEmpty()) {
             try {
                 int intValue = Integer.parseInt(substringOfUnmarkCommand);
@@ -162,6 +195,7 @@ public class Yq {
     }
 
     private static boolean isValidMarkCommand(String substringOfMarkCommand, Task[] list) {
+        printStraightLine();
         if (!substringOfMarkCommand.isEmpty()) {
             try {
                 int intValue = Integer.parseInt(substringOfMarkCommand);
@@ -257,14 +291,13 @@ public class Yq {
     }
 
     private static Task createTodo(String substringOfTodoCommand) {
-        String taskDescription = substringOfTodoCommand.toLowerCase();
-        return new ToDo(taskDescription);
+        return new ToDo(substringOfTodoCommand);
     }
 
     private static Task createDeadline(String substringOfDeadlineCommand) {
         String lowerCaseSubstringOfDeadlineCommand = substringOfDeadlineCommand.toLowerCase();
         int byIndex = lowerCaseSubstringOfDeadlineCommand.indexOf("/by");
-        String deadlineDescription = lowerCaseSubstringOfDeadlineCommand.substring(0, byIndex).trim();
+        String deadlineDescription = substringOfDeadlineCommand.substring(0, byIndex).trim();
         String by = substringOfDeadlineCommand.substring(byIndex + "/by".length()).trim();
         return new Deadline(deadlineDescription, by);
     }
@@ -273,7 +306,7 @@ public class Yq {
         String lowerCaseSubstringOfEventCommand = substringOfEventCommand.toLowerCase();
         int fromIndex = lowerCaseSubstringOfEventCommand.indexOf("/from");
         int toIndex = lowerCaseSubstringOfEventCommand.indexOf("/to");
-        String eventDescription = lowerCaseSubstringOfEventCommand.substring(0, fromIndex).trim();
+        String eventDescription = substringOfEventCommand.substring(0, fromIndex).trim();
         String from = substringOfEventCommand.substring(fromIndex + "/from".length(), toIndex).trim();
         String to = substringOfEventCommand.substring(toIndex + "/to".length()).trim();
         return new Event(eventDescription, from, to);
@@ -287,6 +320,7 @@ public class Yq {
      * @return Updated task list.
      */
     private static Task[] addTask(Task[] list, Task newTask) {
+        printStraightLine();
         processForOneSecond();
         // Create a new empty list that is longer than the main list by 1.
         Task[] newList = new Task[list.length + 1];

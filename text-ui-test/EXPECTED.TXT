@@ -1,7 +1,1934 @@
 Hello from
- ____        _        
-|  _ \ _   _| | _____ 
-| | | | | | | |/ / _ \
-| |_| | |_| |   <  __/
-|____/ \__,_|_|\_\___|
+ __   __    _________
+|  | |  |  |   ___   |
+ \     /   |  |  _|  |
+  |   |    |  |_|    |
+  |   |    |______   \
+  |___|           \___\
 
+
+Hello! I'm Yq.
+What can I do for you?
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The list is empty. There is nothing to show.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Todo' command is valid.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Got it. I have added this task to the task list:
+        [T][ ] add todo task
+    Now you have 1 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Deadline' command is valid.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Got it. I have added this task to the task list:
+        [D][ ] add deadline task (by: today)
+    Now you have 2 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Event' command is valid.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Got it. I have added this task to the task list:
+        [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+    Now you have 3 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Here are the tasks in your list:
+    1. [T][ ] add todo task
+    2. [D][ ] add deadline task (by: today)
+    3. [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    Please enter a valid 'mark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    No integer detected.
+    Please enter a valid 'mark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    The integer entered is out of range.
+    Please enter a valid 'mark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    The integer entered is out of range.
+    Please enter a valid 'mark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    The integer entered is out of range.
+    Please enter a valid 'mark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    'Mark' command is valid.
+
+    Processing...
+
+    Nice! I've marked this task as done:
+        [T][X] add todo task
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    'Mark' command is valid.
+
+    Processing...
+
+    The task "add todo task" has already been marked as done.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    'Mark' command is valid.
+
+    Processing...
+
+    Nice! I've marked this task as done:
+        [D][X] add deadline task (by: today)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    'Mark' command is valid.
+
+    Processing...
+
+    Nice! I've marked this task as done:
+        [E][X] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Here are the tasks in your list:
+    1. [T][X] add todo task
+    2. [D][X] add deadline task (by: today)
+    3. [E][X] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    Please enter a valid 'unmark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    No integer detected.
+    Please enter a valid 'unmark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    The integer entered is out of range.
+    Please enter a valid 'unmark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    The integer entered is out of range.
+    Please enter a valid 'unmark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    'Unmark' command is valid.
+
+    Processing...
+
+    OK, I've marked this task as not done yet:
+        [T][ ] add todo task
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    'Unmark' command is valid.
+
+    Processing...
+
+    The task "add todo task" has already been marked as not done.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    'Unmark' command is valid.
+
+    Processing...
+
+    OK, I've marked this task as not done yet:
+        [D][ ] add deadline task (by: today)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+----------------------------------------------------------------------------------------
+    'Unmark' command is valid.
+
+    Processing...
+
+    OK, I've marked this task as not done yet:
+        [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Unknown option: giwegi
+    Please enter a valid option.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Unknown option: lsit
+    Please enter a valid option.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Unknown option: ybe
+    Please enter a valid option.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Todo' command is valid.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Got it. I have added this task to the task list:
+        [T][ ] CS2113 A level-4 increment
+    Now you have 4 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Deadline' command is valid.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Got it. I have added this task to the task list:
+        [D][ ] Text-ui-test (by: Tonight 8pm)
+    Now you have 5 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Deadline' command is valid.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Got it. I have added this task to the task list:
+        [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
+    Now you have 6 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Event' command is valid.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Got it. I have added this task to the task list:
+        [E][ ] Grinding more CS2113 (from: 6pm to: Eternity :-()
+    Now you have 7 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Todo' command is valid.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Got it. I have added this task to the task list:
+        [T][ ] GET AN INTERNSHIP!!!
+    Now you have 8 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    No todo task is being detected.
+    Please enter a valid 'todo' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Please enter a valid 'deadline' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Please enter a valid 'deadline' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    No event task is being detected
+    Please enter a valid 'event' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Please enter a valid 'event' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Please enter a valid 'event' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Please enter a valid 'event' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Please enter a valid 'event' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Please enter a valid 'event' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Please enter a valid 'event' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Unknown option: faoeih
+    Please enter a valid option.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit 
+            Example: bye
+----------------------------------------------------------------------------------------
+    Bye. Hope to see you again soon!
