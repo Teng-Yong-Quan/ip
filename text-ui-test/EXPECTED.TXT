@@ -36,7 +36,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The list is empty. There is nothing to show.
+    The task list is empty. There is nothing to show.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -70,7 +70,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to mark.
+    Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -104,7 +105,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to unmark.
+    Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -138,7 +140,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to mark.
+    Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -172,7 +175,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to mark.
+    Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -206,7 +210,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to mark.
+    Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -240,7 +245,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to mark.
+    Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -274,7 +280,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to unmark.
+    Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -308,7 +315,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to unmark.
+    Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -342,7 +350,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to unmark.
+    Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -376,7 +385,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty.
+    The task list is empty. There is nothing to unmark.
+    Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -570,7 +580,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
+    The substring of the 'mark' command is empty.
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -605,7 +615,6 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
     No integer detected.
     Please enter a valid 'mark' command.
 
@@ -641,8 +650,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    The integer entered is out of range.
+    The integer is out of range.
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -677,8 +685,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    The integer entered is out of range.
+    The integer is out of range.
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -713,8 +720,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    The integer entered is out of range.
+    The integer is out of range.
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -749,9 +755,10 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    'Mark' command is valid.
+    The integer is valid.
+    The 'mark' command is valid.
 
+----------------------------------------------------------------------------------------
     Processing...
 
     Nice! I've marked this task as done:
@@ -789,9 +796,10 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    'Mark' command is valid.
+    The integer is valid.
+    The 'mark' command is valid.
 
+----------------------------------------------------------------------------------------
     Processing...
 
     The task "add todo task" has already been marked as done.
@@ -828,9 +836,10 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    'Mark' command is valid.
+    The integer is valid.
+    The 'mark' command is valid.
 
+----------------------------------------------------------------------------------------
     Processing...
 
     Nice! I've marked this task as done:
@@ -868,9 +877,10 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    'Mark' command is valid.
+    The integer is valid.
+    The 'mark' command is valid.
 
+----------------------------------------------------------------------------------------
     Processing...
 
     Nice! I've marked this task as done:
@@ -945,7 +955,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
+    The substring of the 'unmark' command is empty.
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -980,7 +990,6 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
     No integer detected.
     Please enter a valid 'unmark' command.
 
@@ -1016,8 +1025,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    The integer entered is out of range.
+    The integer is out of range.
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -1052,8 +1060,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    The integer entered is out of range.
+    The integer is out of range.
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -1088,9 +1095,10 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    'Unmark' command is valid.
+    The integer is valid.
+    The 'unmark' command is valid.
 
+----------------------------------------------------------------------------------------
     Processing...
 
     OK, I've marked this task as not done yet:
@@ -1128,9 +1136,10 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    'Unmark' command is valid.
+    The integer is valid.
+    The 'unmark' command is valid.
 
+----------------------------------------------------------------------------------------
     Processing...
 
     The task "add todo task" has already been marked as not done.
@@ -1167,9 +1176,10 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    'Unmark' command is valid.
+    The integer is valid.
+    The 'unmark' command is valid.
 
+----------------------------------------------------------------------------------------
     Processing...
 
     OK, I've marked this task as not done yet:
@@ -1207,9 +1217,10 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-----------------------------------------------------------------------------------------
-    'Unmark' command is valid.
+    The integer is valid.
+    The 'unmark' command is valid.
 
+----------------------------------------------------------------------------------------
     Processing...
 
     OK, I've marked this task as not done yet:
