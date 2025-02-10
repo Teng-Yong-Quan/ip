@@ -43,11 +43,11 @@ todo
 deadline no by /by
 deadline /by no task assigned
 event
-event /from
-event/to
 event/from/to
-event no to/from
+event no /from
 event no from /to
 event/fromno/totask
+eventassign exception/to/from
+event assign exception/toTomorrow/fromToday
 faoeih
 bye
