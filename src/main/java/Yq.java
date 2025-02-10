@@ -19,7 +19,6 @@ public class Yq {
         int indexAfterCmdWord; // Extracts the substring after the command word.
         Task newTask = null; // Assigns the newly created task a variable name called 'newTask'.
         Task[] list = new Task[EMPTY_LIST_LENGTH]; // Create an empty main list.
-        int listLength = 0;
         Scanner userInput = new Scanner(System.in);
         while (true) {
             printCommandOptions();
@@ -27,61 +26,44 @@ public class Yq {
             userCmd = userCmd.trim();
             // Standardise the user inputs to lower case, so it is easier to check for the command keywords.
             lcUserCmd = userCmd.toLowerCase();
+            lcUserCmd = checkValidCommand(lcUserCmd);
             if (lcUserCmd.contains("bye")) {
                 break;
+
             } else if (lcUserCmd.contains("list")) {
-                printList(list);
+                checkValidPrintListCmd(list);
+
             } else if (lcUserCmd.contains("unmark")) {
-                printStraightLine();
-                processForOneSecond();
                 indexAfterCmdWord = lcUserCmd.indexOf("unmark") + "unmark".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
-                if (isValidUnmarkCmd(substringOfUserCmd, listLength)) {
-                    unmarkTask(list, substringOfUserCmd);
-                }
+                checkValidUnmarkCmd(list, substringOfUserCmd);
+
             } else if (lcUserCmd.contains("mark")) {
-                printStraightLine();
-                processForOneSecond();
                 indexAfterCmdWord = lcUserCmd.indexOf("mark") + "mark".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
-                if (isValidMarkCmd(substringOfUserCmd, listLength)) {
-                    markTask(list, substringOfUserCmd);
-                }
+                checkValidMarkCmd(list, substringOfUserCmd);
+
             } else if (lcUserCmd.contains("todo")) {
-                printStraightLine();
-                processForOneSecond();
                 indexAfterCmdWord = lcUserCmd.indexOf("todo") + "todo".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
-                if (isValidTodoCommand(substringOfUserCmd)) {
-                    newTask = createTodo(substringOfUserCmd);
-                }
+                newTask = makeValidTodo(substringOfUserCmd);
+
             } else if (lcUserCmd.contains("deadline")) {
-                printStraightLine();
-                processForOneSecond();
                 indexAfterCmdWord = lcUserCmd.indexOf("deadline") + "deadline".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
-                if (isValidDeadlineCmd(substringOfUserCmd)) {
-                    newTask = createDeadline(substringOfUserCmd);
-                }
+                newTask = makeValidDeadline(substringOfUserCmd);
+
             } else if (lcUserCmd.contains("event")) {
-                printStraightLine();
-                processForOneSecond();
                 indexAfterCmdWord = lcUserCmd.indexOf("event") + "event".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
-                if (isValidEventCmd(substringOfUserCmd)) {
-                    newTask = createEvent(substringOfUserCmd);
-                }
-            } else {
-                printStraightLine();
-                processForOneSecond();
-                System.out.println("    Unknown option: " + userCmd);
-                System.out.println("    Please enter a valid option.");
+                newTask = makeValidEvent(substringOfUserCmd);
+
             }
             if (newTask != null) {
                 list = addTask(list, newTask);
                 newTask = null;
-                listLength = list.length; // Update the variable 'listLength' with the length of the new task list.
             }
+
             System.out.println();
             printStraightLine();
             processForOneSecond();
@@ -91,12 +73,12 @@ public class Yq {
     }
 
     private static void printWelcomeMessage() {
-        String logo = " __   __    _________\n"
-                + "|  | |  |  |   ___   |\n"
-                + " \\     /   |  |  _|  |\n"
-                + "  |   |    |  |_|    |\n"
-                + "  |   |    |______   \\\n"
-                + "  |___|           \\___\\\n";
+        String logo = " __    __    _________\n"
+                + "|  |  |  |  |   ___   |\n"
+                + " \\  \\/  /   |  |  _|  |\n"
+                + "  \\    /    |  |_|    |\n"
+                + "   |  |     |______   \\\n"
+                + "   |__|            \\___\\\n";
         System.out.println("Hello from\n" + logo);
         System.out.println();
         System.out.println("Hello! I'm Yq.");
@@ -162,21 +144,50 @@ public class Yq {
         }
     }
 
+    private static String returnValidCommand(String userCommand) throws InvalidCommandException {
+        if (userCommand.contains("list") || userCommand.contains("unmark") || userCommand.contains("mark") ||
+                userCommand.contains("todo") || userCommand.contains("deadline") || userCommand.contains("event") ||
+                userCommand.contains("bye")) {
+            return userCommand;
+        }
+        throw new InvalidCommandException();
+    }
+
+    private static String checkValidCommand(String userCommand) {
+        try {
+            return returnValidCommand(userCommand);
+        } catch (InvalidCommandException invalidCommandException) {
+            printStraightLine();
+            processForOneSecond();
+            System.out.println("    Unknown option: " + userCommand);
+            System.out.println("    Please enter a valid option.");
+            return "";
+        }
+    }
+
     /**
      * Prints the list of tasks as requested by the user.
      *
      * @param list The task list.
      */
-    private static void printList(Task[] list) {
+    private static void printList(Task[] list) throws EmptyListException {
         printStraightLine();
         processForOneSecond();
-        if (list.length > EMPTY_LIST_LENGTH) {
-            System.out.println("    Here are the tasks in your list:");
-            for (int i = 0; i < list.length; i++) {
-                Task selectedTask = list[i];
-                System.out.println("    " + (i + LIST_INDEX_ADJUSTMENT) + ". " + selectedTask.toString());
-            }
-        } else {
+        if (list.length == EMPTY_LIST_LENGTH) {
+            throw new EmptyListException();
+
+        }
+        System.out.println("    Here are the tasks in your list:");
+        for (int i = 0; i < list.length; i++) {
+            Task selectedTask = list[i];
+            System.out.println("    " + (i + LIST_INDEX_ADJUSTMENT) + ". " + selectedTask.toString());
+        }
+    }
+
+    private static void checkValidPrintListCmd(Task[] list) {
+        try {
+            printList(list);
+        } catch (EmptyListException emptyListException) {
             System.out.println("    The task list is empty. There is nothing to show.");
         }
     }
@@ -185,76 +196,52 @@ public class Yq {
      * Checks whether the substring of the 'unmark' command inputted by the user is valid. A message is printed to
      * inform users that the list is empty, hence there is no task for them to unmark. It ensures that the unmarking of
      * the task can only be carried out if the substring of the 'unmark' command is not empty, and it contains a valid
-     * integer for extracting the task index from the list after passing the isValidInputInteger method.
-     * Prints a reminder to input a valid 'unmark' command.
+     * integer for extracting the task index from the list. An exception is thrown according to the error found in the
+     * user's input. Prints a reminder to input a valid 'unmark' command.
      *
-     * @param listLength           The length of the task list.
      * @param substringOfUnmarkCmd The substring of the 'unmark' command inputted by the user after
      *                             the 'unmark' word is being verified and removed from the command.
-     * @return The validity of the substring of 'unmark' command.
      */
-    private static boolean isValidUnmarkCmd(String substringOfUnmarkCmd, int listLength) {
-        if (listLength == EMPTY_LIST_LENGTH) {
+    private static void checkValidUnmarkCmd(Task[] list, String substringOfUnmarkCmd) {
+        try {
+            unmarkTask(list, substringOfUnmarkCmd);
+            return;
+        } catch (EmptyListException emptyListException) {
             System.out.println("    The task list is empty. There is nothing to unmark.");
-        } else if (substringOfUnmarkCmd.isEmpty()) {
-            System.out.println("    The substring of the 'unmark' command is empty.");
-        } else if (isValidInputInteger(substringOfUnmarkCmd, listLength)) {
-            System.out.println("    The 'unmark' command is valid." + "\n");
-            return true;
+        } catch (MissingUnmarkNumberException e) {
+            System.out.println("    The number of the 'unmark' command cannot be missing.");
+        } catch (NumberFormatException numberFormatException) {
+            System.out.println("    A valid integer must come after the 'unmark' command.");
+        } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
+            System.out.println("    The integer cannot be out of range.");
         }
         System.out.println("    Please enter a valid 'unmark' command.");
-        return false;
-    }
-
-    /**
-     * Checks for the presence of the integer in the input command. This method caters to both 'mark' and 'unmark'
-     * commands. An exception message is printed when the substring of the command do not contain integers without
-     * neighbouring characters. It also checks whether the integer stated in the command is out of range or valid by
-     * comparing with the length of the list. An error message is printed when the integer detected is out of range.
-     *
-     * @param listLength     The length of the current Task list.
-     * @param substringOfCmd The substring of the input 'mark' or 'unmark' command.
-     * @return Returns the validity of the input integer.
-     */
-    private static boolean isValidInputInteger(String substringOfCmd, int listLength) {
-        try {
-            int inputInteger = Integer.parseInt(substringOfCmd);
-            boolean isValidInteger = inputInteger > EMPTY_LIST_LENGTH && inputInteger <= listLength;
-            if (isValidInteger) {
-                System.out.println("    The integer is valid.");
-            } else {
-                System.out.println("    The integer is out of range.");
-            }
-            return isValidInteger;
-        } catch (NumberFormatException numberFormatException) {
-            System.out.println("    No integer detected.");
-            return false;
-        }
     }
 
     /**
      * Checks whether the substring of the 'mark' command inputted by the user is valid. A message is printed to
      * inform users that the list is empty, hence there is no task for them to mark. It ensures that the marking of
      * the task can only be carried out if the substring of the 'mark' command is not empty, and it contains a valid
-     * integer for extracting the task index from the list after passing the isValidInputInteger method.
-     * Prints a reminder to input a valid 'mark' command.
+     * integer for extracting the task index from the list. An exception is thrown according to the error found in the
+     * user's input.  Prints a reminder to input a valid 'mark' command.
      *
-     * @param listLength         The length of the task list.
      * @param substringOfMarkCmd The substring of the 'mark' command inputted by the user after
      *                           the 'mark' word is being verified and removed from the command.
-     * @return The validity of the substring of 'mark' command.
      */
-    private static boolean isValidMarkCmd(String substringOfMarkCmd, int listLength) {
-        if (listLength == EMPTY_LIST_LENGTH) {
+    private static void checkValidMarkCmd(Task[] list, String substringOfMarkCmd) {
+        try {
+            markTask(list, substringOfMarkCmd);
+            return;
+        } catch (EmptyListException emptyListException) {
             System.out.println("    The task list is empty. There is nothing to mark.");
-        } else if (substringOfMarkCmd.isEmpty()) {
-            System.out.println("    The substring of the 'mark' command is empty.");
-        } else if (isValidInputInteger(substringOfMarkCmd, listLength)) {
-            System.out.println("    The 'mark' command is valid." +"\n");
-            return true;
+        } catch (MissingMarkNumberException e) {
+            System.out.println("    The number of the 'mark' command cannot be missing.");
+        } catch (NumberFormatException numberFormatException) {
+            System.out.println("    A valid integer must come after the 'mark' command.");
+        } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
+            System.out.println("    The integer cannot be out of range.");
         }
         System.out.println("    Please enter a valid 'mark' command.");
-        return false;
     }
 
     /**
@@ -263,11 +250,18 @@ public class Yq {
      * @param list                 The task list containing the selected task that is being marked as not done.
      * @param substringOfUnmarkCmd The substring of the 'unmark' command inputted by the user.
      */
-    private static void unmarkTask(Task[] list, String substringOfUnmarkCmd) {
+    private static void unmarkTask(Task[] list, String substringOfUnmarkCmd) throws EmptyListException,
+            MissingUnmarkNumberException {
         printStraightLine();
         processForOneSecond();
+        if (list.length == EMPTY_LIST_LENGTH) {
+            throw new EmptyListException();
+        } else if (substringOfUnmarkCmd.isEmpty()) {
+            throw new MissingUnmarkNumberException();
+        }
         int chosenUnmarkIndex = Integer.parseInt(substringOfUnmarkCmd);
         Task selectedTask = list[chosenUnmarkIndex - LIST_INDEX_ADJUSTMENT];
+        System.out.println("    The 'unmark' command is valid." + "\n");
         selectedTask.markAsNotDone();
     }
 
@@ -277,11 +271,18 @@ public class Yq {
      * @param list               The task list containing the selected task that is being marked as done.
      * @param substringOfMarkCmd The substring of the 'mark' command inputted by the user.
      */
-    private static void markTask(Task[] list, String substringOfMarkCmd) {
+    private static void markTask(Task[] list, String substringOfMarkCmd) throws EmptyListException,
+            MissingMarkNumberException {
         printStraightLine();
         processForOneSecond();
+        if (list.length == EMPTY_LIST_LENGTH) {
+            throw new EmptyListException();
+        } else if (substringOfMarkCmd.isEmpty()) {
+            throw new MissingMarkNumberException();
+        }
         int chosenMarkIndex = Integer.parseInt(substringOfMarkCmd);
         Task selectedTask = list[chosenMarkIndex - LIST_INDEX_ADJUSTMENT];
+        System.out.println("    The 'mark' command is valid." + "\n");
         selectedTask.markAsDone();
     }
 
@@ -292,16 +293,16 @@ public class Yq {
      *
      * @param substringOfTodoCmd The substring of the 'todo' command inputted by the user after
      *                           the 'todo' word is being verified and removed from the command.
-     * @return The validity of the substring of 'todo' command.
+     * @return The newly created Todo task if the substring of the 'todo' command is valid. Else, it returns null.
      */
-    private static boolean isValidTodoCommand(String substringOfTodoCmd) {
-        if (substringOfTodoCmd.isEmpty()) {
-            System.out.println("    No todo task is being detected.");
+    private static Task makeValidTodo(String substringOfTodoCmd) {
+        try {
+            return createTodo(substringOfTodoCmd);
+        } catch (MissingTodoDescriptionException missingTodoDescriptionException) {
+            System.out.println("    Todo description cannot be missing.");
             System.out.println("    Please enter a valid 'todo' command.");
-            return false;
         }
-        System.out.println("    'Todo' command is valid." + "\n");
-        return true;
+        return null;
     }
 
     /**
@@ -315,26 +316,21 @@ public class Yq {
      *
      * @param substringOfDeadlineCmd The substring of the 'deadline' command inputted by the user after
      *                               the 'deadline' word is being verified and removed from the command.
-     * @return The validity of the substring of 'deadline' command.
+     * @return The newly created Deadline Task if the substring of the 'deadline' command is valid.
+     * Else, it returns null.
      */
-    private static boolean isValidDeadlineCmd(String substringOfDeadlineCmd) {
-        String lcSubstringOfDeadlineCmd = substringOfDeadlineCmd.toLowerCase();
-        if (lcSubstringOfDeadlineCmd.contains("/by")) {
-            int byIndex = lcSubstringOfDeadlineCmd.indexOf("/by");
-            int indexAfterByWord = byIndex + "/by".length();
-
-            String deadlineDescription = substringOfDeadlineCmd.substring(START_INDEX_STRING_CMD, byIndex).trim();
-            String by = substringOfDeadlineCmd.substring(indexAfterByWord).trim();
-
-            if (!deadlineDescription.isEmpty() && !by.isEmpty()) {
-                System.out.println("    'Deadline' command is valid." + "\n");
-                return true;
-            }
-        } else if (substringOfDeadlineCmd.isEmpty()) {
-            System.out.println("    No deadline task is being detected");
+    private static Task makeValidDeadline(String substringOfDeadlineCmd) {
+        try {
+            return createDeadline(substringOfDeadlineCmd);
+        } catch (EmptyDeadlineCommandException emptyDeadlineCommandException) {
+            System.out.println("    The substring of the 'deadline' command cannot be empty.");
+        } catch (MissingByKeywordException missingByKeywordException) {
+            System.out.println("    The '/by' keyword cannot be missing.");
+        } catch (MissingDeadlineDescriptionException missingDeadlineDescriptionException) {
+            System.out.println("    The deadline and '/by' descriptions cannot be missing.");
         }
         System.out.println("    Please enter a valid 'deadline' command.");
-        return false;
+        return null;
     }
 
     /**
@@ -350,27 +346,22 @@ public class Yq {
      *                            the 'event' word is being verified and removed from the command.
      * @return The validity of the substring of 'event' command.
      */
-    private static boolean isValidEventCmd(String substringOfEventCmd) {
-        String lcSubstringOfEventCmd = substringOfEventCmd.toLowerCase();
-        if (lcSubstringOfEventCmd.contains("/from") && lcSubstringOfEventCmd.contains("/to")) {
-            int fromIndex = lcSubstringOfEventCmd.indexOf("/from");
-            int toIndex = lcSubstringOfEventCmd.indexOf("/to");
-            int indexAfterFromWord = fromIndex + "/from".length();
-            int indexAfterToWord = toIndex + "/to".length();
-
-            String eventDescription = substringOfEventCmd.substring(START_INDEX_STRING_CMD, fromIndex).trim();
-            String from = substringOfEventCmd.substring(indexAfterFromWord, toIndex).trim();
-            String to = substringOfEventCmd.substring(indexAfterToWord).trim();
-
-            if (!eventDescription.isEmpty() && !from.isEmpty() && !to.isEmpty()) {
-                System.out.println("    'Event' command is valid." + "\n");
-                return true;
-            }
-        } else if (substringOfEventCmd.isEmpty()) {
-            System.out.println("    No event task is being detected");
+    private static Task makeValidEvent(String substringOfEventCmd) {
+        try {
+            return createEvent(substringOfEventCmd);
+        } catch (EmptyEventCommandException emptyEventCommandException) {
+            System.out.println("    The substring of the 'event' command cannot be empty.");
+        } catch (MissingFromKeywordException missingFromKeywordException) {
+            System.out.println("    The '/from' keyword cannot be missing.");
+        } catch (MissingToKeywordException missingToKeywordException) {
+            System.out.println("    The '/to' keyword cannot be missing.");
+        } catch (InvalidFromToIndexesException invalidFromToIndexesException) {
+            System.out.println("    The '/from' keyword cannot be inputted after the '/to' keyword.");
+        } catch (MissingEventDescriptionException missingEventDescriptionException) {
+            System.out.println("    The event, '/from' and '/to' descriptions cannot be missing.");
         }
         System.out.println("    Please enter a valid 'event' command.");
-        return false;
+        return null;
     }
 
     /**
@@ -380,28 +371,46 @@ public class Yq {
      * @return A new Todo Task.
      */
 
-    private static Task createTodo(String substringOfTodoCmd) {
-        return new ToDo(substringOfTodoCmd);
+    private static Task createTodo(String substringOfTodoCmd) throws MissingTodoDescriptionException {
+        printStraightLine();
+        processForOneSecond();
+        if (substringOfTodoCmd.isEmpty()) {
+            throw new MissingTodoDescriptionException();
+        }
+        System.out.println("    'Todo' command is valid." + "\n");
+        return new Todo(substringOfTodoCmd);
     }
 
     /**
      * Creates a Deadline task from the substring of the 'deadline' command. A duplicate of the substring of the
      * 'deadline' command in lower case is formed. This substring would act as a medium to check for the presence of the
      * '/by' keyword and extract the index of the keyword in the original substring if present. Based on the index of
-     * '/by' keyword, the deadline task description and the deadline datetime could be partitioned and extracted.
+     * '/by' keyword, the deadline task description and the deadline datetime could be partitioned and extracted. An
+     * exception is thrown according to the error found in the user's input.
      *
      * @param substringOfDeadlineCmd The substring of the 'deadline' command inputted by the user.
      * @return A new Deadline Task.
      */
 
 
-    private static Task createDeadline(String substringOfDeadlineCmd) {
+    private static Task createDeadline(String substringOfDeadlineCmd) throws EmptyDeadlineCommandException,
+            MissingByKeywordException, MissingDeadlineDescriptionException {
+        printStraightLine();
+        processForOneSecond();
         String lcSubstringOfDeadlineCmd = substringOfDeadlineCmd.toLowerCase();
+        if (substringOfDeadlineCmd.isEmpty()) {
+            throw new EmptyDeadlineCommandException();
+        } else if (!lcSubstringOfDeadlineCmd.contains("/by")) {
+            throw new MissingByKeywordException();
+        }
         int byIndex = lcSubstringOfDeadlineCmd.indexOf("/by");
         int indexAfterByWord = byIndex + "/by".length();
-
         String deadlineDescription = substringOfDeadlineCmd.substring(START_INDEX_STRING_CMD, byIndex).trim();
         String by = substringOfDeadlineCmd.substring(indexAfterByWord).trim();
+        if (deadlineDescription.isEmpty() || by.isEmpty()) {
+            throw new MissingDeadlineDescriptionException();
+        }
+        System.out.println("    'Deadline' command is valid." + "\n");
         return new Deadline(deadlineDescription, by);
     }
 
@@ -410,22 +419,39 @@ public class Yq {
      * command in lower case is formed. This substring would act as a medium to check for the presence of the
      * '/from' and '/to' keywords and extract the indexes of the keywords in the original substring if present. Based on
      * the indexes of both '/from' and '/to' keywords, the event task description, start datetime and end datetime could
-     * be partitioned and extracted.
+     * be partitioned and extracted. An exception is thrown according to the error found in the user's input.
      *
      * @param substringOfEventCmd The substring of the 'event' command inputted by the user.
      * @return A new Deadline Task.
      */
 
-    private static Task createEvent(String substringOfEventCmd) {
+    private static Task createEvent(String substringOfEventCmd) throws EmptyEventCommandException,
+            MissingFromKeywordException, MissingToKeywordException, InvalidFromToIndexesException,
+            MissingEventDescriptionException {
+        printStraightLine();
+        processForOneSecond();
         String lcSubstringOfEventCmd = substringOfEventCmd.toLowerCase();
+        if (substringOfEventCmd.isEmpty()) {
+            throw new EmptyEventCommandException();
+        } else if (!lcSubstringOfEventCmd.contains("/from")) {
+            throw new MissingFromKeywordException();
+        } else if (!lcSubstringOfEventCmd.contains("/to")) {
+            throw new MissingToKeywordException();
+        }
         int fromIndex = lcSubstringOfEventCmd.indexOf("/from");
         int toIndex = lcSubstringOfEventCmd.indexOf("/to");
         int indexAfterFromWord = fromIndex + "/from".length();
         int indexAfterToWord = toIndex + "/to".length();
-
+        if (fromIndex >= toIndex) {
+            throw new InvalidFromToIndexesException();
+        }
         String eventDescription = substringOfEventCmd.substring(START_INDEX_STRING_CMD, fromIndex).trim();
         String from = substringOfEventCmd.substring(indexAfterFromWord, toIndex).trim();
         String to = substringOfEventCmd.substring(indexAfterToWord).trim();
+        if (eventDescription.isEmpty() || from.isEmpty() || to.isEmpty()) {
+            throw new MissingEventDescriptionException();
+        }
+        System.out.println("    'Event' command is valid." + "\n");
         return new Event(eventDescription, from, to);
     }
 
@@ -437,8 +463,6 @@ public class Yq {
      * @return Updated task list.
      */
     private static Task[] addTask(Task[] list, Task newTask) {
-        printStraightLine();
-        processForOneSecond();
         // Create a new empty list that is longer than the main list by 1.
         Task[] newList = new Task[list.length + ADD_ONE_TASK];
         // Transfer all tasks in the main list into the new list.
