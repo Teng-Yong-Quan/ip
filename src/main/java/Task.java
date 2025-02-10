@@ -1,4 +1,4 @@
-public class Task {
+public abstract class Task {
     protected String description; // Description of the task
     protected boolean isDone; // Check if the task is marked as done or not done
 
