@@ -50,4 +50,13 @@ event/fromno/totask
 eventassign exception/to/from
 event assign exception/toTomorrow/fromToday
 faoeih
+delete
+delete ss
+deLETE0
+delete-1
+ASDELete2
+list
+dDDelete 10
+deLEte 3
+list
 bye
