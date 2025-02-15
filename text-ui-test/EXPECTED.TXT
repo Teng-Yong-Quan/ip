@@ -14,13 +14,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -48,13 +52,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -83,13 +91,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -118,13 +130,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -153,13 +169,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -188,13 +208,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -223,13 +247,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -258,13 +286,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -293,13 +325,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -328,13 +364,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -363,13 +403,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -398,13 +442,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -436,13 +484,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -474,13 +526,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -512,13 +568,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -549,13 +609,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -571,7 +635,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The number of the 'mark' command cannot be missing.
+    The index of the task to be marked cannot be missing from the 'mark' command.
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -584,13 +648,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -606,7 +674,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    A valid integer must come after the 'mark' command.
+    A valid integer starting from 1 and nothing else must be present after the 'mark' word.
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -619,48 +687,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
-        unmark - to choose a task that you want to mark as not done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    unmark 2
-
         mark   - to choose a task that you want to mark as done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    mark 1
-
-        Task type: todo/deadline/event - to add a task to the list
-            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
-            Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
-
-        bye    - to quit
-            Example: bye
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-    Processing...
-
-    The integer cannot be out of range.
-    Please enter a valid 'mark' command.
-
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Is there anything else I can do for you?
-
-----------------------------------------------------------------------------------------
-    Please key in one of the following options:
-        list   - to show the list of tasks
-            Example: list
 
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -689,13 +726,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -724,13 +765,56 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The integer cannot be out of range.
+    Please enter a valid 'mark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
         mark   - to choose a task that you want to mark as done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -761,13 +845,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -797,13 +885,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -834,13 +926,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -871,13 +967,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -908,13 +1008,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -930,7 +1034,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The number of the 'unmark' command cannot be missing.
+    The index of the task to be unmarked cannot be missing from the 'unmark' command.
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -943,13 +1047,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -965,7 +1073,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    A valid integer must come after the 'unmark' command.
+    A valid integer starting from 1 and nothing else must be present after the 'unmark' word.
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -978,48 +1086,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
-        unmark - to choose a task that you want to mark as not done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    unmark 2
-
         mark   - to choose a task that you want to mark as done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    mark 1
-
-        Task type: todo/deadline/event - to add a task to the list
-            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
-            Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
-
-        bye    - to quit
-            Example: bye
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-    Processing...
-
-    The integer cannot be out of range.
-    Please enter a valid 'unmark' command.
-
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Is there anything else I can do for you?
-
-----------------------------------------------------------------------------------------
-    Please key in one of the following options:
-        list   - to show the list of tasks
-            Example: list
 
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1048,13 +1125,56 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The integer cannot be out of range.
+    Please enter a valid 'unmark' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
         mark   - to choose a task that you want to mark as done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1085,13 +1205,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1121,13 +1245,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1158,13 +1286,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1195,13 +1327,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1230,13 +1366,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1265,13 +1405,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1300,13 +1444,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1338,13 +1486,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1376,13 +1528,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1414,13 +1570,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1452,13 +1612,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1490,13 +1654,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1525,13 +1693,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1560,13 +1732,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1595,13 +1771,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1630,13 +1810,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1665,13 +1849,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1700,13 +1888,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1735,13 +1927,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1770,13 +1966,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1805,13 +2005,17 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
-        mark   - to choose a task that you want to mark as done
+        delete - to choose a task that you want to delete from the list
             Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1840,13 +2044,58 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The 'mark' command is valid.
+
+    Nice! I've marked this task as done:
+        [T][X] add todo task
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
         mark   - to choose a task that you want to mark as done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
@@ -1875,13 +2124,463 @@ What can I do for you?
         list   - to show the list of tasks
             Example: list
 
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
         unmark - to choose a task that you want to mark as not done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    unmark 2
 
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The index of the task to be deleted cannot be missing from the 'delete' command.
+    Please enter a valid 'delete' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
         mark   - to choose a task that you want to mark as done
             Parameters: KEYWORD [POSITIVE INTEGER]
             Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The 'mark' command is valid.
+
+    Nice! I've marked this task as done:
+        [D][X] add deadline task (by: today)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    A valid integer starting from 1 and nothing else must be present after the 'delete' word.
+    Please enter a valid 'delete' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The integer cannot be out of range.
+    Please enter a valid 'delete' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The 'mark' command is valid.
+
+    Nice! I've marked this task as done:
+        [D][X] Text-ui-test (by: Tonight 8pm)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The integer cannot be out of range.
+    Please enter a valid 'delete' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Noted. I have removed this task:
+        [D][X] add deadline task (by: today)
+    Now you have 7 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Here are the tasks in your list:
+    1. [T][X] add todo task
+    2. [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+    3. [T][ ] CS2113 A level-4 increment
+    4. [D][X] Text-ui-test (by: Tonight 8pm)
+    5. [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
+    6. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity :-()
+    7. [T][ ] GET AN INTERNSHIP!!!
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The integer cannot be out of range.
+    Please enter a valid 'delete' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Noted. I have removed this task:
+        [T][ ] CS2113 A level-4 increment
+    Now you have 6 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Here are the tasks in your list:
+    1. [T][X] add todo task
+    2. [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+    3. [D][X] Text-ui-test (by: Tonight 8pm)
+    4. [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
+    5. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity :-()
+    6. [T][ ] GET AN INTERNSHIP!!!
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
 
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
