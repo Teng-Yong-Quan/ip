@@ -20,16 +20,13 @@ import yq.tasks.Event;
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
+import java.util.ArrayList;
 
 public class Yq {
-    private static final int EMPTY_LIST_LENGTH = 0;
     private static final int LIST_INDEX_ADJUSTMENT = 1;
     private static final int ONE_SECOND = 1;
     private static final int START_INDEX_STRING_CMD = 0;
-    // Shows the item at the index 0 of the string command.
-    private static final int START_INDEX_LIST = 0;
-    // Shows the item at the index 0 of the list.
-    public static final int ADD_ONE_TASK = 1;
+    private static final ArrayList<Task> taskArrayList = new ArrayList<>(); // Create an empty main list.
 
     public static void main(String[] args) {
         printWelcomeMessage();
@@ -38,7 +35,6 @@ public class Yq {
         String substringOfUserCmd; // Shows the substring of the user command.
         int indexAfterCmdWord; // Extracts the substring after the command word.
         Task newTask = null; // Assigns the newly created task a variable name called 'newTask'.
-        Task[] list = new Task[EMPTY_LIST_LENGTH]; // Create an empty main list.
         Scanner userInput = new Scanner(System.in);
         while (true) {
             printCommandOptions();
@@ -51,17 +47,17 @@ public class Yq {
                 break;
 
             } else if (lcUserCmd.contains("list")) {
-                checkValidPrintListCmd(list);
+                checkValidPrintListCmd(taskArrayList);
 
             } else if (lcUserCmd.contains("unmark")) {
                 indexAfterCmdWord = lcUserCmd.indexOf("unmark") + "unmark".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
-                checkValidUnmarkCmd(list, substringOfUserCmd);
+                checkValidUnmarkCmd(taskArrayList, substringOfUserCmd);
 
             } else if (lcUserCmd.contains("mark")) {
                 indexAfterCmdWord = lcUserCmd.indexOf("mark") + "mark".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
-                checkValidMarkCmd(list, substringOfUserCmd);
+                checkValidMarkCmd(taskArrayList, substringOfUserCmd);
 
             } else if (lcUserCmd.contains("todo")) {
                 indexAfterCmdWord = lcUserCmd.indexOf("todo") + "todo".length();
@@ -80,7 +76,7 @@ public class Yq {
 
             }
             if (newTask != null) {
-                list = addTask(list, newTask);
+                addTask(taskArrayList, newTask);
                 newTask = null;
             }
 
@@ -161,6 +157,7 @@ public class Yq {
             System.out.println("    Processing..." + "\n");
             TimeUnit.SECONDS.sleep(ONE_SECOND);
         } catch (InterruptedException interruptedException) {
+            Thread.currentThread().interrupt();
         }
     }
 
@@ -190,21 +187,21 @@ public class Yq {
      *
      * @param list The task list.
      */
-    private static void printList(Task[] list) throws EmptyListException {
+    private static void printList(ArrayList<Task> list) throws EmptyListException {
         printStraightLine();
         processForOneSecond();
-        if (list.length == EMPTY_LIST_LENGTH) {
+        if (list.isEmpty()) {
             throw new EmptyListException();
 
         }
         System.out.println("    Here are the tasks in your list:");
-        for (int i = 0; i < list.length; i++) {
-            Task selectedTask = list[i];
+        for (int i = 0; i < list.size(); i++) {
+            Task selectedTask = list.get(i);
             System.out.println("    " + (i + LIST_INDEX_ADJUSTMENT) + ". " + selectedTask.toString());
         }
     }
 
-    private static void checkValidPrintListCmd(Task[] list) {
+    private static void checkValidPrintListCmd(ArrayList<Task> list) {
         try {
             printList(list);
         } catch (EmptyListException emptyListException) {
@@ -222,7 +219,7 @@ public class Yq {
      * @param substringOfUnmarkCmd The substring of the 'unmark' command inputted by the user after
      *                             the 'unmark' word is being verified and removed from the command.
      */
-    private static void checkValidUnmarkCmd(Task[] list, String substringOfUnmarkCmd) {
+    private static void checkValidUnmarkCmd(ArrayList<Task> list, String substringOfUnmarkCmd) {
         try {
             unmarkTask(list, substringOfUnmarkCmd);
             return;
@@ -248,7 +245,7 @@ public class Yq {
      * @param substringOfMarkCmd The substring of the 'mark' command inputted by the user after
      *                           the 'mark' word is being verified and removed from the command.
      */
-    private static void checkValidMarkCmd(Task[] list, String substringOfMarkCmd) {
+    private static void checkValidMarkCmd(ArrayList<Task> list, String substringOfMarkCmd) {
         try {
             markTask(list, substringOfMarkCmd);
             return;
@@ -270,17 +267,17 @@ public class Yq {
      * @param list                 The task list containing the selected task that is being marked as not done.
      * @param substringOfUnmarkCmd The substring of the 'unmark' command inputted by the user.
      */
-    private static void unmarkTask(Task[] list, String substringOfUnmarkCmd) throws EmptyListException,
+    private static void unmarkTask(ArrayList<Task> list, String substringOfUnmarkCmd) throws EmptyListException,
             MissingUnmarkNumberException {
         printStraightLine();
         processForOneSecond();
-        if (list.length == EMPTY_LIST_LENGTH) {
+        if (list.isEmpty()) {
             throw new EmptyListException();
         } else if (substringOfUnmarkCmd.isEmpty()) {
             throw new MissingUnmarkNumberException();
         }
         int chosenUnmarkIndex = Integer.parseInt(substringOfUnmarkCmd);
-        Task selectedTask = list[chosenUnmarkIndex - LIST_INDEX_ADJUSTMENT];
+        Task selectedTask = list.get(chosenUnmarkIndex - LIST_INDEX_ADJUSTMENT);
         System.out.println("    The 'unmark' command is valid." + "\n");
         selectedTask.markAsNotDone();
     }
@@ -291,17 +288,17 @@ public class Yq {
      * @param list               The task list containing the selected task that is being marked as done.
      * @param substringOfMarkCmd The substring of the 'mark' command inputted by the user.
      */
-    private static void markTask(Task[] list, String substringOfMarkCmd) throws EmptyListException,
+    private static void markTask(ArrayList<Task> list, String substringOfMarkCmd) throws EmptyListException,
             MissingMarkNumberException {
         printStraightLine();
         processForOneSecond();
-        if (list.length == EMPTY_LIST_LENGTH) {
+        if (list.isEmpty()) {
             throw new EmptyListException();
         } else if (substringOfMarkCmd.isEmpty()) {
             throw new MissingMarkNumberException();
         }
         int chosenMarkIndex = Integer.parseInt(substringOfMarkCmd);
-        Task selectedTask = list[chosenMarkIndex - LIST_INDEX_ADJUSTMENT];
+        Task selectedTask = list.get(chosenMarkIndex - LIST_INDEX_ADJUSTMENT);
         System.out.println("    The 'mark' command is valid." + "\n");
         selectedTask.markAsDone();
     }
@@ -480,20 +477,13 @@ public class Yq {
      *
      * @param newTask The task description input by the user.
      * @param list    The task list.
-     * @return Updated task list.
      */
-    private static Task[] addTask(Task[] list, Task newTask) {
-        // Create a new empty list that is longer than the main list by 1.
-        Task[] newList = new Task[list.length + ADD_ONE_TASK];
-        // Transfer all tasks in the main list into the new list.
-        System.arraycopy(list, START_INDEX_LIST, newList, START_INDEX_LIST, list.length);
+    private static void addTask(ArrayList<Task> list, Task newTask) {
         // Add latest task into the new list.
-        newList[newList.length - LIST_INDEX_ADJUSTMENT] = newTask;
+        list.add(newTask);
         // Set new list as the main list.
-        list = newList;
         System.out.println("    Got it. I have added this task to the task list:");
         System.out.println("        " + newTask.toString());
-        System.out.println("    Now you have " + list.length + " tasks in the list.");
-        return list;
+        System.out.println("    Now you have " + list.size() + " tasks in the list.");
     }
 }
