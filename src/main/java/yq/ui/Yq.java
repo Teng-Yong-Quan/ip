@@ -47,17 +47,17 @@ public class Yq {
                 break;
 
             } else if (lcUserCmd.contains("list")) {
-                checkValidPrintListCmd(taskArrayList);
+                checkValidPrintListCmd();
 
             } else if (lcUserCmd.contains("unmark")) {
                 indexAfterCmdWord = lcUserCmd.indexOf("unmark") + "unmark".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
-                checkValidUnmarkCmd(taskArrayList, substringOfUserCmd);
+                checkValidUnmarkCmd(substringOfUserCmd);
 
             } else if (lcUserCmd.contains("mark")) {
                 indexAfterCmdWord = lcUserCmd.indexOf("mark") + "mark".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
-                checkValidMarkCmd(taskArrayList, substringOfUserCmd);
+                checkValidMarkCmd(substringOfUserCmd);
 
             } else if (lcUserCmd.contains("todo")) {
                 indexAfterCmdWord = lcUserCmd.indexOf("todo") + "todo".length();
@@ -76,7 +76,7 @@ public class Yq {
 
             }
             if (newTask != null) {
-                addTask(taskArrayList, newTask);
+                addTask(newTask);
                 newTask = null;
             }
 
@@ -89,12 +89,14 @@ public class Yq {
     }
 
     private static void printWelcomeMessage() {
-        String logo = " __    __    _________\n"
-                + "|  |  |  |  |   ___   |\n"
-                + " \\  \\/  /   |  |  _|  |\n"
-                + "  \\    /    |  |_|    |\n"
-                + "   |  |     |______   \\\n"
-                + "   |__|            \\___\\\n";
+        String logo = """
+                 __    __    _________
+                |  |  |  |  |   ___   |
+                 \\  \\/  /   |  |  _|  |
+                  \\    /    |  |_|    |
+                   |  |     |______   \\
+                   |__|            \\___\\
+                """;
         System.out.println("Hello from\n" + logo);
         System.out.println();
         System.out.println("Hello! I'm Yq.");
@@ -184,26 +186,24 @@ public class Yq {
 
     /**
      * Prints the list of tasks as requested by the user.
-     *
-     * @param list The task list.
      */
-    private static void printList(ArrayList<Task> list) throws EmptyListException {
+    private static void printList() throws EmptyListException {
         printStraightLine();
         processForOneSecond();
-        if (list.isEmpty()) {
+        if (Yq.taskArrayList.isEmpty()) {
             throw new EmptyListException();
 
         }
         System.out.println("    Here are the tasks in your list:");
-        for (int i = 0; i < list.size(); i++) {
-            Task selectedTask = list.get(i);
+        for (int i = 0; i < Yq.taskArrayList.size(); i++) {
+            Task selectedTask = Yq.taskArrayList.get(i);
             System.out.println("    " + (i + LIST_INDEX_ADJUSTMENT) + ". " + selectedTask.toString());
         }
     }
 
-    private static void checkValidPrintListCmd(ArrayList<Task> list) {
+    private static void checkValidPrintListCmd() {
         try {
-            printList(list);
+            printList();
         } catch (EmptyListException emptyListException) {
             System.out.println("    The task list is empty. There is nothing to show.");
         }
@@ -219,9 +219,9 @@ public class Yq {
      * @param substringOfUnmarkCmd The substring of the 'unmark' command inputted by the user after
      *                             the 'unmark' word is being verified and removed from the command.
      */
-    private static void checkValidUnmarkCmd(ArrayList<Task> list, String substringOfUnmarkCmd) {
+    private static void checkValidUnmarkCmd(String substringOfUnmarkCmd) {
         try {
-            unmarkTask(list, substringOfUnmarkCmd);
+            unmarkTask(substringOfUnmarkCmd);
             return;
         } catch (EmptyListException emptyListException) {
             System.out.println("    The task list is empty. There is nothing to unmark.");
@@ -245,9 +245,9 @@ public class Yq {
      * @param substringOfMarkCmd The substring of the 'mark' command inputted by the user after
      *                           the 'mark' word is being verified and removed from the command.
      */
-    private static void checkValidMarkCmd(ArrayList<Task> list, String substringOfMarkCmd) {
+    private static void checkValidMarkCmd(String substringOfMarkCmd) {
         try {
-            markTask(list, substringOfMarkCmd);
+            markTask(substringOfMarkCmd);
             return;
         } catch (EmptyListException emptyListException) {
             System.out.println("    The task list is empty. There is nothing to mark.");
@@ -264,20 +264,19 @@ public class Yq {
     /**
      * Marks the task, which is selected by the user, as not done.
      *
-     * @param list                 The task list containing the selected task that is being marked as not done.
      * @param substringOfUnmarkCmd The substring of the 'unmark' command inputted by the user.
      */
-    private static void unmarkTask(ArrayList<Task> list, String substringOfUnmarkCmd) throws EmptyListException,
+    private static void unmarkTask(String substringOfUnmarkCmd) throws EmptyListException,
             MissingUnmarkNumberException {
         printStraightLine();
         processForOneSecond();
-        if (list.isEmpty()) {
+        if (Yq.taskArrayList.isEmpty()) {
             throw new EmptyListException();
         } else if (substringOfUnmarkCmd.isEmpty()) {
             throw new MissingUnmarkNumberException();
         }
         int chosenUnmarkIndex = Integer.parseInt(substringOfUnmarkCmd);
-        Task selectedTask = list.get(chosenUnmarkIndex - LIST_INDEX_ADJUSTMENT);
+        Task selectedTask = Yq.taskArrayList.get(chosenUnmarkIndex - LIST_INDEX_ADJUSTMENT);
         System.out.println("    The 'unmark' command is valid." + "\n");
         selectedTask.markAsNotDone();
     }
@@ -285,20 +284,19 @@ public class Yq {
     /**
      * Marks the task, which is selected by the user, as done.
      *
-     * @param list               The task list containing the selected task that is being marked as done.
      * @param substringOfMarkCmd The substring of the 'mark' command inputted by the user.
      */
-    private static void markTask(ArrayList<Task> list, String substringOfMarkCmd) throws EmptyListException,
+    private static void markTask(String substringOfMarkCmd) throws EmptyListException,
             MissingMarkNumberException {
         printStraightLine();
         processForOneSecond();
-        if (list.isEmpty()) {
+        if (Yq.taskArrayList.isEmpty()) {
             throw new EmptyListException();
         } else if (substringOfMarkCmd.isEmpty()) {
             throw new MissingMarkNumberException();
         }
         int chosenMarkIndex = Integer.parseInt(substringOfMarkCmd);
-        Task selectedTask = list.get(chosenMarkIndex - LIST_INDEX_ADJUSTMENT);
+        Task selectedTask = Yq.taskArrayList.get(chosenMarkIndex - LIST_INDEX_ADJUSTMENT);
         System.out.println("    The 'mark' command is valid." + "\n");
         selectedTask.markAsDone();
     }
@@ -476,14 +474,13 @@ public class Yq {
      * Adds the newly formed task into the task list and returns the updated list with the latest task being added.
      *
      * @param newTask The task description input by the user.
-     * @param list    The task list.
      */
-    private static void addTask(ArrayList<Task> list, Task newTask) {
+    private static void addTask(Task newTask) {
         // Add latest task into the new list.
-        list.add(newTask);
+        Yq.taskArrayList.add(newTask);
         // Set new list as the main list.
         System.out.println("    Got it. I have added this task to the task list:");
         System.out.println("        " + newTask.toString());
-        System.out.println("    Now you have " + list.size() + " tasks in the list.");
+        System.out.println("    Now you have " + Yq.taskArrayList.size() + " tasks in the list.");
     }
 }
