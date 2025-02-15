@@ -7,6 +7,7 @@ import yq.exceptions.InvalidCommandException;
 import yq.exceptions.InvalidFromToIndexesException;
 import yq.exceptions.MissingByKeywordException;
 import yq.exceptions.MissingDeadlineDescriptionException;
+import yq.exceptions.MissingDeleteNumberException;
 import yq.exceptions.MissingEventDescriptionException;
 import yq.exceptions.MissingFromKeywordException;
 import yq.exceptions.MissingMarkNumberException;
@@ -74,6 +75,11 @@ public class Yq {
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
                 newTask = makeValidEvent(substringOfUserCmd);
 
+            } else if (lcUserCmd.contains("delete")) {
+                indexAfterCmdWord = lcUserCmd.indexOf("delete") + "delete".length();
+                substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
+                checkValidDeleteCmd(substringOfUserCmd);
+
             }
             if (newTask != null) {
                 addTask(newTask);
@@ -135,6 +141,12 @@ public class Yq {
         System.out.println("            Example:                 event project meeting /from Mon 2pm /to 4pm" + "\n");
     }
 
+    private static void printInstructionToDeleteTask() {
+        System.out.println("        delete - to choose a task that you want to delete from the list");
+        System.out.println("            Parameters: KEYWORD [POSITIVE INTEGER]");
+        System.out.println("            Example:    delete 3" + "\n");
+    }
+
     private static void printInstructionToExit() {
         System.out.println("        bye    - to quit");
         System.out.println("            Example: bye");
@@ -144,8 +156,9 @@ public class Yq {
         printStraightLine();
         System.out.println("    Please key in one of the following options:");
         printInstructionToPrintList();
-        printInstructionToUnmarkTask();
         printInstructionToMarkTask();
+        printInstructionToUnmarkTask();
+        printInstructionToDeleteTask();
         printInstructionToAddTask();
         printInstructionToExit();
         printStraightLine();
@@ -163,15 +176,30 @@ public class Yq {
         }
     }
 
+    /**
+     * Checks the command inputted by the user contains one of the following valid command: list, unmark, mark, todo,
+     * deadline, event, delete and bye. If it is none of the above, an exception will be thrown.
+     *
+     * @param userCommand user command inputted by the user.
+     * @return The valid user command.
+     * @throws InvalidCommandException If the user command does not contain any one of the valid commands.
+     */
     private static String returnValidCommand(String userCommand) throws InvalidCommandException {
         if (userCommand.contains("list") || userCommand.contains("unmark") || userCommand.contains("mark") ||
-                userCommand.contains("todo") || userCommand.contains("deadline") || userCommand.contains("event") ||
-                userCommand.contains("bye")) {
+                userCommand.contains("todo") || userCommand.contains("deadline") || userCommand.contains("event")
+                || userCommand.contains("delete") || userCommand.contains("bye")) {
             return userCommand;
         }
         throw new InvalidCommandException();
     }
 
+    /**
+     * Checks and returns the user command if it does not throw any exception. If the user command is not valid,
+     * error messages will be generated to remind the user to input a valid command.
+     *
+     * @param userCommand User command inputted by the user.
+     * @return User command if it is valid. Else, an empty string will be returned instead.
+     */
     private static String checkValidCommand(String userCommand) {
         try {
             return returnValidCommand(userCommand);
@@ -186,6 +214,8 @@ public class Yq {
 
     /**
      * Prints the list of tasks as requested by the user.
+     *
+     * @throws EmptyListException If the list is empty.
      */
     private static void printList() throws EmptyListException {
         printStraightLine();
@@ -216,7 +246,7 @@ public class Yq {
      * integer for extracting the task index from the list. An exception is thrown according to the error found in the
      * user's input. Prints a reminder to input a valid 'unmark' command.
      *
-     * @param substringOfUnmarkCmd The substring of the 'unmark' command inputted by the user after
+     * @param substringOfUnmarkCmd Substring of the 'unmark' command inputted by the user after
      *                             the 'unmark' word is being verified and removed from the command.
      */
     private static void checkValidUnmarkCmd(String substringOfUnmarkCmd) {
@@ -225,11 +255,13 @@ public class Yq {
             return;
         } catch (EmptyListException emptyListException) {
             System.out.println("    The task list is empty. There is nothing to unmark.");
-        } catch (MissingUnmarkNumberException e) {
-            System.out.println("    The number of the 'unmark' command cannot be missing.");
+        } catch (MissingUnmarkNumberException missingUnmarkNumberException) {
+            System.out.println("    The index of the task to be unmarked cannot be missing " +
+                    "from the 'unmark' command.");
         } catch (NumberFormatException numberFormatException) {
-            System.out.println("    A valid integer must come after the 'unmark' command.");
-        } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
+            System.out.println("    A valid integer starting from 1 and nothing else must be present " +
+                    "after the 'unmark' word.");
+        } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
             System.out.println("    The integer cannot be out of range.");
         }
         System.out.println("    Please enter a valid 'unmark' command.");
@@ -242,7 +274,7 @@ public class Yq {
      * integer for extracting the task index from the list. An exception is thrown according to the error found in the
      * user's input.  Prints a reminder to input a valid 'mark' command.
      *
-     * @param substringOfMarkCmd The substring of the 'mark' command inputted by the user after
+     * @param substringOfMarkCmd Substring of the 'mark' command inputted by the user after
      *                           the 'mark' word is being verified and removed from the command.
      */
     private static void checkValidMarkCmd(String substringOfMarkCmd) {
@@ -251,11 +283,12 @@ public class Yq {
             return;
         } catch (EmptyListException emptyListException) {
             System.out.println("    The task list is empty. There is nothing to mark.");
-        } catch (MissingMarkNumberException e) {
-            System.out.println("    The number of the 'mark' command cannot be missing.");
+        } catch (MissingMarkNumberException missingMarkNumberException) {
+            System.out.println("    The index of the task to be marked cannot be missing from the 'mark' command.");
         } catch (NumberFormatException numberFormatException) {
-            System.out.println("    A valid integer must come after the 'mark' command.");
-        } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
+            System.out.println("    A valid integer starting from 1 and nothing else must be present " +
+                    "after the 'mark' word.");
+        } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
             System.out.println("    The integer cannot be out of range.");
         }
         System.out.println("    Please enter a valid 'mark' command.");
@@ -264,7 +297,9 @@ public class Yq {
     /**
      * Marks the task, which is selected by the user, as not done.
      *
-     * @param substringOfUnmarkCmd The substring of the 'unmark' command inputted by the user.
+     * @param substringOfUnmarkCmd Substring of the 'unmark' command inputted by the user.
+     * @throws EmptyListException           If the list is empty.
+     * @throws MissingUnmarkNumberException If the index of the task to be unmarked is not present in the user input.
      */
     private static void unmarkTask(String substringOfUnmarkCmd) throws EmptyListException,
             MissingUnmarkNumberException {
@@ -284,7 +319,9 @@ public class Yq {
     /**
      * Marks the task, which is selected by the user, as done.
      *
-     * @param substringOfMarkCmd The substring of the 'mark' command inputted by the user.
+     * @param substringOfMarkCmd Substring of the 'mark' command inputted by the user.
+     * @throws EmptyListException         If the list is empty.
+     * @throws MissingMarkNumberException If the index of the task to be marked is not present in the user input.
      */
     private static void markTask(String substringOfMarkCmd) throws EmptyListException,
             MissingMarkNumberException {
@@ -306,7 +343,7 @@ public class Yq {
      * Prints a message that indicates whether the 'todo' command is valid or it does not
      * contain the todo task.
      *
-     * @param substringOfTodoCmd The substring of the 'todo' command inputted by the user after
+     * @param substringOfTodoCmd Substring of the 'todo' command inputted by the user after
      *                           the 'todo' word is being verified and removed from the command.
      * @return The newly created Todo task if the substring of the 'todo' command is valid. Else, it returns null.
      */
@@ -329,7 +366,7 @@ public class Yq {
      * deadline task description and the deadline datetime. Else, an error message and a remainder to input a valid
      * deadline command is printed.
      *
-     * @param substringOfDeadlineCmd The substring of the 'deadline' command inputted by the user after
+     * @param substringOfDeadlineCmd Substring of the 'deadline' command inputted by the user after
      *                               the 'deadline' word is being verified and removed from the command.
      * @return The newly created Deadline Task if the substring of the 'deadline' command is valid.
      * Else, it returns null.
@@ -357,7 +394,7 @@ public class Yq {
      * if it contains the event description, start datetime and end datetime. Else, an error message and a remainder to
      * input a valid deadline command is printed.
      *
-     * @param substringOfEventCmd The substring of the 'event' command inputted by the user after
+     * @param substringOfEventCmd Substring of the 'event' command inputted by the user after
      *                            the 'event' word is being verified and removed from the command.
      * @return The validity of the substring of 'event' command.
      */
@@ -382,10 +419,10 @@ public class Yq {
     /**
      * Creates a Todo task from the substring of the 'todo' command.
      *
-     * @param substringOfTodoCmd The substring of the 'todo' command inputted by the user.
+     * @param substringOfTodoCmd Substring of the 'todo' command inputted by the user.
      * @return A new Todo Task.
+     * @throws MissingTodoDescriptionException If the todo description is empty.
      */
-
     private static Task createTodo(String substringOfTodoCmd) throws MissingTodoDescriptionException {
         printStraightLine();
         processForOneSecond();
@@ -403,11 +440,13 @@ public class Yq {
      * '/by' keyword, the deadline task description and the deadline datetime could be partitioned and extracted. An
      * exception is thrown according to the error found in the user's input.
      *
-     * @param substringOfDeadlineCmd The substring of the 'deadline' command inputted by the user.
+     * @param substringOfDeadlineCmd Substring of the 'deadline' command inputted by the user.
      * @return A new Deadline Task.
+     * @throws EmptyDeadlineCommandException       If the user input only contains the 'deadline' word.
+     * @throws MissingByKeywordException           If the '/by' keyword is missing.
+     * @throws MissingDeadlineDescriptionException If the deadline command does not contain deadline description and/or
+     *                                             'by' description.
      */
-
-
     private static Task createDeadline(String substringOfDeadlineCmd) throws EmptyDeadlineCommandException,
             MissingByKeywordException, MissingDeadlineDescriptionException {
         printStraightLine();
@@ -436,10 +475,15 @@ public class Yq {
      * the indexes of both '/from' and '/to' keywords, the event task description, start datetime and end datetime could
      * be partitioned and extracted. An exception is thrown according to the error found in the user's input.
      *
-     * @param substringOfEventCmd The substring of the 'event' command inputted by the user.
-     * @return A new Deadline Task.
+     * @param substringOfEventCmd Substring of the 'event' command inputted by the user.
+     * @return A new Event Task.
+     * @throws EmptyEventCommandException       If the user input only contains the 'event' word and nothing else.
+     * @throws MissingFromKeywordException      If the '/from' keyword is missing.
+     * @throws MissingToKeywordException        If the '/to' keyword is missing.
+     * @throws InvalidFromToIndexesException    If the '/to' keyword appears before the '/from' keyword.
+     * @throws MissingEventDescriptionException If the event command does not contain the event description and/or
+     *                                          'from' description and/or 'by' description.
      */
-
     private static Task createEvent(String substringOfEventCmd) throws EmptyEventCommandException,
             MissingFromKeywordException, MissingToKeywordException, InvalidFromToIndexesException,
             MissingEventDescriptionException {
@@ -473,7 +517,7 @@ public class Yq {
     /**
      * Adds the newly formed task into the task list and returns the updated list with the latest task being added.
      *
-     * @param newTask The task description input by the user.
+     * @param newTask New task to be added into the task list.
      */
     private static void addTask(Task newTask) {
         // Add latest task into the new list.
@@ -482,5 +526,55 @@ public class Yq {
         System.out.println("    Got it. I have added this task to the task list:");
         System.out.println("        " + newTask.toString());
         System.out.println("    Now you have " + Yq.taskArrayList.size() + " tasks in the list.");
+    }
+
+    /**
+     * Delete the task from the task list according to the index selected by the user.
+     *
+     * @param substringOfDeleteCmd Substring of the delete command inputted by the user.
+     * @throws EmptyListException           If the list is empty.
+     * @throws MissingDeleteNumberException If the index of the task to be deleted is not present in the user input.
+     */
+    private static void deleteTask(String substringOfDeleteCmd) throws EmptyListException,
+            MissingDeleteNumberException {
+        printStraightLine();
+        processForOneSecond();
+        if (Yq.taskArrayList.isEmpty()) {
+            throw new EmptyListException();
+        } else if (substringOfDeleteCmd.isEmpty()) {
+            throw new MissingDeleteNumberException();
+        }
+        int chosenDeleteIndex = Integer.parseInt(substringOfDeleteCmd);
+        Task deletedTask = Yq.taskArrayList.remove(chosenDeleteIndex - LIST_INDEX_ADJUSTMENT);
+        System.out.println("    Noted. I have removed this task:");
+        System.out.println("        " + deletedTask.toString());
+        System.out.println("    Now you have " + Yq.taskArrayList.size() + " tasks in the list.");
+    }
+
+    /**
+     * Checks whether the substring of the 'delete' command inputted by the user is valid. A message is printed to
+     * inform users that the list is empty, hence there is no task for them to delete. It ensures that the deleting of
+     * the task can only be carried out if the substring of the 'delete' command is not empty, and it contains a valid
+     * integer for extracting the task index from the list. An exception is thrown according to the error found in the
+     * user's input.  Prints a reminder to input a valid 'delete' command.
+     *
+     * @param substringOfDeleteCmd Substring of the 'delete' command inputted by the user after
+     *                             the 'delete' word is being verified and removed from the command.
+     */
+    private static void checkValidDeleteCmd(String substringOfDeleteCmd) {
+        try {
+            deleteTask(substringOfDeleteCmd);
+            return;
+        } catch (EmptyListException emptyListException) {
+            System.out.println("    The task list is empty. There is nothing to delete.");
+        } catch (MissingDeleteNumberException missingDeleteNumberException) {
+            System.out.println("    The index of the task to be deleted cannot be missing from the 'delete' command.");
+        } catch (NumberFormatException numberFormatException) {
+            System.out.println("    A valid integer starting from 1 and nothing else must be present " +
+                    "after the 'delete' word.");
+        } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
+            System.out.println("    The integer cannot be out of range.");
+        }
+        System.out.println("    Please enter a valid 'delete' command.");
     }
 }
