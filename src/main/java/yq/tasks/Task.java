@@ -61,4 +61,7 @@ public abstract class Task {
     public String toString() {
         return "[" + getStatusIcon() + "] " + getDescription();
     }
+
+    @Override
+    public abstract boolean equals(Object obj);
 }
