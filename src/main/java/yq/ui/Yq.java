@@ -103,7 +103,6 @@ public class Yq {
         }
         userInput.close();
         checkValidWrite();
-        System.out.println();
         System.out.println("    Bye. Hope to see you again soon!");
     }
 
@@ -214,6 +213,7 @@ public class Yq {
                 System.out.println("    " + count + ": " + task);
                 count++;
             }
+            System.out.println();
         }
         fileWriter.close();
     }
