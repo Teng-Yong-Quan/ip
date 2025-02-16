@@ -30,4 +30,13 @@ public class Event extends Task {
     public String toString() {
         return "[E]" + super.toString() + " (from: " + getFrom() + " to: " + getTo() + ")";
     }
+
+    @Override
+    public boolean equals(Object object) {
+        if (object instanceof Event eventObject) {
+            return eventObject.getFrom().equalsIgnoreCase(getFrom()) && eventObject.getTo().equalsIgnoreCase(getTo())
+                    && eventObject.getDescription().equalsIgnoreCase(getDescription());
+        }
+        return false;
+    }
 }
