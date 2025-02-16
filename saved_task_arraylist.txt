@@ -1,0 +1,7 @@
+[T][X] add todo task
+[D][ ] add deadline task (by: today)
+[E][X] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+[D][ ] Text-ui-test (by: Tonight 8pm)
+[D][X] Finish A-CodeQuality (by: Tonight 9pm)
+[E][ ] Grinding more CS2113 (from: 6pm to: Eternity :-<)
+[T][ ] GET AN INTERNSHIP!!!

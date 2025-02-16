@@ -1,8 +1,6 @@
-[T][ ] add todo task
-[D][ ] add deadline task (by: today)
+[T][X] add todo task
 [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
-[T][ ] CS2113 A level-4 increment
-[D][ ] Text-ui-test (by: Tonight 8pm)
+[D][X] Text-ui-test (by: Tonight 8pm)
 [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
-[E][ ] Grinding more CS2113 (from: 6pm to: Eternity :-()
+[E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
 [T][ ] GET AN INTERNSHIP!!!
