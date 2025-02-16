@@ -13,13 +13,21 @@ import yq.exceptions.MissingMarkNumberException;
 import yq.exceptions.MissingToKeywordException;
 import yq.exceptions.MissingTodoDescriptionException;
 import yq.exceptions.MissingUnmarkNumberException;
+
 import yq.tasks.Task;
 import yq.tasks.Todo;
 import yq.tasks.Deadline;
 import yq.tasks.Event;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class Yq {
     private static final int EMPTY_LIST_LENGTH = 0;
@@ -32,13 +40,16 @@ public class Yq {
     public static final int ADD_ONE_TASK = 1;
 
     public static void main(String[] args) {
-        printWelcomeMessage();
         String userCmd; // Represents the user command with 'cmd' stands for 'command'.
         String lcUserCmd; // Represents the lower case of the user command with lc' stands for 'lower case'.
         String substringOfUserCmd; // Shows the substring of the user command.
         int indexAfterCmdWord; // Extracts the substring after the command word.
         Task newTask = null; // Assigns the newly created task a variable name called 'newTask'.
         Task[] list = new Task[EMPTY_LIST_LENGTH]; // Create an empty main list.
+        ArrayList<String> tasksFromFileArrayList = new ArrayList<>();
+        checkGetTaskFromFile(tasksFromFileArrayList);
+        list = populateTaskArraylist(list, tasksFromFileArrayList);
+        printWelcomeMessage();
         Scanner userInput = new Scanner(System.in);
         while (true) {
             printCommandOptions();
@@ -89,10 +100,14 @@ public class Yq {
             processForOneSecond();
             System.out.println("    Is there anything else I can do for you?" + "\n");
         }
+        userInput.close();
+        checkValidWrite(list);
+        System.out.println();
         System.out.println("    Bye. Hope to see you again soon!");
     }
 
     private static void printWelcomeMessage() {
+        printStraightLine();
         String logo = " __    __    _________\n"
                 + "|  |  |  |  |   ___   |\n"
                 + " \\  \\/  /   |  |  _|  |\n"
@@ -151,6 +166,117 @@ public class Yq {
         printInstructionToAddTask();
         printInstructionToExit();
         printStraightLine();
+    }
+
+    private static void getTasksFromFile(ArrayList<String> tasksFromFileArrayList) throws IOException {
+        File file = new File("saved_task_arraylist.txt");
+        Scanner fileScanner = new Scanner(file);
+        while (fileScanner.hasNextLine()) {
+            tasksFromFileArrayList.add(fileScanner.nextLine());
+        }
+        fileScanner.close();
+        Files.deleteIfExists(Paths.get(file.getAbsolutePath()));
+    }
+
+    private static void checkGetTaskFromFile(ArrayList<String> tasksFromFileArrayList) {
+        try {
+            printStraightLine();
+            System.out.println("    Starting..." + "\n");
+            getTasksFromFile(tasksFromFileArrayList);
+        } catch (FileNotFoundException fileNotFoundException) {
+            System.out.println("    saved_task_arraylist.txt file" + " is not found." + "\n");
+        } catch (IOException ioException) {
+            System.out.println("    saved_task_arraylist.txt file" + " could not be deleted." + "\n");
+        }
+    }
+
+    private static void writeToFile(Task[] list) throws IOException {
+        FileWriter fileWriter = new FileWriter("saved_task_arraylist.txt", true);
+        printStraightLine();
+        processForOneSecond();
+        if (list.length == 0) {
+            System.out.println("    There are no tasks to be saved into saved_task_arraylist.txt file." + "\n");
+        } else {
+            int count = 1;
+            System.out.println("    The following tasks have been saved into saved_task_arraylist.txt file: ");
+            for (Task task : list) {
+                fileWriter.write(task.toString() + "\n");
+                System.out.println("    " + count + ": " + task);
+                count++;
+            }
+        }
+        fileWriter.close();
+    }
+
+    private static void checkValidWrite(Task[] list) {
+        try {
+            writeToFile(list);
+        } catch (FileNotFoundException fileNotFoundException) {
+            System.out.println("    saved_task_arraylist.txt file is not found." + "\n");
+        } catch (IOException ioException) {
+            System.out.println("    Something went wrong: " + ioException.getMessage() + "\n");
+        }
+    }
+
+    private static Task[] populateTaskArraylist(Task[] list, ArrayList<String> taskDescriptionsArrayList) {
+        int taskTypeIndex = 1; // The index whereby it shows the task type T (Todo), D (Deadline) and E (Event).
+        int markOrUnmarkTaskIndex = 4; // The index whereby it shows the task is marked or unmarked.
+        int taskDescriptionIndex = 7; // The index whereby it shows the full task description.
+        printStraightLine();
+        System.out.println("    Retrieving saved tasks from saved_task_arraylist.txt file " +
+                "and populating task arraylist..." + "\n");
+        for (String taskDescription : taskDescriptionsArrayList) {
+            Task newTask = null;
+            String finalTaskDescription;
+            if (taskDescription.isEmpty()) {
+                continue;
+            }
+            if (taskDescription.charAt(taskTypeIndex) == 'T') {
+                finalTaskDescription = taskDescription.substring(taskDescriptionIndex).trim();
+                newTask = makeValidTodo(finalTaskDescription);
+
+            } else if (taskDescription.charAt(taskTypeIndex) == 'D') {
+                taskDescription = modifyDeadlineDescription(taskDescription);
+                finalTaskDescription = taskDescription.substring(taskDescriptionIndex).trim();
+                newTask = makeValidDeadline(finalTaskDescription);
+
+            } else if (taskDescription.charAt(taskTypeIndex) == 'E') {
+                taskDescription = modifyEventDescription(taskDescription);
+                finalTaskDescription = taskDescription.substring(taskDescriptionIndex).trim();
+                newTask = makeValidEvent(finalTaskDescription);
+
+            }
+            if (taskDescription.charAt(markOrUnmarkTaskIndex) == 'X') {
+                assert newTask != null;
+                newTask.markAsDone();
+                System.out.println();
+            }
+            if (newTask != null) {
+                list = addTask(list, newTask);
+                System.out.println();
+            }
+        }
+        if (list.length == 0) {
+            System.out.println("    There is nothing to retrieve from saved_task_arraylist.txt file.");
+            System.out.println();
+        }
+
+        return list;
+    }
+
+    private static String modifyDeadlineDescription(String deadlineDescription) {
+        deadlineDescription = deadlineDescription.replace("by:", "/by");
+        deadlineDescription = deadlineDescription.replace("(", "");
+        deadlineDescription = deadlineDescription.replace(")", "");
+        return deadlineDescription;
+    }
+
+    private static String modifyEventDescription(String eventDescription) {
+        eventDescription = eventDescription.replace("from:", "/from");
+        eventDescription = eventDescription.replace("to:", "/to");
+        eventDescription = eventDescription.replace("(", "");
+        eventDescription = eventDescription.replace(")", "");
+        return eventDescription;
     }
 
     /**
