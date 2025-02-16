@@ -90,6 +90,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to mark.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -129,6 +130,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to unmark.
+
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -168,6 +170,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to mark.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -207,6 +210,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to mark.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -246,6 +250,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to mark.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -285,6 +290,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to mark.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -324,6 +330,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to unmark.
+
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -363,6 +370,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to unmark.
+
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -402,6 +410,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to unmark.
+
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -441,6 +450,7 @@ What can I do for you?
     Processing...
 
     The task list is empty. There is nothing to unmark.
+
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -647,6 +657,7 @@ What can I do for you?
     Processing...
 
     The index of the task to be marked cannot be missing from the 'mark' command.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -686,6 +697,7 @@ What can I do for you?
     Processing...
 
     A valid integer starting from 1 and nothing else must be present after the 'mark' word.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -725,6 +737,7 @@ What can I do for you?
     Processing...
 
     The integer cannot be out of range.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -764,6 +777,7 @@ What can I do for you?
     Processing...
 
     The integer cannot be out of range.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -803,6 +817,7 @@ What can I do for you?
     Processing...
 
     The integer cannot be out of range.
+
     Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
@@ -1046,6 +1061,7 @@ What can I do for you?
     Processing...
 
     The index of the task to be unmarked cannot be missing from the 'unmark' command.
+
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -1085,6 +1101,7 @@ What can I do for you?
     Processing...
 
     A valid integer starting from 1 and nothing else must be present after the 'unmark' word.
+
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -1124,6 +1141,7 @@ What can I do for you?
     Processing...
 
     The integer cannot be out of range.
+
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -1163,6 +1181,7 @@ What can I do for you?
     Processing...
 
     The integer cannot be out of range.
+
     Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
@@ -1610,7 +1629,7 @@ What can I do for you?
     'Event' command is valid.
 
     Got it. I have added this task to the task list:
-        [E][ ] Grinding more CS2113 (from: 6pm to: Eternity :-()
+        [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
     Now you have 7 tasks in the list.
 
 ----------------------------------------------------------------------------------------
@@ -1692,6 +1711,7 @@ What can I do for you?
     Processing...
 
     Todo description cannot be missing.
+
     Please enter a valid 'todo' command.
 
 ----------------------------------------------------------------------------------------
@@ -1731,6 +1751,7 @@ What can I do for you?
     Processing...
 
     The deadline and '/by' descriptions cannot be missing.
+
     Please enter a valid 'deadline' command.
 
 ----------------------------------------------------------------------------------------
@@ -1770,6 +1791,7 @@ What can I do for you?
     Processing...
 
     The deadline and '/by' descriptions cannot be missing.
+
     Please enter a valid 'deadline' command.
 
 ----------------------------------------------------------------------------------------
@@ -1809,6 +1831,7 @@ What can I do for you?
     Processing...
 
     The substring of the 'event' command cannot be empty.
+
     Please enter a valid 'event' command.
 
 ----------------------------------------------------------------------------------------
@@ -1848,6 +1871,7 @@ What can I do for you?
     Processing...
 
     The event, '/from' and '/to' descriptions cannot be missing.
+
     Please enter a valid 'event' command.
 
 ----------------------------------------------------------------------------------------
@@ -1926,6 +1950,7 @@ What can I do for you?
     Processing...
 
     The '/from' keyword cannot be missing.
+
     Please enter a valid 'event' command.
 
 ----------------------------------------------------------------------------------------
@@ -1965,6 +1990,7 @@ What can I do for you?
     Processing...
 
     The event, '/from' and '/to' descriptions cannot be missing.
+
     Please enter a valid 'event' command.
 
 ----------------------------------------------------------------------------------------
@@ -2004,6 +2030,7 @@ What can I do for you?
     Processing...
 
     The '/from' keyword cannot be inputted after the '/to' keyword.
+
     Please enter a valid 'event' command.
 
 ----------------------------------------------------------------------------------------
@@ -2043,6 +2070,7 @@ What can I do for you?
     Processing...
 
     The '/from' keyword cannot be inputted after the '/to' keyword.
+
     Please enter a valid 'event' command.
 
 ----------------------------------------------------------------------------------------
@@ -2162,6 +2190,7 @@ What can I do for you?
     Processing...
 
     The index of the task to be deleted cannot be missing from the 'delete' command.
+
     Please enter a valid 'delete' command.
 
 ----------------------------------------------------------------------------------------
@@ -2242,6 +2271,7 @@ What can I do for you?
     Processing...
 
     A valid integer starting from 1 and nothing else must be present after the 'delete' word.
+
     Please enter a valid 'delete' command.
 
 ----------------------------------------------------------------------------------------
@@ -2281,6 +2311,7 @@ What can I do for you?
     Processing...
 
     The integer cannot be out of range.
+
     Please enter a valid 'delete' command.
 
 ----------------------------------------------------------------------------------------
@@ -2361,6 +2392,7 @@ What can I do for you?
     Processing...
 
     The integer cannot be out of range.
+
     Please enter a valid 'delete' command.
 
 ----------------------------------------------------------------------------------------
@@ -2445,7 +2477,7 @@ What can I do for you?
     3. [T][ ] CS2113 A level-4 increment
     4. [D][X] Text-ui-test (by: Tonight 8pm)
     5. [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
-    6. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity :-()
+    6. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
     7. [T][ ] GET AN INTERNSHIP!!!
 
 ----------------------------------------------------------------------------------------
@@ -2485,6 +2517,7 @@ What can I do for you?
     Processing...
 
     The integer cannot be out of range.
+
     Please enter a valid 'delete' command.
 
 ----------------------------------------------------------------------------------------
@@ -2568,7 +2601,7 @@ What can I do for you?
     2. [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
     3. [D][X] Text-ui-test (by: Tonight 8pm)
     4. [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
-    5. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity :-()
+    5. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
     6. [T][ ] GET AN INTERNSHIP!!!
 
 ----------------------------------------------------------------------------------------
@@ -2608,13 +2641,11 @@ What can I do for you?
     Processing...
 
     The following tasks have been saved into saved_task_arraylist.txt file:
-    1: [T][ ] add todo task
-    2: [D][ ] add deadline task (by: today)
-    3: [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
-    4: [T][ ] CS2113 A level-4 increment
-    5: [D][ ] Text-ui-test (by: Tonight 8pm)
-    6: [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
-    7: [E][ ] Grinding more CS2113 (from: 6pm to: Eternity :-()
-    8: [T][ ] GET AN INTERNSHIP!!!
+    1: [T][X] add todo task
+    2: [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+    3: [D][X] Text-ui-test (by: Tonight 8pm)
+    4: [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
+    5: [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
+    6: [T][ ] GET AN INTERNSHIP!!!
 
     Bye. Hope to see you again soon!
