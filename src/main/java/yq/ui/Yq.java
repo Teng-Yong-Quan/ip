@@ -1,5 +1,6 @@
 package yq.ui;
 
+import yq.exceptions.DuplicateTaskException;
 import yq.exceptions.EmptyDeadlineCommandException;
 import yq.exceptions.EmptyEventCommandException;
 import yq.exceptions.EmptyListException;
@@ -96,7 +97,6 @@ public class Yq {
                 newTask = null;
             }
 
-            System.out.println();
             printStraightLine();
             processForOneSecond();
             System.out.println("    Is there anything else I can do for you?" + "\n");
@@ -185,7 +185,6 @@ public class Yq {
             tasksFromFileArrayList.add(fileScanner.nextLine());
         }
         fileScanner.close();
-        Files.deleteIfExists(Paths.get(file.getAbsolutePath()));
     }
 
     private static void checkGetTaskFromFile(ArrayList<String> tasksFromFileArrayList) {
@@ -201,6 +200,7 @@ public class Yq {
     }
 
     private static void writeToFile() throws IOException {
+        Files.deleteIfExists(Paths.get("saved_task_arraylist.txt"));
         FileWriter fileWriter = new FileWriter("saved_task_arraylist.txt", true);
         printStraightLine();
         processForOneSecond();
@@ -236,8 +236,9 @@ public class Yq {
         System.out.println("    Retrieving saved tasks from saved_task_arraylist.txt file " +
                 "and populating task arraylist..." + "\n");
         for (String taskDescription : taskDescriptionsArrayList) {
-            Task newTask = null;
+            Task newTask;
             String finalTaskDescription;
+            taskDescription = taskDescription.trim();
             if (taskDescription.isEmpty()) {
                 continue;
             }
@@ -256,6 +257,9 @@ public class Yq {
                 newTask = makeValidEvent(finalTaskDescription);
 
             } else {
+                printStraightLine();
+                processForOneSecond();
+                System.out.println("    An invalid line is detected and it will be ignored." + "\n");
                 continue;
             }
             if (taskDescription.charAt(markOrUnmarkTaskIndex) == 'X' && newTask != null) {
@@ -264,12 +268,10 @@ public class Yq {
             }
             if (newTask != null) {
                 addTask(newTask);
-                System.out.println();
             }
         }
         if (taskArrayList.isEmpty()) {
-            System.out.println("    There is nothing to retrieve from saved_task_arraylist.txt file.");
-            System.out.println();
+            System.out.println("    There is nothing to retrieve from saved_task_arraylist.txt file." + "\n");
         }
     }
 
@@ -331,7 +333,7 @@ public class Yq {
             printStraightLine();
             processForOneSecond();
             System.out.println("    Unknown option: " + userCommand);
-            System.out.println("    Please enter a valid option.");
+            System.out.println("    Please enter a valid option." + "\n");
             return "";
         }
     }
@@ -353,13 +355,14 @@ public class Yq {
             Task selectedTask = Yq.taskArrayList.get(i);
             System.out.println("    " + (i + LIST_INDEX_ADJUSTMENT) + ". " + selectedTask.toString());
         }
+        System.out.println();
     }
 
     private static void checkValidPrintListCmd() {
         try {
             printList();
         } catch (EmptyListException emptyListException) {
-            System.out.println("    The task list is empty. There is nothing to show.");
+            System.out.println("    The task list is empty. There is nothing to show." + "\n");
         }
     }
 
@@ -378,17 +381,17 @@ public class Yq {
             unmarkTask(substringOfUnmarkCmd);
             return;
         } catch (EmptyListException emptyListException) {
-            System.out.println("    The task list is empty. There is nothing to unmark.");
+            System.out.println("    The task list is empty. There is nothing to unmark." + "\n");
         } catch (MissingUnmarkNumberException missingUnmarkNumberException) {
             System.out.println("    The index of the task to be unmarked cannot be missing " +
-                    "from the 'unmark' command.");
+                    "from the 'unmark' command." + "\n");
         } catch (NumberFormatException numberFormatException) {
             System.out.println("    A valid integer starting from 1 and nothing else must be present " +
-                    "after the 'unmark' word.");
+                    "after the 'unmark' word." + "\n");
         } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
-            System.out.println("    The integer cannot be out of range.");
+            System.out.println("    The integer cannot be out of range." + "\n");
         }
-        System.out.println("    Please enter a valid 'unmark' command.");
+        System.out.println("    Please enter a valid 'unmark' command." + "\n");
     }
 
     /**
@@ -406,16 +409,17 @@ public class Yq {
             markTask(substringOfMarkCmd);
             return;
         } catch (EmptyListException emptyListException) {
-            System.out.println("    The task list is empty. There is nothing to mark.");
+            System.out.println("    The task list is empty. There is nothing to mark." + "\n");
         } catch (MissingMarkNumberException missingMarkNumberException) {
-            System.out.println("    The index of the task to be marked cannot be missing from the 'mark' command.");
+            System.out.println("    The index of the task to be marked cannot be missing" +
+                    " from the 'mark' command." + "\n");
         } catch (NumberFormatException numberFormatException) {
             System.out.println("    A valid integer starting from 1 and nothing else must be present " +
-                    "after the 'mark' word.");
+                    "after the 'mark' word." + "\n");
         } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
-            System.out.println("    The integer cannot be out of range.");
+            System.out.println("    The integer cannot be out of range." + "\n");
         }
-        System.out.println("    Please enter a valid 'mark' command.");
+        System.out.println("    Please enter a valid 'mark' command." + "\n");
     }
 
     /**
@@ -438,6 +442,7 @@ public class Yq {
         Task selectedTask = Yq.taskArrayList.get(chosenUnmarkIndex - LIST_INDEX_ADJUSTMENT);
         System.out.println("    The 'unmark' command is valid." + "\n");
         selectedTask.markAsNotDone();
+        System.out.println();
     }
 
     /**
@@ -460,6 +465,7 @@ public class Yq {
         Task selectedTask = Yq.taskArrayList.get(chosenMarkIndex - LIST_INDEX_ADJUSTMENT);
         System.out.println("    The 'mark' command is valid." + "\n");
         selectedTask.markAsDone();
+        System.out.println();
     }
 
     /**
@@ -471,13 +477,16 @@ public class Yq {
      *                           the 'todo' word is being verified and removed from the command.
      * @return The newly created Todo task if the substring of the 'todo' command is valid. Else, it returns null.
      */
-    private static Task makeValidTodo(String substringOfTodoCmd) {
+    private static Todo makeValidTodo(String substringOfTodoCmd) {
         try {
             return createTodo(substringOfTodoCmd);
         } catch (MissingTodoDescriptionException missingTodoDescriptionException) {
-            System.out.println("    Todo description cannot be missing.");
-            System.out.println("    Please enter a valid 'todo' command.");
+            System.out.println("    Todo description cannot be missing." + "\n");
+        } catch (DuplicateTaskException duplicateTaskException) {
+            System.out.println("    There is an existing Todo task in the task arraylist.");
+            System.out.println("    Duplicate Todo task is not allowed." + "\n");
         }
+        System.out.println("    Please enter a valid 'todo' command." + "\n");
         return null;
     }
 
@@ -495,17 +504,20 @@ public class Yq {
      * @return The newly created Deadline Task if the substring of the 'deadline' command is valid.
      * Else, it returns null.
      */
-    private static Task makeValidDeadline(String substringOfDeadlineCmd) {
+    private static Deadline makeValidDeadline(String substringOfDeadlineCmd) {
         try {
             return createDeadline(substringOfDeadlineCmd);
         } catch (EmptyDeadlineCommandException emptyDeadlineCommandException) {
-            System.out.println("    The substring of the 'deadline' command cannot be empty.");
+            System.out.println("    The substring of the 'deadline' command cannot be empty." + "\n");
         } catch (MissingByKeywordException missingByKeywordException) {
-            System.out.println("    The '/by' keyword cannot be missing.");
+            System.out.println("    The '/by' keyword cannot be missing." + "\n");
         } catch (MissingDeadlineDescriptionException missingDeadlineDescriptionException) {
-            System.out.println("    The deadline and '/by' descriptions cannot be missing.");
+            System.out.println("    The deadline and '/by' descriptions cannot be missing." + "\n");
+        } catch (DuplicateTaskException duplicateTaskException) {
+            System.out.println("    There is an existing Deadline task in the task arraylist.");
+            System.out.println("    Duplicate Deadline task is not allowed." + "\n");
         }
-        System.out.println("    Please enter a valid 'deadline' command.");
+        System.out.println("    Please enter a valid 'deadline' command." + "\n");
         return null;
     }
 
@@ -522,21 +534,25 @@ public class Yq {
      *                            the 'event' word is being verified and removed from the command.
      * @return The validity of the substring of 'event' command.
      */
-    private static Task makeValidEvent(String substringOfEventCmd) {
+    private static Event makeValidEvent(String substringOfEventCmd) {
+
         try {
             return createEvent(substringOfEventCmd);
         } catch (EmptyEventCommandException emptyEventCommandException) {
-            System.out.println("    The substring of the 'event' command cannot be empty.");
+            System.out.println("    The substring of the 'event' command cannot be empty." + "\n");
         } catch (MissingFromKeywordException missingFromKeywordException) {
-            System.out.println("    The '/from' keyword cannot be missing.");
+            System.out.println("    The '/from' keyword cannot be missing." + "\n");
         } catch (MissingToKeywordException missingToKeywordException) {
             System.out.println("    The '/to' keyword cannot be missing.");
         } catch (InvalidFromToIndexesException invalidFromToIndexesException) {
-            System.out.println("    The '/from' keyword cannot be inputted after the '/to' keyword.");
+            System.out.println("    The '/from' keyword cannot be inputted after the '/to' keyword." + "\n");
         } catch (MissingEventDescriptionException missingEventDescriptionException) {
-            System.out.println("    The event, '/from' and '/to' descriptions cannot be missing.");
+            System.out.println("    The event, '/from' and '/to' descriptions cannot be missing." + "\n");
+        } catch (DuplicateTaskException duplicateTaskException) {
+            System.out.println("    There is an existing Event task in the task arraylist.");
+            System.out.println("    Duplicate Event task is not allowed." + "\n");
         }
-        System.out.println("    Please enter a valid 'event' command.");
+        System.out.println("    Please enter a valid 'event' command." + "\n");
         return null;
     }
 
@@ -546,15 +562,24 @@ public class Yq {
      * @param substringOfTodoCmd Substring of the 'todo' command inputted by the user.
      * @return A new Todo Task.
      * @throws MissingTodoDescriptionException If the todo description is empty.
+     * @throws DuplicateTaskException          If there is such an existing todo task.
      */
-    private static Task createTodo(String substringOfTodoCmd) throws MissingTodoDescriptionException {
+    private static Todo createTodo(String substringOfTodoCmd) throws MissingTodoDescriptionException,
+            DuplicateTaskException {
         printStraightLine();
         processForOneSecond();
         if (substringOfTodoCmd.isEmpty()) {
             throw new MissingTodoDescriptionException();
         }
+
+        Todo newTodo = new Todo(substringOfTodoCmd);
+        for (Task task : taskArrayList) {
+            if (task.equals(newTodo)) {
+                throw new DuplicateTaskException();
+            }
+        }
         System.out.println("    'Todo' command is valid." + "\n");
-        return new Todo(substringOfTodoCmd);
+        return newTodo;
     }
 
     /**
@@ -570,9 +595,10 @@ public class Yq {
      * @throws MissingByKeywordException           If the '/by' keyword is missing.
      * @throws MissingDeadlineDescriptionException If the deadline command does not contain deadline description and/or
      *                                             'by' description.
+     * @throws DuplicateTaskException              If there is such an existing deadline task.
      */
-    private static Task createDeadline(String substringOfDeadlineCmd) throws EmptyDeadlineCommandException,
-            MissingByKeywordException, MissingDeadlineDescriptionException {
+    private static Deadline createDeadline(String substringOfDeadlineCmd) throws EmptyDeadlineCommandException,
+            MissingByKeywordException, MissingDeadlineDescriptionException, DuplicateTaskException {
         printStraightLine();
         processForOneSecond();
         String lcSubstringOfDeadlineCmd = substringOfDeadlineCmd.toLowerCase();
@@ -588,8 +614,15 @@ public class Yq {
         if (deadlineDescription.isEmpty() || by.isEmpty()) {
             throw new MissingDeadlineDescriptionException();
         }
+
+        Deadline newDeadline = new Deadline(deadlineDescription, by);
+        for (Task task : taskArrayList) {
+            if (task.equals(newDeadline)) {
+                throw new DuplicateTaskException();
+            }
+        }
         System.out.println("    'Deadline' command is valid." + "\n");
-        return new Deadline(deadlineDescription, by);
+        return newDeadline;
     }
 
     /**
@@ -607,10 +640,11 @@ public class Yq {
      * @throws InvalidFromToIndexesException    If the '/to' keyword appears before the '/from' keyword.
      * @throws MissingEventDescriptionException If the event command does not contain the event description and/or
      *                                          'from' description and/or 'by' description.
+     * @throws DuplicateTaskException           If there is such an existing event task.
      */
-    private static Task createEvent(String substringOfEventCmd) throws EmptyEventCommandException,
+    private static Event createEvent(String substringOfEventCmd) throws EmptyEventCommandException,
             MissingFromKeywordException, MissingToKeywordException, InvalidFromToIndexesException,
-            MissingEventDescriptionException {
+            MissingEventDescriptionException, DuplicateTaskException {
         printStraightLine();
         processForOneSecond();
         String lcSubstringOfEventCmd = substringOfEventCmd.toLowerCase();
@@ -634,8 +668,15 @@ public class Yq {
         if (eventDescription.isEmpty() || from.isEmpty() || to.isEmpty()) {
             throw new MissingEventDescriptionException();
         }
+
+        Event newEvent = new Event(eventDescription, from, to);
+        for (Task task : taskArrayList) {
+            if (task.equals(newEvent)) {
+                throw new DuplicateTaskException();
+            }
+        }
         System.out.println("    'Event' command is valid." + "\n");
-        return new Event(eventDescription, from, to);
+        return newEvent;
     }
 
     /**
@@ -650,7 +691,9 @@ public class Yq {
         System.out.println("    Got it. I have added this task to the task list:");
         System.out.println("        " + newTask.toString());
         System.out.println("    Now you have " + Yq.taskArrayList.size() + " tasks in the list.");
+        System.out.println();
     }
+
 
     /**
      * Delete the task from the task list according to the index selected by the user.
@@ -673,6 +716,7 @@ public class Yq {
         System.out.println("    Noted. I have removed this task:");
         System.out.println("        " + deletedTask.toString());
         System.out.println("    Now you have " + Yq.taskArrayList.size() + " tasks in the list.");
+        System.out.println();
     }
 
     /**
@@ -690,15 +734,16 @@ public class Yq {
             deleteTask(substringOfDeleteCmd);
             return;
         } catch (EmptyListException emptyListException) {
-            System.out.println("    The task list is empty. There is nothing to delete.");
+            System.out.println("    The task list is empty. There is nothing to delete." + "\n");
         } catch (MissingDeleteNumberException missingDeleteNumberException) {
-            System.out.println("    The index of the task to be deleted cannot be missing from the 'delete' command.");
+            System.out.println("    The index of the task to be deleted cannot be missing" +
+                    " from the 'delete' command." + "\n");
         } catch (NumberFormatException numberFormatException) {
             System.out.println("    A valid integer starting from 1 and nothing else must be present " +
-                    "after the 'delete' word.");
+                    "after the 'delete' word." + "\n");
         } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
-            System.out.println("    The integer cannot be out of range.");
+            System.out.println("    The integer cannot be out of range." + "\n");
         }
-        System.out.println("    Please enter a valid 'delete' command.");
+        System.out.println("    Please enter a valid 'delete' command." + "\n");
     }
 }
