@@ -28,7 +28,7 @@ unmark ss
 hihsunMARk -1
 unmark 100
 unmark 1
-unmark 1
+unmARk 1
 unmaRK 2
 DSunMArk 3
 giwegi
@@ -49,5 +49,17 @@ event no from /to
 event/fromno/totask
 eventassign exception/to/from
 event assign exception/toTomorrow/fromToday
+mark 1
 faoeih
+delete
+mark 2
+delete ss
+deLETE0
+mark 5
+delete-1
+ASDELete2
+list
+dDDelete 10
+deLEte 3
+list
 bye
