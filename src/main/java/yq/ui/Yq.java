@@ -40,6 +40,7 @@ public class Yq {
     public static void main(String[] args) {
         String userCmd; // Represents the user command with 'cmd' stands for 'command'.
         String lcUserCmd; // Represents the lower case of the user command with lc' stands for 'lower case'.
+        String lcValidUserCmd; // Represents the lower case of the valid user command.
         String substringOfUserCmd; // Shows the substring of the user command.
         int indexAfterCmdWord; // Extracts the substring after the command word.
         Task newTask = null; // Assigns the newly created task a variable name called 'newTask'.
@@ -50,44 +51,43 @@ public class Yq {
         Scanner userInput = new Scanner(System.in);
         while (true) {
             printCommandOptions();
-            userCmd = userInput.nextLine();
-            userCmd = userCmd.trim();
+            userCmd = userInput.nextLine().trim();
             // Standardise the user inputs to lower case, so it is easier to check for the command keywords.
             lcUserCmd = userCmd.toLowerCase();
-            lcUserCmd = checkValidCommand(lcUserCmd);
-            if (lcUserCmd.contains("bye")) {
+            lcValidUserCmd = checkValidCommand(lcUserCmd);
+            if (lcValidUserCmd.contains("bye")) {
                 break;
 
-            } else if (lcUserCmd.contains("list")) {
+            } else if (lcValidUserCmd.contains("list")) {
                 checkValidPrintListCmd();
 
-            } else if (lcUserCmd.contains("unmark")) {
-                indexAfterCmdWord = lcUserCmd.indexOf("unmark") + "unmark".length();
+            } else if (lcValidUserCmd.contains("unmark")) {
+                indexAfterCmdWord = lcValidUserCmd.indexOf("unmark") + "unmark".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
                 checkValidUnmarkCmd(substringOfUserCmd);
 
-            } else if (lcUserCmd.contains("mark")) {
-                indexAfterCmdWord = lcUserCmd.indexOf("mark") + "mark".length();
+            } else if (lcValidUserCmd.contains("mark")) {
+                indexAfterCmdWord = lcValidUserCmd.indexOf("mark") + "mark".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
                 checkValidMarkCmd(substringOfUserCmd);
 
-            } else if (lcUserCmd.contains("todo")) {
-                indexAfterCmdWord = lcUserCmd.indexOf("todo") + "todo".length();
+            } else if (lcValidUserCmd.contains("todo")) {
+                indexAfterCmdWord = lcValidUserCmd.indexOf("todo") + "todo".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
                 newTask = makeValidTodo(substringOfUserCmd);
 
-            } else if (lcUserCmd.contains("deadline")) {
-                indexAfterCmdWord = lcUserCmd.indexOf("deadline") + "deadline".length();
+            } else if (lcValidUserCmd.contains("deadline")) {
+                indexAfterCmdWord = lcValidUserCmd.indexOf("deadline") + "deadline".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
                 newTask = makeValidDeadline(substringOfUserCmd);
 
-            } else if (lcUserCmd.contains("event")) {
-                indexAfterCmdWord = lcUserCmd.indexOf("event") + "event".length();
+            } else if (lcValidUserCmd.contains("event")) {
+                indexAfterCmdWord = lcValidUserCmd.indexOf("event") + "event".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
                 newTask = makeValidEvent(substringOfUserCmd);
 
-            } else if (lcUserCmd.contains("delete")) {
-                indexAfterCmdWord = lcUserCmd.indexOf("delete") + "delete".length();
+            } else if (lcValidUserCmd.contains("delete")) {
+                indexAfterCmdWord = lcValidUserCmd.indexOf("delete") + "delete".length();
                 substringOfUserCmd = userCmd.substring(indexAfterCmdWord).trim();
                 checkValidDeleteCmd(substringOfUserCmd);
 
@@ -235,25 +235,26 @@ public class Yq {
         printStraightLine();
         System.out.println("    Retrieving saved tasks from saved_task_arraylist.txt file " +
                 "and populating task arraylist..." + "\n");
-        for (String taskDescription : taskDescriptionsArrayList) {
+        for (String TaskDescription : taskDescriptionsArrayList) {
             Task newTask;
+            String trimedTaskDescription;
             String finalTaskDescription;
-            taskDescription = taskDescription.trim();
-            if (taskDescription.isEmpty()) {
+            trimedTaskDescription = TaskDescription.trim();
+            if (trimedTaskDescription.isEmpty()) {
                 continue;
             }
-            if (taskDescription.charAt(taskTypeIndex) == 'T') {
-                finalTaskDescription = taskDescription.substring(taskDescriptionIndex).trim();
+            if (trimedTaskDescription.charAt(taskTypeIndex) == 'T') {
+                finalTaskDescription = trimedTaskDescription.substring(taskDescriptionIndex).trim();
                 newTask = makeValidTodo(finalTaskDescription);
 
-            } else if (taskDescription.charAt(taskTypeIndex) == 'D') {
-                taskDescription = modifyDeadlineDescription(taskDescription);
-                finalTaskDescription = taskDescription.substring(taskDescriptionIndex).trim();
+            } else if (trimedTaskDescription.charAt(taskTypeIndex) == 'D') {
+                trimedTaskDescription = modifyDeadlineDescription(trimedTaskDescription);
+                finalTaskDescription = trimedTaskDescription.substring(taskDescriptionIndex).trim();
                 newTask = makeValidDeadline(finalTaskDescription);
 
-            } else if (taskDescription.charAt(taskTypeIndex) == 'E') {
-                taskDescription = modifyEventDescription(taskDescription);
-                finalTaskDescription = taskDescription.substring(taskDescriptionIndex).trim();
+            } else if (trimedTaskDescription.charAt(taskTypeIndex) == 'E') {
+                trimedTaskDescription = modifyEventDescription(trimedTaskDescription);
+                finalTaskDescription = trimedTaskDescription.substring(taskDescriptionIndex).trim();
                 newTask = makeValidEvent(finalTaskDescription);
 
             } else {
@@ -262,7 +263,7 @@ public class Yq {
                 System.out.println("    An invalid line is detected and it will be ignored." + "\n");
                 continue;
             }
-            if (taskDescription.charAt(markOrUnmarkTaskIndex) == 'X' && newTask != null) {
+            if (trimedTaskDescription.charAt(markOrUnmarkTaskIndex) == 'X' && newTask != null) {
                 newTask.markAsDone();
                 System.out.println();
             }
@@ -276,17 +277,15 @@ public class Yq {
     }
 
     private static String modifyDeadlineDescription(String deadlineDescription) {
-        deadlineDescription = deadlineDescription.replace("by:", "/by");
-        deadlineDescription = deadlineDescription.replace("(", "");
-        deadlineDescription = deadlineDescription.replace(")", "");
+        deadlineDescription = deadlineDescription.replace("by:", "/by")
+                .replace("(", "").replace(")", "");
         return deadlineDescription;
     }
 
     private static String modifyEventDescription(String eventDescription) {
-        eventDescription = eventDescription.replace("from:", "/from");
-        eventDescription = eventDescription.replace("to:", "/to");
-        eventDescription = eventDescription.replace("(", "");
-        eventDescription = eventDescription.replace(")", "");
+        eventDescription = eventDescription.replace("from:", "/from")
+                .replace("to:", "/to").replace("(", "")
+                .replace(")", "");
         return eventDescription;
     }
 
@@ -571,7 +570,6 @@ public class Yq {
         if (substringOfTodoCmd.isEmpty()) {
             throw new MissingTodoDescriptionException();
         }
-
         Todo newTodo = new Todo(substringOfTodoCmd);
         for (Task task : taskArrayList) {
             if (task.equals(newTodo)) {
@@ -607,6 +605,7 @@ public class Yq {
         } else if (!lcSubstringOfDeadlineCmd.contains("/by")) {
             throw new MissingByKeywordException();
         }
+
         int byIndex = lcSubstringOfDeadlineCmd.indexOf("/by");
         int indexAfterByWord = byIndex + "/by".length();
         String deadlineDescription = substringOfDeadlineCmd.substring(START_INDEX_STRING_CMD, byIndex).trim();
@@ -655,6 +654,7 @@ public class Yq {
         } else if (!lcSubstringOfEventCmd.contains("/to")) {
             throw new MissingToKeywordException();
         }
+
         int fromIndex = lcSubstringOfEventCmd.indexOf("/from");
         int toIndex = lcSubstringOfEventCmd.indexOf("/to");
         int indexAfterFromWord = fromIndex + "/from".length();
@@ -662,6 +662,7 @@ public class Yq {
         if (fromIndex >= toIndex) {
             throw new InvalidFromToIndexesException();
         }
+
         String eventDescription = substringOfEventCmd.substring(START_INDEX_STRING_CMD, fromIndex).trim();
         String from = substringOfEventCmd.substring(indexAfterFromWord, toIndex).trim();
         String to = substringOfEventCmd.substring(indexAfterToWord).trim();
@@ -711,6 +712,7 @@ public class Yq {
         } else if (substringOfDeleteCmd.isEmpty()) {
             throw new MissingDeleteNumberException();
         }
+
         int chosenDeleteIndex = Integer.parseInt(substringOfDeleteCmd);
         Task deletedTask = Yq.taskArrayList.remove(chosenDeleteIndex - LIST_INDEX_ADJUSTMENT);
         System.out.println("    Noted. I have removed this task:");
