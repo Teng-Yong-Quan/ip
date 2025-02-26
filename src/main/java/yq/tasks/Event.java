@@ -34,8 +34,11 @@ public class Event extends Task {
     @Override
     public boolean equals(Object object) {
         if (object instanceof Event eventObject) {
-            return eventObject.getFrom().equalsIgnoreCase(getFrom()) && eventObject.getTo().equalsIgnoreCase(getTo())
-                    && eventObject.getDescription().equalsIgnoreCase(getDescription());
+            String eventDescription = eventObject.getDescription();
+            String eventFrom = eventObject.getFrom();
+            String eventTo = eventObject.getTo();
+            return eventFrom.equalsIgnoreCase(getFrom()) && eventTo.equalsIgnoreCase(getTo())
+                    && eventDescription.equalsIgnoreCase(getDescription());
         }
         return false;
     }

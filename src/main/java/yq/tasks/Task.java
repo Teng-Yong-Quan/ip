@@ -36,7 +36,7 @@ public abstract class Task {
         if (!isDone()) {
             setDone(true);
             System.out.println("    Nice! I've marked this task as done:");
-            System.out.println("        " + toString());
+            System.out.println("        " + this);
         } else {
             System.out.println("    The task \"" + getDescription()
                     + "\" has already been marked as done.");
@@ -50,7 +50,7 @@ public abstract class Task {
         if (isDone()) {
             setDone(false);
             System.out.println("    OK, I've marked this task as not done yet:");
-            System.out.println("        " + toString());
+            System.out.println("        " + this);
         } else {
             System.out.println("    The task \"" + getDescription()
                     + "\" has already been marked as not done.");

@@ -13,7 +13,8 @@ public class Todo extends Task {
     @Override
     public boolean equals(Object object) {
         if (object instanceof Todo todoObject) {
-            return todoObject.getDescription().equalsIgnoreCase(getDescription());
+            String todoDescription = todoObject.getDescription();
+            return todoDescription.equalsIgnoreCase(getDescription());
         }
         return false;
     }

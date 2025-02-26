@@ -24,8 +24,10 @@ public class Deadline extends Task {
     @Override
     public boolean equals(Object object) {
         if (object instanceof Deadline deadlineObject) {
-            return deadlineObject.getBy().equalsIgnoreCase(getBy()) &&
-                    deadlineObject.getDescription().equalsIgnoreCase(getDescription());
+            String deadlineDescription = deadlineObject.getDescription();
+            String deadlineBy = deadlineObject.getBy();
+            return deadlineDescription.equalsIgnoreCase(getBy()) &&
+                    deadlineBy.equalsIgnoreCase(getDescription());
         }
         return false;
     }
