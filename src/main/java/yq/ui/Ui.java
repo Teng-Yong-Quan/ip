@@ -184,4 +184,14 @@ public class Ui {
         processForOneSecond();
         System.out.println("    Is there anything else I can do for you?" + "\n");
     }
+
+    public void printMatchingTaskList(ArrayList<Task> matchingTaskList) {
+        final int LIST_INDEX_ADJUSTMENT = 1;
+        System.out.println("    Here are the matching tasks in your list:");
+        for (int i = 0; i < matchingTaskList.size(); i++) {
+            Task selectedTask = matchingTaskList.get(i);
+            System.out.println("    " + (i + LIST_INDEX_ADJUSTMENT) + ". " + selectedTask.toString());
+        }
+        System.out.println();
+    }
 }
