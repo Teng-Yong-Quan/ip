@@ -34,11 +34,14 @@ public class Event extends Task {
     @Override
     public boolean equals(Object object) {
         if (object instanceof Event eventObject) {
-            String eventDescription = eventObject.getDescription();
-            String eventFrom = eventObject.getFrom();
-            String eventTo = eventObject.getTo();
-            return eventFrom.equalsIgnoreCase(getFrom()) && eventTo.equalsIgnoreCase(getTo())
-                    && eventDescription.equalsIgnoreCase(getDescription());
+            String objectDescription = eventObject.getDescription();
+            String objectFrom = eventObject.getFrom();
+            String objectTo = eventObject.getTo();
+            String from  = getFrom();
+            String to = getTo();
+            String description = getDescription();
+            return objectFrom.equalsIgnoreCase(from) && objectTo.equalsIgnoreCase(to)
+                    && objectDescription.equalsIgnoreCase(description);
         }
         return false;
     }
