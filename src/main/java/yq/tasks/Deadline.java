@@ -26,8 +26,8 @@ public class Deadline extends Task {
         if (object instanceof Deadline deadlineObject) {
             String deadlineDescription = deadlineObject.getDescription();
             String deadlineBy = deadlineObject.getBy();
-            return deadlineDescription.equalsIgnoreCase(getBy()) &&
-                    deadlineBy.equalsIgnoreCase(getDescription());
+            return deadlineDescription.equalsIgnoreCase(getDescription()) &&
+                    deadlineBy.equalsIgnoreCase(getBy());
         }
         return false;
     }
