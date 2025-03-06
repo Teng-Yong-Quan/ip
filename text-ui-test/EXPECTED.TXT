@@ -350,6 +350,43 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
+    The task list is empty. There is nothing to find.
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
     The task list is empty. There is nothing to unmark.
 
 ----------------------------------------------------------------------------------------
@@ -2265,6 +2302,46 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
+    Here are the matching tasks in your list:
+    1. [T][ ] CS2113 A level-4 increment
+    2. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
     The integer cannot be out of range.
     Please enter a valid 'delete' command.
 
@@ -2432,6 +2509,47 @@ What can I do for you?
     5. [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
     6. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
     7. [T][ ] GET AN INTERNSHIP!!!
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
+            Example:                 deadline return book /by Sunday
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
+            Example:                 event project meeting /from Mon 2pm /to 4pm
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Unable to find tasks with 'cry' in the task descriptions.
+    If the tasks with 'cry' are actually present in the list, please key in only the
+    relevant words that you are searching for with the correct spelling in uppercase or lowercase when
+    necessary as it is case-sensitive.
 
 ----------------------------------------------------------------------------------------
     Processing...

@@ -6,6 +6,7 @@ deLETE
 OOmark -1
 psidmArK 2
 delete2
+find meeting
 uNmaRK 0
 OOuNmark -1
 psidUNmArK 2
@@ -54,11 +55,13 @@ faoeih
 delete
 mark 2
 delete ss
+fIND CS2113
 deLETE0
 mark 5
 delete-1
 ASDELete2
 list
+find cry
 dDDelete 10
 deLEte 3
 list
