@@ -1,6 +1,5 @@
 package yq.ui;
 
-
 import yq.commands.Command;
 import yq.exceptions.InvalidCommandException;
 import yq.exceptions.YqException;
@@ -20,9 +19,9 @@ public class Storage {
      * The ArrayList which contains the task lines extracted from the input file
      */
     private static final ArrayList<String> TASKS_FROM_FILE_ARRAY_LIST = new ArrayList<>();
+    private static final Ui UI = new Ui();
     private String fileName;
     private static ArrayList<Task> taskArrayList = new ArrayList<>();
-    private static final Ui UI = new Ui();
     /**
      * The index where the task type T (Todo), D (Deadline) and E (Event) is located
      */

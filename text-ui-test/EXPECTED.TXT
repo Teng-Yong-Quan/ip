@@ -35,10 +35,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -73,10 +74,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -111,10 +113,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -149,10 +152,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -187,10 +191,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -225,10 +230,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -263,10 +269,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -301,10 +308,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -339,10 +347,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -350,8 +359,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The task list is empty. There is nothing to unmark.
-
+    The task list is empty. There is nothing to find.
 ----------------------------------------------------------------------------------------
     Processing...
 
@@ -415,10 +423,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -453,10 +462,50 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The task list is empty. There is nothing to unmark.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -495,10 +544,52 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    There is an existing Todo task in the task arraylist.
+    Duplicate Todo task is not allowed.
+    Please enter a valid 'todo' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -509,7 +600,7 @@ What can I do for you?
     'Deadline' command is valid.
 
     Got it. I have added this task to the task list:
-        [D][ ] add deadline task (by: today)
+        [D][ ] add deadline task (by: THU 06-Mar-2025)
     Now you have 2 tasks in the list.
 
 ----------------------------------------------------------------------------------------
@@ -537,10 +628,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -548,11 +640,7 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    'Event' command is valid.
-
-    Got it. I have added this task to the task list:
-        [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
-    Now you have 3 tasks in the list.
+    Unable to detect any date. Please key in an appropriate date with the specified format.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -579,10 +667,52 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    There is an existing Deadline task in the task arraylist.
+    Duplicate deadline task is not allowed.
+    Please enter a valid 'deadline' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -592,8 +722,7 @@ What can I do for you?
 
     Here are the tasks in your list:
     1. [T][ ] add todo task
-    2. [D][ ] add deadline task (by: today)
-    3. [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+    2. [D][ ] add deadline task (by: THU 06-Mar-2025)
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -620,10 +749,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -659,10 +789,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -698,10 +829,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -737,10 +869,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -776,10 +909,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -815,10 +949,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -856,10 +991,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -896,10 +1032,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -910,7 +1047,7 @@ What can I do for you?
     The 'mark' command is valid.
 
     Nice! I've marked this task as done:
-        [D][X] add deadline task (by: today)
+        [D][X] add deadline task (by: THU 06-Mar-2025)
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -937,10 +1074,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -948,10 +1086,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The 'mark' command is valid.
-
-    Nice! I've marked this task as done:
-        [E][X] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+    The integer cannot be out of range.
+    Please enter a valid 'mark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -978,10 +1114,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -991,8 +1128,7 @@ What can I do for you?
 
     Here are the tasks in your list:
     1. [T][X] add todo task
-    2. [D][X] add deadline task (by: today)
-    3. [E][X] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+    2. [D][X] add deadline task (by: THU 06-Mar-2025)
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -1019,10 +1155,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1058,10 +1195,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1097,10 +1235,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1136,10 +1275,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1175,10 +1315,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1216,50 +1357,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
-
-        bye    - to quit
-            Example: bye
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-    Processing...
-
-    The 'unmark' command is valid.
-
-    The task "add todo task" has already been marked as not done.
-
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Is there anything else I can do for you?
-
-----------------------------------------------------------------------------------------
-    Please key in one of the following options:
-        list   - to show the list of tasks
-            Example: list
-
-        mark   - to choose a task that you want to mark as done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
-
-        unmark - to choose a task that you want to mark as not done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    unmark 2
-
-        delete - to choose a task that you want to delete from the list
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    delete 3
-
-        Task type: todo/deadline/event - to add a task to the list
-            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
-            Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1270,7 +1372,7 @@ What can I do for you?
     The 'unmark' command is valid.
 
     OK, I've marked this task as not done yet:
-        [D][ ] add deadline task (by: today)
+        [D][ ] add deadline task (by: THU 06-Mar-2025)
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -1297,10 +1399,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1308,10 +1411,8 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    The 'unmark' command is valid.
-
-    OK, I've marked this task as not done yet:
-        [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
+    The integer cannot be out of range.
+    Please enter a valid 'unmark' command.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -1338,10 +1439,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1377,10 +1479,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1416,10 +1519,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1455,10 +1559,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1470,6 +1575,49 @@ What can I do for you?
 
     Got it. I have added this task to the task list:
         [T][ ] CS2113 A level-4 increment
+    Now you have 3 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Deadline' command is valid.
+
+    Got it. I have added this task to the task list:
+        [D][ ] Update Text-ui-test (by: THU 06-Mar-2025 8.00pm)
     Now you have 4 tasks in the list.
 
 ----------------------------------------------------------------------------------------
@@ -1497,10 +1645,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1508,10 +1657,49 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    'Deadline' command is valid.
+    Unable to detect any date. Please key in an appropriate date with the specified format.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Event' command is valid.
 
     Got it. I have added this task to the task list:
-        [D][ ] Text-ui-test (by: Tonight 8pm)
+        [E][ ] Grinding more CS2113 (from: WED 01-Jan-2025 to: MON 12-May-2025 11.59pm)
     Now you have 5 tasks in the list.
 
 ----------------------------------------------------------------------------------------
@@ -1539,10 +1727,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1550,10 +1739,51 @@ What can I do for you?
 ----------------------------------------------------------------------------------------
     Processing...
 
-    'Deadline' command is valid.
+    There is an existing Event task in the task arraylist.
+    Duplicate Event task is not allowed.
+    Please enter a valid 'event' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    'Todo' command is valid.
 
     Got it. I have added this task to the task list:
-        [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
+        [T][ ] GET AN INTERNSHIP!!!
     Now you have 6 tasks in the list.
 
 ----------------------------------------------------------------------------------------
@@ -1581,94 +1811,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
-
-        bye    - to quit
-            Example: bye
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-    Processing...
-
-    'Event' command is valid.
-
-    Got it. I have added this task to the task list:
-        [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
-    Now you have 7 tasks in the list.
-
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Is there anything else I can do for you?
-
-----------------------------------------------------------------------------------------
-    Please key in one of the following options:
-        list   - to show the list of tasks
-            Example: list
-
-        mark   - to choose a task that you want to mark as done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
-
-        unmark - to choose a task that you want to mark as not done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    unmark 2
-
-        delete - to choose a task that you want to delete from the list
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    delete 3
-
-        Task type: todo/deadline/event - to add a task to the list
-            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
-            Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
-
-        bye    - to quit
-            Example: bye
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-    Processing...
-
-    'Todo' command is valid.
-
-    Got it. I have added this task to the task list:
-        [T][ ] GET AN INTERNSHIP!!!
-    Now you have 8 tasks in the list.
-
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Is there anything else I can do for you?
-
-----------------------------------------------------------------------------------------
-    Please key in one of the following options:
-        list   - to show the list of tasks
-            Example: list
-
-        mark   - to choose a task that you want to mark as done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
-
-        unmark - to choose a task that you want to mark as not done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    unmark 2
-
-        delete - to choose a task that you want to delete from the list
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    delete 3
-
-        Task type: todo/deadline/event - to add a task to the list
-            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
-            Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1704,10 +1851,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1743,10 +1891,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1782,10 +1931,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1821,10 +1971,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1860,10 +2011,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1899,10 +2051,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1938,10 +2091,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -1977,10 +2131,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2016,10 +2171,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2055,10 +2211,51 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The '/from' keyword cannot be inputted after the '/to' keyword.
+    Please enter a valid 'event' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2096,10 +2293,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2135,10 +2333,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2174,10 +2373,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2188,7 +2388,7 @@ What can I do for you?
     The 'mark' command is valid.
 
     Nice! I've marked this task as done:
-        [D][X] add deadline task (by: today)
+        [D][X] add deadline task (by: THU 06-Mar-2025)
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -2215,10 +2415,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2254,6 +2455,47 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Here are the matching tasks in your list:
+    1. [T][ ] CS2113 A level-4 increment
+    2. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
             Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
             Example:                 deadline return book /by Sunday
             Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
@@ -2293,10 +2535,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2307,7 +2550,130 @@ What can I do for you?
     The 'mark' command is valid.
 
     Nice! I've marked this task as done:
-        [D][X] Text-ui-test (by: Tonight 8pm)
+        [E][X] Grinding more CS2113 (from: WED 01-Jan-2025 to: MON 12-May-2025 11.59pm)
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    The integer cannot be out of range.
+    Please enter a valid 'delete' command.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Noted. I have removed this task:
+        [D][X] add deadline task (by: THU 06-Mar-2025)
+    Now you have 5 tasks in the list.
+
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Is there anything else I can do for you?
+
+----------------------------------------------------------------------------------------
+    Please key in one of the following options:
+        list   - to show the list of tasks
+            Example: list
+
+        mark   - to choose a task that you want to mark as done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    mark 1
+
+        unmark - to choose a task that you want to mark as not done
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    unmark 2
+
+        delete - to choose a task that you want to delete from the list
+            Parameters: KEYWORD [POSITIVE INTEGER]
+            Example:    delete 3
+
+        Task type: todo/deadline/event - to add a task to the list
+            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
+            Example:                 todo read book
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
+
+        bye    - to quit
+            Example: bye
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+    Processing...
+
+    Unable to find tasks with 'cry' in the task descriptions.
+    If the tasks with 'cry' are actually present in the list, please key in only the
+    relevant words that you are searching for with the correct spelling in uppercase or lowercase when
+    necessary as it is case-sensitive.
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -2373,50 +2739,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
-
-        bye    - to quit
-            Example: bye
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Noted. I have removed this task:
-        [D][X] add deadline task (by: today)
-    Now you have 7 tasks in the list.
-
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Is there anything else I can do for you?
-
-----------------------------------------------------------------------------------------
-    Please key in one of the following options:
-        list   - to show the list of tasks
-            Example: list
-
-        mark   - to choose a task that you want to mark as done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
-
-        unmark - to choose a task that you want to mark as not done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    unmark 2
-
-        delete - to choose a task that you want to delete from the list
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    delete 3
-
-        Task type: todo/deadline/event - to add a task to the list
-            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
-            Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2426,12 +2753,10 @@ What can I do for you?
 
     Here are the tasks in your list:
     1. [T][X] add todo task
-    2. [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
-    3. [T][ ] CS2113 A level-4 increment
-    4. [D][X] Text-ui-test (by: Tonight 8pm)
-    5. [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
-    6. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
-    7. [T][ ] GET AN INTERNSHIP!!!
+    2. [T][ ] CS2113 A level-4 increment
+    3. [D][ ] Update Text-ui-test (by: THU 06-Mar-2025 8.00pm)
+    4. [E][X] Grinding more CS2113 (from: WED 01-Jan-2025 to: MON 12-May-2025 11.59pm)
+    5. [T][ ] GET AN INTERNSHIP!!!
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -2458,133 +2783,11 @@ What can I do for you?
         Task type: todo/deadline/event - to add a task to the list
             Parameters for todo:     KEYWORD [TASK DESCRIPTION]
             Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
-
-        bye    - to quit
-            Example: bye
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-    Processing...
-
-    The integer cannot be out of range.
-    Please enter a valid 'delete' command.
-
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Is there anything else I can do for you?
-
-----------------------------------------------------------------------------------------
-    Please key in one of the following options:
-        list   - to show the list of tasks
-            Example: list
-
-        mark   - to choose a task that you want to mark as done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
-
-        unmark - to choose a task that you want to mark as not done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    unmark 2
-
-        delete - to choose a task that you want to delete from the list
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    delete 3
-
-        Task type: todo/deadline/event - to add a task to the list
-            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
-            Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
-
-        bye    - to quit
-            Example: bye
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Noted. I have removed this task:
-        [T][ ] CS2113 A level-4 increment
-    Now you have 6 tasks in the list.
-
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Is there anything else I can do for you?
-
-----------------------------------------------------------------------------------------
-    Please key in one of the following options:
-        list   - to show the list of tasks
-            Example: list
-
-        mark   - to choose a task that you want to mark as done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
-
-        unmark - to choose a task that you want to mark as not done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    unmark 2
-
-        delete - to choose a task that you want to delete from the list
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    delete 3
-
-        Task type: todo/deadline/event - to add a task to the list
-            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
-            Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
-
-        bye    - to quit
-            Example: bye
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Here are the tasks in your list:
-    1. [T][X] add todo task
-    2. [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
-    3. [D][X] Text-ui-test (by: Tonight 8pm)
-    4. [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
-    5. [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
-    6. [T][ ] GET AN INTERNSHIP!!!
-
-----------------------------------------------------------------------------------------
-    Processing...
-
-    Is there anything else I can do for you?
-
-----------------------------------------------------------------------------------------
-    Please key in one of the following options:
-        list   - to show the list of tasks
-            Example: list
-
-        mark   - to choose a task that you want to mark as done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    mark 1
-
-        unmark - to choose a task that you want to mark as not done
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    unmark 2
-
-        delete - to choose a task that you want to delete from the list
-            Parameters: KEYWORD [POSITIVE INTEGER]
-            Example:    delete 3
-
-        Task type: todo/deadline/event - to add a task to the list
-            Parameters for todo:     KEYWORD [TASK DESCRIPTION]
-            Example:                 todo read book
-            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]
-            Example:                 deadline return book /by Sunday
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DAY/DATE/TIME] /to [DAY/DATE/TIME]
-            Example:                 event project meeting /from Mon 2pm /to 4pm
+            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DATE/DATE & TIME]
+            Example:                 deadline return book /by 2023-12-19
+            Example:                 deadline return book /by 2021-11-01 0815
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         bye    - to quit
             Example: bye
@@ -2594,10 +2797,9 @@ What can I do for you?
 
     The following tasks have been saved into saved_task_arraylist.txt file:
     1: [T][X] add todo task
-    2: [E][ ] add event tasks (from: Tomorrow 5pm to: Next Week 5pm)
-    3: [D][X] Text-ui-test (by: Tonight 8pm)
-    4: [D][ ] Finish A-CodeQuality (by: Tonight 9pm)
-    5: [E][ ] Grinding more CS2113 (from: 6pm to: Eternity)
-    6: [T][ ] GET AN INTERNSHIP!!!
+    2: [T][ ] CS2113 A level-4 increment
+    3: [D][ ] Update Text-ui-test (by: THU 06-Mar-2025 8.00pm)
+    4: [E][X] Grinding more CS2113 (from: WED 01-Jan-2025 to: MON 12-May-2025 11.59pm)
+    5: [T][ ] GET AN INTERNSHIP!!!
 
     Bye. Hope to see you again soon!

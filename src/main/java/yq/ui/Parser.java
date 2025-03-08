@@ -6,6 +6,7 @@ import yq.commands.DeadlineCommand;
 import yq.commands.DeleteCommand;
 import yq.commands.EventCommand;
 import yq.commands.ExitCommand;
+import yq.commands.FindCommand;
 import yq.commands.ListCommand;
 import yq.commands.MarkCommand;
 import yq.commands.TodoCommand;
@@ -17,15 +18,17 @@ public class Parser {
     private static int indexAfterCmdWord;
     private static String extractedDescription;
     private static String extractedIndex;
-    private static String lcUserCmd; // User command in lowercase
-    private static final String BYE = "bye";
-    private static final String LIST = "list";
+    private static String lcUserCmd = ""; // User command in lowercase
+    private static final String TODO = "todo";
     private static final String DEADLINE = "deadline";
     private static final String EVENT = "event";
+    private static final String LIST = "list";
     private static final String MARK = "mark";
     private static final String UNMARK = "unmark";
     private static final String DELETE = "delete";
-    private static final String TODO = "todo";
+    private static final String FIND = "find";
+    private static final String BYE = "bye";
+
 
 
     public static Command parse(String userCmd) throws YqException {
@@ -53,9 +56,19 @@ public class Parser {
         } else if (lcUserCmd.contains(EVENT)) {
             substringOfUserCmd = extractEventDescription(userCmd);
             return new EventCommand(substringOfUserCmd);
+        } else if (lcUserCmd.contains(FIND)) {
+            substringOfUserCmd = extractFindDescription(userCmd);
+            return new FindCommand(substringOfUserCmd);
         } else {
             throw new InvalidCommandException(userCmd);
         }
+    }
+
+    private static String extractFindDescription(String userCmd) {
+        lcUserCmd = userCmd.toLowerCase();
+        indexAfterCmdWord = lcUserCmd.indexOf(FIND) + FIND.length();
+        extractedDescription = userCmd.substring(indexAfterCmdWord).trim();
+        return extractedDescription;
     }
 
     private static String extractEventDescription(String userCmd) {
