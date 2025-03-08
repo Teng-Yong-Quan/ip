@@ -29,7 +29,7 @@ public class Ui {
         System.out.println("What can I do for you?");
     }
 
-    void printStraightLine() {
+    public void printStraightLine() {
         System.out.println("----------------------------------------------------------------------------------------");
     }
 
@@ -53,11 +53,11 @@ public class Ui {
     void printInstructionToAddTask() {
         System.out.println("        Task type: todo/deadline/event - to add a task to the list");
         System.out.println("            Parameters for todo:     KEYWORD [TASK DESCRIPTION]");
-        System.out.println("            Example:                 todo read book");
+        System.out.println("            Example:                 todo read book" + "\n");
         System.out.println("            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by " +
                 "[DATE/DATE & TIME]");
         System.out.println("            Example:                 deadline return book /by 2023-12-19");
-        System.out.println("            Example:                 deadline return book /by 2021-11-01 0815");
+        System.out.println("            Example:                 deadline return book /by 2021-11-01 0815" + "\n");
         System.out.println("            Parameters for event:    KEYWORD [TASK DESCRIPTION] " +
                 "/from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]");
         System.out.println("            Example:                 event project meeting /from 2021-03-15 1400 " +
@@ -68,6 +68,13 @@ public class Ui {
         System.out.println("        delete - to choose a task that you want to delete from the list");
         System.out.println("            Parameters: KEYWORD [POSITIVE INTEGER]");
         System.out.println("            Example:    delete 3" + "\n");
+    }
+
+    void printInstructionToFindTask() {
+        System.out.println("        find   - to find task(s) with the specified word(s) that you are looking for");
+        System.out.println("            Parameters: KEYWORD [WORD(S) YOU ARE LOOKING FOR]");
+        System.out.println("            Example:    find book");
+        System.out.println("            Example:    find CS2113 Ip" + "\n");
     }
 
     void printInstructionToExit() {
@@ -83,9 +90,11 @@ public class Ui {
         printInstructionToUnmarkTask();
         printInstructionToDeleteTask();
         printInstructionToAddTask();
+        printInstructionToFindTask();
         printInstructionToExit();
         printStraightLine();
     }
+
 
     void printKeyInFollowingOptions() {
         System.out.println("    Please key in one of the following options:");
@@ -104,7 +113,7 @@ public class Ui {
         return userCmd;
     }
 
-    void processForOneSecond() {
+    public void processForOneSecond() {
         final int ONE_SECOND = 1;
         try {
             System.out.println("    Processing..." + "\n");
