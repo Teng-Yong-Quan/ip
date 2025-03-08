@@ -22,8 +22,8 @@ public class DeadlineCommand extends Command {
 
     public void execute(TaskList taskList, Ui ui, Storage storage) throws YqException {
         ArrayList<Task> taskArrayList = taskList.getTaskArrayList();
-        autoExecute(taskArrayList,ui);
-        storage.saveTaskArraylist(taskList,taskArrayList);
+        autoExecute(taskArrayList, ui);
+        storage.saveTaskArraylist(taskList, taskArrayList);
     }
 
     /**
@@ -57,12 +57,20 @@ public class DeadlineCommand extends Command {
         ui.printAddedDeadlineMessage(taskArrayList, newDeadline);
     }
 
+    /**
+     * Convert valid by date time description with "yyyy-MM-dd" and "HHmm" format into a date time
+     * string with "dd-MMM-yyyy" and "h.mma" format. If the by date time description is invalid, an empty
+     * string will be returned instead.
+     *
+     * @param by By date time description.
+     * @return By date in "dd-MMM-yyyy" format and time in "h.mma" format.
+     * @throws YqException If the by date time cannot be parsed and converted.
+     */
     private String checkValidBy(String by) throws YqException {
         DateTimeHandler dateTimeHandler = new DateTimeHandler();
         dateTimeHandler.convertDateTime(by);
         return dateTimeHandler.getFinalDateTimeString();
     }
-    // check in terms of format
 
     /**
      * Prevent the Deadline command with empty deadline description or by description from being processed into a

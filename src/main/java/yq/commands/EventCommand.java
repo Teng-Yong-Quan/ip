@@ -67,6 +67,14 @@ public class EventCommand extends Command {
         }
     }
 
+    /** Check if the 'from' datetime is earlier than the 'to' datetime after both datetime inputs are
+     * standardised to the same format of "dd-MMM-yyyy h.mma".
+     *
+     * @param validFrom Valid 'from' datetime.
+     * @param validTo Valid 'to' datetime.
+     * @return True if the 'from' datetime is before the 'to' datetime else returns false.
+     * @throws YqException If the 'from' datetime is after the 'to' datetime.
+     */
     private boolean checkValidEventInterval(String validFrom, String validTo) throws YqException {
         DateTimeHandler dateTimeHandler = new DateTimeHandler();
         dateTimeHandler.revertDateTime(validFrom);
@@ -76,12 +84,30 @@ public class EventCommand extends Command {
         return dateTimeHandler.compareDates(revertedFrom, revertedTo);
     }
 
+    /**
+     * Convert valid 'to' date time description with "yyyy-MM-dd" and "HHmm" format into a date time
+     * string with "dd-MMM-yyyy" and "h.mma" format. If the 'to' date time description is invalid, an empty
+     * string will be returned instead.
+     *
+     * @param to By date time description.
+     * @return To date in "dd-MMM-yyyy" format and time in "h.mma" format.
+     * @throws YqException If the 'to' date time cannot be parsed and converted.
+     */
     private String checkValidTo(String to) throws YqException {
         DateTimeHandler dateTimeHandler = new DateTimeHandler();
         dateTimeHandler.convertDateTime(to);
         return dateTimeHandler.getFinalDateTimeString();
     }
 
+    /**
+     * Convert valid 'from' date time description with "yyyy-MM-dd" and "HHmm" format into a date time
+     * string with "dd-MMM-yyyy" and "h.mma" format. If the 'from' date time description is invalid, an empty
+     * string will be returned instead.
+     *
+     * @param from By date time description.
+     * @return From date in "dd-MMM-yyyy" format and time in "h.mma" format.
+     * @throws YqException If the 'from' date time cannot be parsed and converted.
+     */
     private String checkValidFrom(String from) throws YqException {
         DateTimeHandler dateTimeHandler = new DateTimeHandler();
         dateTimeHandler.convertDateTime(from);

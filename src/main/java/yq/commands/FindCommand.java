@@ -48,8 +48,9 @@ public class FindCommand extends Command {
 
     private static void addMatchingTasks(ArrayList<Task> taskArrayList, String commandInput, ArrayList<Task> matchingTaskArrayList) {
         for (Task task : taskArrayList) {
-            String taskDescription = task.getDescription();
-            if (taskDescription.contains(commandInput)) {
+            String lcTaskDescription = task.getDescription().toLowerCase();
+            String lcCommandInput = commandInput.toLowerCase();
+            if (lcTaskDescription.contains(lcCommandInput)) {
                 matchingTaskArrayList.add(task);
             }
         }
