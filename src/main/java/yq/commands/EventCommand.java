@@ -3,7 +3,7 @@ package yq.commands;
 import yq.datetime.DateTimeHandler;
 import yq.exceptions.DuplicateEventTaskException;
 import yq.exceptions.EmptyEventCommandException;
-import yq.exceptions.InvalidFromToIndexesException;
+import yq.exceptions.InvalidToFromException;
 import yq.exceptions.InvalidTimeIntervalException;
 import yq.exceptions.MissingEventDescriptionException;
 import yq.exceptions.MissingFromKeywordException;
@@ -98,7 +98,7 @@ public class EventCommand extends Command {
     private static void checkValidFromToIndex(int fromIndex, int toIndex)
             throws YqException {
         if (fromIndex >= toIndex) {
-            throw new InvalidFromToIndexesException();
+            throw new InvalidToFromException();
         }
     }
 
