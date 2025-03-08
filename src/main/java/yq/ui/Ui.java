@@ -54,11 +54,14 @@ public class Ui {
         System.out.println("        Task type: todo/deadline/event - to add a task to the list");
         System.out.println("            Parameters for todo:     KEYWORD [TASK DESCRIPTION]");
         System.out.println("            Example:                 todo read book");
-        System.out.println("            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by [DAY/DATE/TIME]");
-        System.out.println("            Example:                 deadline return book /by Sunday");
+        System.out.println("            Parameters for deadline: KEYWORD [TASK DESCRIPTION] /by " +
+                "[DATE/DATE & TIME]");
+        System.out.println("            Example:                 deadline return book /by 2023-12-19");
+        System.out.println("            Example:                 deadline return book /by 2021-11-01 0815");
         System.out.println("            Parameters for event:    KEYWORD [TASK DESCRIPTION] " +
-                "/from [DAY/DATE/TIME] /to [DAY/DATE/TIME]");
-        System.out.println("            Example:                 event project meeting /from Mon 2pm /to 4pm" + "\n");
+                "/from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]");
+        System.out.println("            Example:                 event project meeting /from 2021-03-15 1400 " +
+                "/to 2021-04-02" + "\n");
     }
 
     void printInstructionToDeleteTask() {

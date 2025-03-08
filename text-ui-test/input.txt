@@ -11,8 +11,10 @@ uNmaRK 0
 OOuNmark -1
 psidUNmArK 2
 todo add todo task
-deadline add deadline task /by today
+todo add todo task
+deadline add deadline task /by 2025-03-06
 event add event tasks /from Tomorrow 5pm /to Next Week 5pm
+deadline add deadline task /by 2025-03-06
 list
 mark
 mark ss
@@ -29,16 +31,16 @@ unmark ss
 hihsunMARk -1
 unmark 100
 unmark 1
-unmARk 1
 unmaRK 2
 DSunMArk 3
 giwegi
 lsit
 ybe
 dsihTodo CS2113 A level-4 increment
-dihifdeaDLINEText-ui-test/bYTonight 8pm
+dihifdeaDLINEUpdate Text-ui-test/bY2025-03-06 2000
 hfesiuhDeaDLINE Finish A-CodeQuality/BYTonight 9pm
-hodhaeeVEnTGrinding more CS2113/FRom6pm/tOEternity
+hodhaeeVEnTGrinding more CS2113/FRom2025-01-01/tO2025-05-12 2359
+hodhaeeVEnTGrinding more CS2113/FRom2025-01-01/tO2025-05-12 2359
 tODOGET AN INTERNSHIP!!!
 todo
 deadline no by /by
@@ -49,7 +51,8 @@ event no /from
 event no from /to
 event/fromno/totask
 eventassign exception/to/from
-event assign exception/toTomorrow/fromToday
+event assign exception/to02-01-2025/from 03-01-2022
+event assign exception/to2025-01-02/from 2022-01-20 0130
 mark 1
 faoeih
 delete
@@ -63,6 +66,5 @@ ASDELete2
 list
 find cry
 dDDelete 10
-deLEte 3
 list
 bye
