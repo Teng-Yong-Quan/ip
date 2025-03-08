@@ -17,12 +17,22 @@ public class FindCommand extends Command {
         setExit(false);
     }
 
+    /**
+     * Check the find command input is valid and process it. It can only be processed if both the
+     * taskArrayList and the command input are not empty. An array list of tasks containing the matching words will be
+     * printed by the User Interface. If there are no such tasks, it will notify the user.
+     *
+     * @param taskList The object which contains the taskArrayList.
+     * @param ui       User Interface.
+     * @param storage  The object which handles the transferring and storing of tasks between the file and the program.
+     * @throws YqException If the find command input violates any of the checks.
+     */
     @Override
     public void execute(TaskList taskList, Ui ui, Storage storage) throws YqException {
         ArrayList<Task> taskArrayList = taskList.getTaskArrayList();
         ArrayList<Task> matchingTaskArrayList = new ArrayList<>();
         String commandInput = getCommandInput();
-        if(taskArrayList.isEmpty()){
+        if (taskArrayList.isEmpty()) {
             throw new NothingToFindException();
         }
         if (commandInput.isEmpty()) {
