@@ -1,5 +1,6 @@
 package yq.commands;
 
+import yq.datetime.DateTimeHandler;
 import yq.exceptions.DuplicateDeadlineTaskException;
 import yq.exceptions.EmptyDeadlineCommandException;
 import yq.exceptions.MissingByKeywordException;
@@ -39,12 +40,20 @@ public class DeadlineCommand extends Command {
         String by = commandInput.substring(indexAfterByWord).trim();
 
         checkEmptyDlInput(deadlineDescription, by);
-        Deadline newDeadline = new Deadline(deadlineDescription, by);
+        String validBy = checkValidBy(by);
+        Deadline newDeadline = new Deadline(deadlineDescription, validBy);
 
         checkDuplicateDeadline(taskArrayList, newDeadline);
         taskArrayList.add(newDeadline);
         ui.printAddedDeadlineMessage(taskArrayList, newDeadline);
     }
+
+    private String checkValidBy(String by) throws YqException {
+        DateTimeHandler dateTimeHandler = new DateTimeHandler();
+        dateTimeHandler.convertDateTime(by);
+        return dateTimeHandler.getFinalDateTimeString();
+    }
+    // check in terms of format
 
     private static void checkEmptyDlInput(String deadlineDescription, String by) throws YqException {
         if (deadlineDescription.isEmpty() || by.isEmpty()) {

@@ -14,9 +14,9 @@ public class Yq {
 
     private Yq(String fileName) {
         UI = new Ui();
-        STORAGE = new Storage(fileName, UI);
+        STORAGE = new Storage(fileName);
         try {
-            taskList = new TaskList(STORAGE.load(UI));
+            taskList = new TaskList(STORAGE.load());
         } catch (FileNotFoundException fileNotFoundException) {
             STORAGE.showFileNotFoundError();
             taskList = new TaskList();

@@ -2,7 +2,9 @@ package yq.ui;
 
 
 import yq.commands.Command;
+import yq.datetime.DateTimeHandler;
 import yq.exceptions.InvalidCommandException;
+import yq.exceptions.InvalidTimeIntervalException;
 import yq.exceptions.YqException;
 import yq.tasks.Task;
 
@@ -17,13 +19,14 @@ import java.util.Scanner;
 
 public class Storage {
     private static final ArrayList<String> TASKS_FROM_FILE_ARRAY_LIST = new ArrayList<>();
+    private static final Ui UI = new Ui();
     private String fileName;
     private static ArrayList<Task> taskArrayList = new ArrayList<>();
     static final int TASK_TYPE_INDEX = 1; // Shows the task type T (Todo), D (Deadline) and E (Event).
     static final int TASK_DESCRIPTION_INDEX = 7; // The index whereby it shows the full task description.
 
-    Storage(String fileName, Ui ui) {
-        ui.printStraightLine();
+    Storage(String fileName) {
+        UI.printStraightLine();
         System.out.println("    Starting..." + "\n");
         setFileName(fileName);
     }
@@ -36,9 +39,9 @@ public class Storage {
         this.fileName = fileName;
     }
 
-    ArrayList<Task> load(Ui ui) throws IOException, InvalidCommandException {
+    ArrayList<Task> load() throws IOException, InvalidCommandException {
         getTasksFromFile();
-        populateTaskArraylist(ui);
+        populateTaskArraylist();
         return taskArrayList;
     }
 
@@ -55,9 +58,9 @@ public class Storage {
         fileScanner.close();
     }
 
-    private void populateTaskArraylist(Ui ui) {
-        ui.printStraightLine();
-        ui.processForOneSecond();
+    private void populateTaskArraylist() {
+        UI.printStraightLine();
+        UI.processForOneSecond();
         System.out.println("    Retrieving saved tasks from " + fileName + " file " +
                 "and populating task arraylist..." + "\n");
         if (TASKS_FROM_FILE_ARRAY_LIST.isEmpty()) {
@@ -65,51 +68,51 @@ public class Storage {
             return;
         }
         for (String taskDescription : TASKS_FROM_FILE_ARRAY_LIST) {
-            checkValidTaskLine(ui, taskDescription);
+            UI.printStraightLine();
+            UI.processForOneSecond();
+            checkValidTaskLine(taskDescription);
         }
     }
 
-    private static void checkValidTaskLine(Ui ui, String taskDescription) {
+    private static void checkValidTaskLine(String taskDescription) {
         try {
-            extractTaskFromFile(ui, taskDescription);
+            extractTaskFromFile(taskDescription);
         } catch (YqException yqException) {
-            ui.showError(yqException.getMessage());
+            UI.showError(yqException.getMessage());
         }
     }
 
-    private static void extractTaskFromFile(Ui ui, String taskDescription) throws YqException {
+    private static void extractTaskFromFile(String taskDescription) throws YqException {
         String finalTaskDescription;
         taskDescription = taskDescription.trim();
         finalTaskDescription = convertTaskDescription(taskDescription);
         if (finalTaskDescription.isEmpty()) {
-            ui.printIgnoreInvalidLineMessage();
+            UI.printIgnoreInvalidLineMessage();
             return;
         }
-        processAutoParsedCommand(ui, finalTaskDescription);
-        markExtractedTask(ui, taskDescription);
+        processAutoParsedCommand(finalTaskDescription);
+        markExtractedTask(taskDescription);
     }
 
-    private static void processAutoParsedCommand(Ui ui, String finalTaskDescription) throws YqException {
+    private static void processAutoParsedCommand(String finalTaskDescription) throws YqException {
         Command autoParsedCommand = Parser.autoParse(finalTaskDescription);
-        ui.printStraightLine();
-        ui.processForOneSecond();
-        autoParsedCommand.autoExecute(taskArrayList, ui);
+        autoParsedCommand.autoExecute(taskArrayList, UI);
     }
 
-    private static void markExtractedTask(Ui ui, String taskDescription) throws YqException {
+    private static void markExtractedTask(String taskDescription) throws YqException {
         final int MARK_OR_UNMARK_INDEX = 4; // The index whereby it shows the task is marked or unmarked.
         final char MARK_SYMBOL = 'X';
         if (taskDescription.charAt(MARK_OR_UNMARK_INDEX) == MARK_SYMBOL) {
-            autoMark(taskArrayList, ui);
+            autoMark(taskArrayList);
         }
     }
 
-    private static String convertTaskDescription(String taskDescription) {
+    private static String convertTaskDescription(String taskDescription) throws YqException {
         String finalTaskDescription = "";
         if (!getFinalTodoDescription(taskDescription).isEmpty()) {
             finalTaskDescription = getFinalTodoDescription(taskDescription);
         } else if (!getFinalDlDescription(taskDescription).isEmpty()) {
-            finalTaskDescription = getFinalTodoDescription(taskDescription);
+            finalTaskDescription = getFinalDlDescription(taskDescription);
         } else if (!getFinalEventDescription(taskDescription).isEmpty()) {
             finalTaskDescription = getFinalEventDescription(taskDescription);
         }
@@ -126,63 +129,88 @@ public class Storage {
         return finalTaskDescription;
     }
 
-    private static String getFinalDlDescription(String taskDescription) {
+    private static String getFinalDlDescription(String taskDescription) throws YqException {
         final char DEADLINE_CHARACTER = 'D';
         final String DEADLINE_WORD = "deadline ";
         String finalTaskDescription = "";
         if (taskDescription.charAt(TASK_TYPE_INDEX) == DEADLINE_CHARACTER) {
-            taskDescription = modifyDeadlineDescription(taskDescription);
-            finalTaskDescription = DEADLINE_WORD + taskDescription.substring(TASK_DESCRIPTION_INDEX).trim();
+            String trimmedTaskDescription = taskDescription.substring(TASK_DESCRIPTION_INDEX).trim();
+            String modifiedTaskDescription = modifyDeadlineDescription(trimmedTaskDescription);
+            finalTaskDescription = DEADLINE_WORD + " " + modifiedTaskDescription.trim();
         }
         return finalTaskDescription;
     }
 
-    private static String getFinalEventDescription(String taskDescription) {
+    private static String getFinalEventDescription(String taskDescription) throws YqException {
         final char EVENT_CHARACTER = 'E';
         final String EVENT_WORD = "event ";
         String finalTaskDescription = "";
         if (taskDescription.charAt(TASK_TYPE_INDEX) == EVENT_CHARACTER) {
-            taskDescription = modifyEventDescription(taskDescription);
-            finalTaskDescription = EVENT_WORD + taskDescription.substring(TASK_DESCRIPTION_INDEX).trim();
+            String trimmedTaskDescription = taskDescription.substring(TASK_DESCRIPTION_INDEX).trim();
+            String modifiedTaskDescription = modifyEventDescription(trimmedTaskDescription);
+            finalTaskDescription = EVENT_WORD + modifiedTaskDescription.trim();
         }
         return finalTaskDescription;
     }
 
-    private static void autoMark(ArrayList<Task> taskArrayList, Ui ui) throws YqException {
+    private static void autoMark(ArrayList<Task> taskArrayList) throws YqException {
         final String MARK_WORD = "mark ";
         Command parsedMarkCommand;
         String markCommand = MARK_WORD + taskArrayList.size();
         parsedMarkCommand = Parser.parse(markCommand);
-        ui.printStraightLine();
-        ui.processForOneSecond();
-        parsedMarkCommand.autoExecute(taskArrayList, ui);
+        UI.printStraightLine();
+        UI.processForOneSecond();
+        parsedMarkCommand.autoExecute(taskArrayList, UI);
     }
 
-    private static String modifyDeadlineDescription(String deadlineDescription) {
-        final String ORIGINAL_BY = "by:";
+    private static String modifyDeadlineDescription(String deadlineDescription) throws YqException {
+        DateTimeHandler dateTimeHandler = new DateTimeHandler();
         final String EDITED_BY = "/by";
-        final String OPEN_BRACKET = "(";
         final String CLOSE_BRACKET = ")";
-        final String EMPTY_STRING = "";
-        deadlineDescription = deadlineDescription.replace(ORIGINAL_BY, EDITED_BY);
-        deadlineDescription = deadlineDescription.replace(OPEN_BRACKET, EMPTY_STRING);
-        deadlineDescription = deadlineDescription.replace(CLOSE_BRACKET, EMPTY_STRING);
-        return deadlineDescription;
+        final String ORIGINAL_BY = "by:";
+        final String OPEN_BRACKET = "(";
+        final int ZERO_INDEX = 0;
+        int openBracketIndex = deadlineDescription.indexOf(OPEN_BRACKET);
+        int byIndex = deadlineDescription.indexOf(ORIGINAL_BY) + ORIGINAL_BY.length();
+        int closeBracketIndex = deadlineDescription.indexOf(CLOSE_BRACKET);
+        String dlDescriptionPart = deadlineDescription.substring(ZERO_INDEX, openBracketIndex);
+        String byDescription = deadlineDescription.substring(byIndex, closeBracketIndex);
+        dateTimeHandler.revertDateTime(byDescription);
+        return dlDescriptionPart + " " + EDITED_BY + " " + dateTimeHandler.getFinalDateTimeString();
     }
 
-    private static String modifyEventDescription(String eventDescription) {
+
+    private static String modifyEventDescription(String eventDescription) throws YqException {
         final String ORIGINAL_FROM = "from:";
         final String EDITED_FROM = "/from";
         final String ORIGINAL_TO = "to:";
         final String EDITED_TO = "/to";
-        final String OPEN_BRACKET = "(";
         final String CLOSE_BRACKET = ")";
-        final String EMPTY_STRING = "";
-        eventDescription = eventDescription.replace(ORIGINAL_FROM, EDITED_FROM);
-        eventDescription = eventDescription.replace(ORIGINAL_TO, EDITED_TO);
-        eventDescription = eventDescription.replace(OPEN_BRACKET, EMPTY_STRING);
-        eventDescription = eventDescription.replace(CLOSE_BRACKET, EMPTY_STRING);
-        return eventDescription;
+        final String OPEN_BRACKET = "(";
+        final int ZERO_INDEX = 0;
+        int openBracketIndex = eventDescription.indexOf(OPEN_BRACKET);
+        int fromIndex = eventDescription.indexOf(ORIGINAL_FROM) + ORIGINAL_FROM.length();
+        int beforeToIndex = eventDescription.indexOf(ORIGINAL_TO);
+        int toIndex = beforeToIndex + ORIGINAL_TO.length();
+        int closeBracketIndex = eventDescription.indexOf(CLOSE_BRACKET);
+        String eventDescriptionPart = eventDescription.substring(ZERO_INDEX, openBracketIndex);
+        String finalFromDescription = getEditedDescription(eventDescription, fromIndex, beforeToIndex);
+        String finalToDescription = getEditedDescription(eventDescription, toIndex, closeBracketIndex);
+        if (checkValidTimeInterval(finalFromDescription, finalToDescription)) {
+            return eventDescriptionPart + EDITED_FROM + " " + finalFromDescription + " " + EDITED_TO + finalToDescription;
+        }
+        throw new InvalidTimeIntervalException();
+    }
+
+    private static boolean checkValidTimeInterval(String from, String to) throws YqException {
+        DateTimeHandler dateTimeHandler = new DateTimeHandler();
+        return dateTimeHandler.compareDates(from, to);
+    }
+    private static String getEditedDescription(String eventDescription, int startIndex, int endIndex) throws YqException {
+        DateTimeHandler dateTimeHandler = new DateTimeHandler();
+        String editedDescription = eventDescription.substring(startIndex, endIndex);
+        dateTimeHandler.revertDateTime(editedDescription);
+        return dateTimeHandler.getFinalDateTimeString();
     }
 
     public void writeToFile() throws IOException {
