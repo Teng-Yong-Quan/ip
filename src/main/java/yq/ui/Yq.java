@@ -12,6 +12,12 @@ public class Yq {
     private final Ui UI;
     private static final String FILENAME = "saved_task_arraylist.txt";
 
+    /**
+     * Load the saved tasks in the file into the task list if the file exists. If the file does not exist, the user will
+     * be notified and a new empty task list will be created.
+     *
+     * @param fileName Name of the file input.
+     */
     private Yq(String fileName) {
         UI = new Ui();
         STORAGE = new Storage(fileName);
