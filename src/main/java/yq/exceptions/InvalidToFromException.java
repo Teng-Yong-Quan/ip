@@ -1,9 +1,9 @@
 package yq.exceptions;
 
-public class InvalidFromToIndexesException extends YqException {
+public class InvalidToFromException extends YqException {
     public String getMessage() {
         return """
-                    The '/from' keyword cannot be inputted after the '/to' keyword.
+                    The '/to' keyword cannot be inputted before the '/from' keyword.
                     Please enter a valid 'event' command.
                 """;
     }
