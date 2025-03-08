@@ -22,16 +22,29 @@ public class UnmarkCommand extends Command {
     public void execute(TaskList taskList, Ui ui, Storage storage) throws YqException {
         ArrayList<Task> taskArrayList = taskList.getTaskArrayList();
         String commandInput = getCommandInput();
-        unmarkTask(commandInput, taskArrayList, ui);
+        checkValidUnmarkTask(commandInput, taskArrayList, ui);
         storage.saveTaskArraylist(taskList, taskArrayList);
     }
 
-    private static void unmarkTask(String substringOfUnmarkCmd, ArrayList<Task> taskArrayList, Ui ui)
+    /**
+     * Conduct various checks to ensure that the unmark command input is valid and can be processed.
+     * Once it passes all the tests, it is executed and the task with the respective index in the
+     * taskArrayList will be unmarked.
+     *
+     * @param substringOfUnmarkCmd Substring of the unmark command input.
+     * @param taskArrayList        ArrayList that stores the tasks.
+     * @param ui                   User Interface class for printing relevant statements.
+     * @throws YqException If the unmark command input fails any of the test.
+     */
+    private static void checkValidUnmarkTask(String substringOfUnmarkCmd, ArrayList<Task> taskArrayList, Ui ui)
             throws YqException {
         checkValidUnmarkCmd(substringOfUnmarkCmd, taskArrayList);
         checkValidUnmarkNumber(substringOfUnmarkCmd, taskArrayList, ui);
     }
 
+    /**
+     * Prevent the unmark command from processing if it is empty or when the taskArrayList is empty
+     */
     private static void checkValidUnmarkCmd(String substringOfUnmarkCmd, ArrayList<Task> taskArrayList)
             throws YqException {
         if (taskArrayList.isEmpty()) {
@@ -41,10 +54,19 @@ public class UnmarkCommand extends Command {
         }
     }
 
+    /**
+     * Prevent the unmark command input which contains other invalid characters besides an integer or an integer that
+     * are out of bounds of the taskArrayList range from being processed and executed.
+     *
+     * @param unmarkNumber  Substring which contains the index of the task to be unmarked.
+     * @param taskArrayList ArrayList that stores the tasks.
+     * @param ui            User Interface class for printing relevant statements.
+     * @throws YqException If the unmark command input fails any of the test.
+     */
     private static void checkValidUnmarkNumber(String unmarkNumber, ArrayList<Task> taskArrayList, Ui ui)
             throws YqException {
         try {
-            unmarkingTask(unmarkNumber, taskArrayList, ui);
+            unmarkTask(unmarkNumber, taskArrayList, ui);
         } catch (NumberFormatException numberFormatException) {
             throw new UnmarkNumberFormatException();
         } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
@@ -52,7 +74,7 @@ public class UnmarkCommand extends Command {
         }
     }
 
-    private static void unmarkingTask(String unmarkNumber, ArrayList<Task> taskArrayList, Ui ui) {
+    private static void unmarkTask(String unmarkNumber, ArrayList<Task> taskArrayList, Ui ui) {
         final int LIST_INDEX_ADJUSTMENT = 1;
         int chosenUnmarkIndex = Integer.parseInt(unmarkNumber);
         Task selectedTask = taskArrayList.get(chosenUnmarkIndex - LIST_INDEX_ADJUSTMENT);

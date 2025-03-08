@@ -29,7 +29,7 @@ public class Ui {
         System.out.println("What can I do for you?");
     }
 
-    public void printStraightLine() {
+    void printStraightLine() {
         System.out.println("----------------------------------------------------------------------------------------");
     }
 
@@ -84,7 +84,7 @@ public class Ui {
         printStraightLine();
     }
 
-    private static void printKeyInFollowingOptions() {
+    void printKeyInFollowingOptions() {
         System.out.println("    Please key in one of the following options:");
     }
 
@@ -101,10 +101,7 @@ public class Ui {
         return userCmd;
     }
 
-    /**
-     * Imitates the processing time of 1 second by sleeping for 1 second.
-     */
-    public void processForOneSecond() {
+    void processForOneSecond() {
         final int ONE_SECOND = 1;
         try {
             System.out.println("    Processing..." + "\n");
@@ -114,10 +111,7 @@ public class Ui {
         }
     }
 
-    /**
-     * Adds the newly formed task into the task list and returns the updated list with the latest task being added.
-     */
-    public void printAddedTaskMessage(ArrayList<Task> taskArrayList, Task newTask) {
+    void printAddedTaskMessage(ArrayList<Task> taskArrayList, Task newTask) {
         System.out.println("    Got it. I have added this task to the task list:");
         System.out.println("        " + newTask.toString());
         System.out.println("    Now you have " + taskArrayList.size() + " tasks in the list.");
@@ -173,13 +167,15 @@ public class Ui {
         System.out.println();
     }
 
-    public void printIgnoreInvalidLineMessage() {
+    /* Inform the user that the line in saved_task_arraylist.txt cannot be processed into a task,
+     * and it will be skipped by the system. */
+    void printIgnoreInvalidLineMessage() {
         printStraightLine();
         processForOneSecond();
         System.out.println("    An invalid line is detected and it will be ignored." + "\n");
     }
 
-    public void printPrompt() {
+    void printPrompt() {
         printStraightLine();
         processForOneSecond();
         System.out.println("    Is there anything else I can do for you?" + "\n");

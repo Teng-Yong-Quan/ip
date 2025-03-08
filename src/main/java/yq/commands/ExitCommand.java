@@ -23,6 +23,10 @@ public class ExitCommand extends Command {
         checkValidWriteToFile(storage);
         ui.printGoodByeMessage();
     }
+
+    /**
+     * Ensure that the file is being created if it does not exist, so the tasks could be saved in the file
+     */
     public void checkValidWriteToFile(Storage storage) {
         try {
             storage.writeToFile();

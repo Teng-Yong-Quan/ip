@@ -31,14 +31,26 @@ public class Event extends Task {
         return "[E]" + super.toString() + " (from: " + getFrom() + " to: " + getTo() + ")";
     }
 
+    /**
+     * Checks whether the input object is a duplicate of the current Event task. If the input object has the same
+     * event description, from description and to description as those of the current Event task, the input object is
+     * considered to be a duplicate task. The purpose is to prevent duplicate Event tasks in the taskArrayList.
+     *
+     * @param object Object to be compared.
+     * @return True if the object is equivalent to the current Event task else false.
+     */
     @Override
     public boolean equals(Object object) {
         if (object instanceof Event eventObject) {
-            String eventDescription = eventObject.getDescription();
-            String eventFrom = eventObject.getFrom();
-            String eventTo = eventObject.getTo();
-            return eventFrom.equalsIgnoreCase(getFrom()) && eventTo.equalsIgnoreCase(getTo())
-                    && eventDescription.equalsIgnoreCase(getDescription());
+            String objectDescription = eventObject.getDescription();
+            String objectFrom = eventObject.getFrom();
+            String objectTo = eventObject.getTo();
+            String selfDescription = getDescription();
+            String selfFrom = getFrom();
+            String selfTo = getTo();
+
+            return objectFrom.equalsIgnoreCase(selfFrom) && objectTo.equalsIgnoreCase(selfTo)
+                    && objectDescription.equalsIgnoreCase(selfDescription);
         }
         return false;
     }

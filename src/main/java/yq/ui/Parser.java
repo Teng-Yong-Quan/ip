@@ -17,85 +17,86 @@ public class Parser {
     private static int indexAfterCmdWord;
     private static String extractedDescription;
     private static String extractedIndex;
-    private static String lcUserCmd = "";
+    private static String lcUserCmd; // User command in lowercase
+    private static final String BYE = "bye";
+    private static final String LIST = "list";
+    private static final String DEADLINE = "deadline";
+    private static final String EVENT = "event";
+    private static final String MARK = "mark";
+    private static final String UNMARK = "unmark";
+    private static final String DELETE = "delete";
+    private static final String TODO = "todo";
+
 
     public static Command parse(String userCmd) throws YqException {
         String substringOfUserCmd;
         lcUserCmd = userCmd.toLowerCase();
-        if (lcUserCmd.contains("bye")) {
-            return new ExitCommand(lcUserCmd);
-        } else if (lcUserCmd.contains("list")) {
-            return new ListCommand(lcUserCmd);
-        } else if (lcUserCmd.contains("unmark")) {
+        if (lcUserCmd.contains(BYE)) {
+            return new ExitCommand(userCmd);
+        } else if (lcUserCmd.contains(LIST)) {
+            return new ListCommand(userCmd);
+        } else if (lcUserCmd.contains(UNMARK)) {
             substringOfUserCmd = extractUnmarkIndex(userCmd);
             return new UnmarkCommand(substringOfUserCmd);
-        } else if (lcUserCmd.contains("mark")) {
+        } else if (lcUserCmd.contains(MARK)) {
             substringOfUserCmd = extractMarkIndex(userCmd);
             return new MarkCommand(substringOfUserCmd);
-        } else if (lcUserCmd.contains("delete")) {
+        } else if (lcUserCmd.contains(DELETE)) {
             substringOfUserCmd = extractDeleteIndex(userCmd);
             return new DeleteCommand(substringOfUserCmd);
+        } else if (lcUserCmd.contains(TODO)) {
+            substringOfUserCmd = extractTodoDescription(userCmd);
+            return new TodoCommand(substringOfUserCmd);
+        } else if (lcUserCmd.contains(DEADLINE)) {
+            substringOfUserCmd = extractDlDescription(userCmd);
+            return new DeadlineCommand(substringOfUserCmd);
+        } else if (lcUserCmd.contains(EVENT)) {
+            substringOfUserCmd = extractEventDescription(userCmd);
+            return new EventCommand(substringOfUserCmd);
         } else {
-            return autoParse(userCmd);
+            throw new InvalidCommandException(userCmd);
         }
     }
 
     private static String extractEventDescription(String userCmd) {
         lcUserCmd = userCmd.toLowerCase();
-        indexAfterCmdWord = lcUserCmd.indexOf("event") + "event".length();
+        indexAfterCmdWord = lcUserCmd.indexOf(EVENT) + EVENT.length();
         extractedDescription = userCmd.substring(indexAfterCmdWord).trim();
         return extractedDescription;
     }
 
     private static String extractDlDescription(String userCmd) {
         lcUserCmd = userCmd.toLowerCase();
-        indexAfterCmdWord = lcUserCmd.indexOf("deadline") + "deadline".length();
+        indexAfterCmdWord = lcUserCmd.indexOf(DEADLINE) + DEADLINE.length();
         extractedDescription = userCmd.substring(indexAfterCmdWord).trim();
         return extractedDescription;
     }
 
     private static String extractTodoDescription(String userCmd) {
         lcUserCmd = userCmd.toLowerCase();
-        indexAfterCmdWord = lcUserCmd.indexOf("todo") + "todo".length();
+        indexAfterCmdWord = lcUserCmd.indexOf(TODO) + TODO.length();
         extractedDescription = userCmd.substring(indexAfterCmdWord).trim();
         return extractedDescription;
     }
 
     private static String extractDeleteIndex(String userCmd) {
         lcUserCmd = userCmd.toLowerCase();
-        indexAfterCmdWord = lcUserCmd.indexOf("delete") + "delete".length();
+        indexAfterCmdWord = lcUserCmd.indexOf(DELETE) + DELETE.length();
         extractedIndex = userCmd.substring(indexAfterCmdWord).trim();
         return extractedIndex;
     }
 
     private static String extractMarkIndex(String userCmd) {
         lcUserCmd = userCmd.toLowerCase();
-        indexAfterCmdWord = lcUserCmd.indexOf("mark") + "mark".length();
+        indexAfterCmdWord = lcUserCmd.indexOf(MARK) + MARK.length();
         extractedIndex = userCmd.substring(indexAfterCmdWord).trim();
         return extractedIndex;
     }
 
     private static String extractUnmarkIndex(String userCmd) {
         lcUserCmd = userCmd.toLowerCase();
-        indexAfterCmdWord = lcUserCmd.indexOf("unmark") + "unmark".length();
+        indexAfterCmdWord = lcUserCmd.indexOf(UNMARK) + UNMARK.length();
         extractedIndex = userCmd.substring(indexAfterCmdWord).trim();
         return extractedIndex;
-    }
-
-    public static Command autoParse(String finalTaskDescription) throws YqException {
-        String substringOfUserCmd;
-        String lcFinalTaskDescription = finalTaskDescription.toLowerCase();
-        if (lcFinalTaskDescription.contains("todo")) {
-            substringOfUserCmd = extractTodoDescription(finalTaskDescription);
-            return new TodoCommand(substringOfUserCmd);
-        } else if (lcFinalTaskDescription.contains("deadline")) {
-            substringOfUserCmd = extractDlDescription(finalTaskDescription);
-            return new DeadlineCommand(substringOfUserCmd);
-        } else if (lcFinalTaskDescription.contains("event")) {
-            substringOfUserCmd = extractEventDescription(finalTaskDescription);
-            return new EventCommand(substringOfUserCmd);
-        } else {
-            throw new InvalidCommandException(finalTaskDescription);
-        }
     }
 }
