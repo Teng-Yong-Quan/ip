@@ -59,7 +59,7 @@ public class Ui {
         System.out.println("            Example:                 deadline return book /by 2023-12-19");
         System.out.println("            Example:                 deadline return book /by 2021-11-01 0815" + "\n");
         System.out.println("            Parameters for event:    KEYWORD [TASK DESCRIPTION] " +
-                "/from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]");
+                "/from [DATE/DATE & TIME] /to [DATE/DATE & TIME]");
         System.out.println("            Example:                 event project meeting /from 2021-03-15 1400 " +
                 "/to 2021-04-02" + "\n");
     }
