@@ -29,6 +29,15 @@ public class EventCommand extends Command {
         storage.saveTaskArraylist(taskList, taskArrayList);
     }
 
+    /**
+     * Conduct various checks to ensure that the event command input is valid and can be processed into an Event
+     * Task. After that, it is then checked for any duplicate Event task that has already been present in the
+     * taskArrayList. Once it passes all the tests, it is added into the taskArrayList.
+     *
+     * @param taskArrayList ArrayList that stores the tasks.
+     * @param ui            User Interface class for printing relevant statements.
+     * @throws YqException If the event command input fails any of the test,
+     */
     @Override
     public void autoExecute(ArrayList<Task> taskArrayList, Ui ui) throws YqException {
         String commandInput = getCommandInput();
@@ -77,6 +86,7 @@ public class EventCommand extends Command {
         DateTimeHandler dateTimeHandler = new DateTimeHandler();
         dateTimeHandler.convertDateTime(from);
         return dateTimeHandler.getFinalDateTimeString();
+
     }
 
     private static void checkDuplicateEvent(ArrayList<Task> taskArrayList, Event newEvent)
@@ -88,6 +98,10 @@ public class EventCommand extends Command {
         }
     }
 
+    /**
+     * Prevent the Event command with empty event description, from description or to description from being processed
+     * into an Event task
+     */
     private static void checkEmptyEventInput(String eventDescription, String from, String to)
             throws YqException {
         if (eventDescription.isEmpty() || from.isEmpty() || to.isEmpty()) {
@@ -95,6 +109,14 @@ public class EventCommand extends Command {
         }
     }
 
+    /**
+     * Prevent the event command input with '/to' keyword existing before '/from' keyword from being processed into an
+     * Event task.
+     *
+     * @param fromIndex Index of the '/from' keyword.
+     * @param toIndex   Index of the '/to' keyword.
+     * @throws YqException If the index of the '/to' keyword < the index of the '/from' keyword.
+     */
     private static void checkValidFromToIndex(int fromIndex, int toIndex)
             throws YqException {
         if (fromIndex >= toIndex) {
@@ -102,6 +124,16 @@ public class EventCommand extends Command {
         }
     }
 
+    /**
+     * Prevent the empty event command whereby all event, from and to descriptions are missing from being processed into
+     * an Event task.
+     * Also, it checks for the presence of '/from' keyword and '/to' keyword.
+     *
+     * @param commandInput   Event command input.
+     * @param lcCommandInput Lowercase Event command input.
+     * @throws YqException If the Event command is empty or the 'from' keyword is missing or the '/to' keyword is
+     *                     missing.
+     */
     private static void conductPrimaryEventCheck(String commandInput, String lcCommandInput)
             throws YqException {
         if (commandInput.isEmpty()) {

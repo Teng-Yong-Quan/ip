@@ -4,7 +4,7 @@ public class DeleteIndexOutOfBoundsException extends YqException {
     @Override
     public String getMessage() {
         return """
-                    The integer cannot be out of range.
+                    The index of the task to be deleted cannot be out of range.
                     Please enter a valid 'delete' command.
                 """;
     }

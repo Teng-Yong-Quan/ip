@@ -4,7 +4,7 @@ public class MissingTodoDescriptionException extends YqException {
     @Override
     public String getMessage() {
         return """
-                    Todo description cannot be missing.
+                    The todo description cannot be missing.
                     Please enter a valid 'todo' command.
                 """;
     }

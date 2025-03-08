@@ -1,7 +1,7 @@
 package yq.tasks;
 
 public abstract class Task {
-    protected String description; // Description of the task
+    protected String description; // Describe task
     protected boolean isDone; // Check if the task is marked as done or not done
 
     public Task(String description) {
@@ -29,9 +29,6 @@ public abstract class Task {
         this.isDone = isDone;
     }
 
-    /**
-     * Marks the selected task as done.
-     */
     public void markAsDone() {
         if (!isDone()) {
             setDone(true);
@@ -43,9 +40,6 @@ public abstract class Task {
         }
     }
 
-    /**
-     * Marks the selected task as not done.
-     */
     public void markAsNotDone() {
         if (isDone()) {
             setDone(false);
