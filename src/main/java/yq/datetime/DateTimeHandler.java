@@ -60,8 +60,6 @@ public class DateTimeHandler {
         try {
             return formatDate(inputDate);
         } catch (DateTimeParseException dateTimeParseException) {
-            UI.printStraightLine();
-            UI.processForOneSecond();
             throw new InvalidDateException();
         }
     }
@@ -136,8 +134,6 @@ public class DateTimeHandler {
         try {
             return formatTime(timeSubstring);
         } catch (DateTimeParseException dateTimeParseException) {
-            UI.printStraightLine();
-            UI.processForOneSecond();
             throw new InvalidTimeException();
         }
     }
@@ -257,6 +253,8 @@ public class DateTimeHandler {
         try {
             return revertTime(formattedTime);
         } catch (DateTimeParseException dateTimeParseException) {
+            UI.printStraightLine();
+            UI.processForOneSecond();
             throw new InvalidFormattedTimeException();
         }
     }
@@ -310,6 +308,8 @@ public class DateTimeHandler {
         if (matcher.find()) {
             return matcher.group();
         }
+        UI.printStraightLine();
+        UI.processForOneSecond();
         throw new MissingFormattedDateException();
     }
 
