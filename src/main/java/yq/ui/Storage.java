@@ -7,8 +7,9 @@ import yq.exceptions.InvalidTimeIntervalException;
 import yq.exceptions.YqException;
 import yq.tasks.Task;
 
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -58,13 +59,21 @@ public class Storage {
     }
 
     /**
-     * Retrieve lines from the file and add them into TASKS_FROM_FILE_ARRAY_LIST
+     * Retrieve lines from the file and add them into TASKS_FROM_FILE_ARRAY_LIST if the file is not empty
      */
-    private void getTaskLinesFromFile() throws FileNotFoundException {
+    private void getTaskLinesFromFile() throws IOException {
         File file = new File(this.getFileName());
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+        String readLine = bufferedReader.readLine();
+        if (readLine == null || readLine.isEmpty()) { // Check if the file is empty
+            bufferedReader.close();
+            return;
+        }
+        bufferedReader.close();
         Scanner fileScanner = new Scanner(file);
         while (fileScanner.hasNextLine()) {
-            TASKS_FROM_FILE_ARRAY_LIST.add(fileScanner.nextLine());
+            String line = fileScanner.nextLine().trim();
+            TASKS_FROM_FILE_ARRAY_LIST.add(line);
         }
         fileScanner.close();
     }
