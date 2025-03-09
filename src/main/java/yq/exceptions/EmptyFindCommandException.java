@@ -4,8 +4,9 @@ public class EmptyFindCommandException extends YqException {
     @Override
     public String getMessage() {
         return """
-                    Unable to detect any words that you want to search for. Please key in the contents you want to find
-                    so the relevant tasks with the matching words can be extracted.
+                    The word(s) that you are looking for cannot be missing from the 'find' command.
+                    Please enter a valid 'find' command, so the relevant tasks with the matching word(s)
+                    can be extracted.
                 """;
     }
 }
