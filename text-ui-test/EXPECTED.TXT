@@ -40,7 +40,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -86,7 +86,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -132,7 +132,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -178,7 +178,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -224,7 +224,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -270,7 +270,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -316,7 +316,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -362,7 +362,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -408,7 +408,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -453,7 +453,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -499,7 +499,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -545,7 +545,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -591,7 +591,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -641,7 +641,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -689,7 +689,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -739,7 +739,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -785,7 +785,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -833,7 +833,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -881,7 +881,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -928,7 +928,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -976,7 +976,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1023,7 +1023,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1070,7 +1070,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1117,7 +1117,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1166,7 +1166,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1214,7 +1214,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1263,7 +1263,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1310,7 +1310,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1358,7 +1358,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1405,7 +1405,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1453,7 +1453,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1500,7 +1500,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1547,7 +1547,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1596,7 +1596,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1645,7 +1645,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1692,7 +1692,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1739,7 +1739,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1786,7 +1786,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1833,7 +1833,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1883,7 +1883,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1933,7 +1933,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -1979,7 +1979,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2029,7 +2029,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2077,7 +2077,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2127,7 +2127,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2174,7 +2174,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2221,7 +2221,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2268,7 +2268,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2315,7 +2315,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2362,7 +2362,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2409,7 +2409,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2456,7 +2456,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2503,7 +2503,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2550,7 +2550,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2597,7 +2597,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2644,7 +2644,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2693,7 +2693,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2740,7 +2740,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2787,7 +2787,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2836,7 +2836,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2884,7 +2884,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2932,7 +2932,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -2979,7 +2979,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -3028,7 +3028,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -3075,7 +3075,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -3123,7 +3123,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -3174,7 +3174,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -3189,9 +3189,8 @@ What can I do for you?
     Processing...
 
     Unable to find tasks with 'cry' in the task descriptions.
-    If the tasks with 'cry' are actually present in the list, please key in only the
-    relevant words that you are searching for with the correct spelling in uppercase or lowercase when
-    necessary as it is case-sensitive.
+    If it is due to incorrect spelling, please key in only the relevant words that
+    you are searching for with the correct spelling (case-insensitive).
 
 ----------------------------------------------------------------------------------------
     Processing...
@@ -3223,7 +3222,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -3270,7 +3269,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
@@ -3321,7 +3320,7 @@ What can I do for you?
             Example:                 deadline return book /by 2023-12-19
             Example:                 deadline return book /by 2021-11-01 0815
 
-            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME IN 24HR FORMAT] /to [DATE/DATE & TIME IN 24HR FORMAT]
+            Parameters for event:    KEYWORD [TASK DESCRIPTION] /from [DATE/DATE & TIME] /to [DATE/DATE & TIME]
             Example:                 event project meeting /from 2021-03-15 1400 /to 2021-04-02
 
         find   - to find task(s) with the specified word(s) that you are looking for
