@@ -3,6 +3,7 @@ package yq.ui;
 import yq.commands.Command;
 import yq.datetime.DateTimeHandler;
 import yq.exceptions.InvalidCommandException;
+import yq.exceptions.InvalidTaskLineException;
 import yq.exceptions.InvalidTimeIntervalException;
 import yq.exceptions.YqException;
 import yq.tasks.Task;
@@ -101,13 +102,21 @@ public class Storage {
         try {
             makeTask(taskLine);
         } catch (Exception exception) {
-            if (exception instanceof YqException) {
-                UI.showError(exception.getMessage());
-            } else {
-                UI.printStraightLine();
-                UI.processForOneSecond();
-                UI.showError("    Unable to carry out the operation. It will be skipped.");
-            }
+            printExceptionMessage(exception);
+        }
+
+    }
+
+    /**
+     * Print message accordingly after checking whether the exception is an instance of YqException.
+     */
+    private static void printExceptionMessage(Exception exception) {
+        if (exception instanceof YqException) {
+            UI.showError(exception.getMessage());
+        } else {
+            UI.printStraightLine();
+            UI.processForOneSecond();
+            UI.showError("    Unable to carry out the operation. It will be skipped.\n");
         }
     }
 
@@ -124,8 +133,9 @@ public class Storage {
         taskLine = taskLine.trim();
         finalizedCommand = getFinalCommand(taskLine);
         if (finalizedCommand.isEmpty()) {
-            UI.printIgnoreInvalidLineMessage();
-            return;
+            UI.printStraightLine();
+            UI.processForOneSecond();
+            throw new InvalidTaskLineException();
         }
         processAutoParsedCommand(finalizedCommand);
         markExtractedTask(taskLine);
@@ -171,10 +181,16 @@ public class Storage {
      * @param taskLine Line of the task extracted from the input file.
      * @return Finalized Todo Command.
      */
-    private static String getFinalTodoCommand(String taskLine) {
+    private static String getFinalTodoCommand(String taskLine) throws YqException {
         final char TODO_CHARACTER = 'T';
         final String TODO_WORD = "todo ";
         String finalizedCommand = "";
+        int taskLineLength = taskLine.length();
+        if (taskLineLength <= TASK_DESCRIPTION_INDEX) {
+            UI.printStraightLine();
+            UI.processForOneSecond();
+            throw new InvalidTaskLineException();
+        }
         if (taskLine.charAt(TASK_TYPE_INDEX) == TODO_CHARACTER) {
             finalizedCommand = TODO_WORD + taskLine.substring(TASK_DESCRIPTION_INDEX).trim();
         }
@@ -196,6 +212,12 @@ public class Storage {
         final String DEADLINE_WORD = "deadline ";
         String modifiedTaskLine;
         String finalizedCommand = "";
+        int taskLineLength = taskLine.length();
+        if (taskLineLength <= TASK_DESCRIPTION_INDEX) {
+            UI.printStraightLine();
+            UI.processForOneSecond();
+            throw new InvalidTaskLineException();
+        }
         if (taskLine.charAt(TASK_TYPE_INDEX) == DEADLINE_CHARACTER) {
             String trimmedTaskLine = taskLine.substring(TASK_DESCRIPTION_INDEX).trim();
             modifiedTaskLine = modifyDeadlineFormat(trimmedTaskLine);
@@ -220,6 +242,12 @@ public class Storage {
         final String EVENT_WORD = "event ";
         String modifiedTaskLine;
         String finalizedCommand = "";
+        int taskLineLength = taskLine.length();
+        if (taskLineLength <= TASK_DESCRIPTION_INDEX) {
+            UI.printStraightLine();
+            UI.processForOneSecond();
+            throw new InvalidTaskLineException();
+        }
         if (taskLine.charAt(TASK_TYPE_INDEX) == EVENT_CHARACTER) {
             String trimmedTaskLine = taskLine.substring(TASK_DESCRIPTION_INDEX).trim();
             modifiedTaskLine = modifyEventFormat(trimmedTaskLine);
@@ -249,20 +277,39 @@ public class Storage {
      * @return Modified deadline task line.
      */
     private static String modifyDeadlineFormat(String deadlineTaskLine) throws YqException {
-        DateTimeHandler dateTimeHandler = new DateTimeHandler();
         final String ORIGINAL_BY = "by:";
-        final String EDITED_BY = "/by";
         final String OPEN_BRACKET = "(";
         final String CLOSE_BRACKET = ")";
         final int ZERO_INDEX = 0;
-        int openBracketIndex = deadlineTaskLine.indexOf(OPEN_BRACKET);
-        int byIndex = deadlineTaskLine.indexOf(ORIGINAL_BY) + ORIGINAL_BY.length();
-        int closeBracketIndex = deadlineTaskLine.indexOf(CLOSE_BRACKET);
-        String dlDescriptionPart = deadlineTaskLine.substring(ZERO_INDEX, openBracketIndex);
-        String byDescription = deadlineTaskLine.substring(byIndex, closeBracketIndex);
-        dateTimeHandler.revertDateTime(byDescription);
-        return dlDescriptionPart + " " + EDITED_BY + " " + dateTimeHandler.getFinalDateTimeString();
+        int byStartIndex = 0;
+        if (deadlineTaskLine.contains(ORIGINAL_BY)) {
+            byStartIndex = deadlineTaskLine.indexOf(ORIGINAL_BY);
+        }
+        if (deadlineTaskLine.contains(OPEN_BRACKET)) {
+            deadlineTaskLine = deadlineTaskLine.replace(OPEN_BRACKET, " ");
+        }
+        if (deadlineTaskLine.contains(CLOSE_BRACKET)) {
+            deadlineTaskLine = deadlineTaskLine.replace(CLOSE_BRACKET, " ");
+        }
+        int byEndIndex = byStartIndex + ORIGINAL_BY.length();
+        if (byStartIndex == ZERO_INDEX || !deadlineTaskLine.contains(ORIGINAL_BY)) {
+            UI.printStraightLine();
+            UI.processForOneSecond();
+            throw new InvalidTaskLineException();
+        }
+        return finalizeDeadlineString(deadlineTaskLine, byStartIndex, byEndIndex);
     }
+
+    private static String finalizeDeadlineString(String deadlineTaskLine,
+                                                 int byStartIndex, int byEndIndex) throws YqException {
+        final int ZERO_INDEX = 0;
+        final String EDITED_BY = "/by";
+        int deadlineTlLength = deadlineTaskLine.length();
+        String dlDescriptionPart = deadlineTaskLine.substring(ZERO_INDEX, byStartIndex);
+        String byDescription = getEditedDescription(deadlineTaskLine, byEndIndex, deadlineTlLength);
+        return dlDescriptionPart + " " + EDITED_BY + " " + byDescription;
+    }
+
 
     /**
      * Modify the event task line with 'from:' into /from, 'to:' into '/to' and remove the brackets because the
@@ -280,19 +327,46 @@ public class Storage {
         final String OPEN_BRACKET = "(";
         final String CLOSE_BRACKET = ")";
         final int ZERO_INDEX = 0;
-        int openBracketIndex = eventTaskLine.indexOf(OPEN_BRACKET);
-        int fromIndex = eventTaskLine.indexOf(ORIGINAL_FROM) + ORIGINAL_FROM.length();
-        int beforeToIndex = eventTaskLine.indexOf(ORIGINAL_TO);
-        int toIndex = beforeToIndex + ORIGINAL_TO.length();
-        int closeBracketIndex = eventTaskLine.indexOf(CLOSE_BRACKET);
-        String eventDescriptionPart = eventTaskLine.substring(ZERO_INDEX, openBracketIndex);
-        String finalFromDescription = getEditedDescription(eventTaskLine, fromIndex, beforeToIndex);
-        String finalToDescription = getEditedDescription(eventTaskLine, toIndex, closeBracketIndex);
-        if (checkValidTimeInterval(finalFromDescription, finalToDescription)) {
-            return eventDescriptionPart + EDITED_FROM + " " + finalFromDescription + " "
-                    + EDITED_TO + finalToDescription;
+        int fromStartIndex = 0;
+        int toStartIndex = 0;
+        if (eventTaskLine.contains(ORIGINAL_FROM)) {
+            fromStartIndex = eventTaskLine.indexOf(ORIGINAL_FROM);
         }
-        throw new InvalidTimeIntervalException();
+        if (eventTaskLine.contains(ORIGINAL_TO)) {
+            toStartIndex = eventTaskLine.indexOf(ORIGINAL_TO);
+        }
+        if (eventTaskLine.contains(OPEN_BRACKET)) {
+            eventTaskLine = eventTaskLine.replace(OPEN_BRACKET, " ");
+        }
+        if (eventTaskLine.contains(CLOSE_BRACKET)) {
+            eventTaskLine = eventTaskLine.replace(CLOSE_BRACKET, " ");
+        }
+        int fromEndIndex = fromStartIndex + EDITED_FROM.length();
+        int toEndIndex = toStartIndex + EDITED_TO.length();
+        if (fromStartIndex == ZERO_INDEX || toStartIndex == ZERO_INDEX || fromEndIndex >= toEndIndex) {
+            UI.printStraightLine();
+            UI.processForOneSecond();
+            throw new InvalidTaskLineException();
+        }
+        return finalizeEvent(eventTaskLine, fromStartIndex, fromEndIndex, toStartIndex, toEndIndex);
+    }
+
+    private static String finalizeEvent(String eventTaskLine, int fromStartIndex,
+                                        int fromEndIndex, int toStartIndex, int toEndIndex) throws YqException {
+        final String EDITED_FROM = "/from";
+        final String EDITED_TO = "/to";
+        final int ZERO_INDEX = 0;
+        int eventTlLength = eventTaskLine.length();
+        String eventDescriptionPart = eventTaskLine.substring(ZERO_INDEX, fromStartIndex);
+        String finalFromDescription = getEditedDescription(eventTaskLine, fromEndIndex, toStartIndex);
+        String finalToDescription = getEditedDescription(eventTaskLine, toEndIndex, eventTlLength);
+        if (!checkValidTimeInterval(finalFromDescription, finalToDescription)) {
+            UI.printStraightLine();
+            UI.processForOneSecond();
+            throw new InvalidTimeIntervalException();
+        }
+        return eventDescriptionPart + EDITED_FROM + " " + finalFromDescription + " "
+                + EDITED_TO + finalToDescription;
     }
 
     private static boolean checkValidTimeInterval(String from, String to) throws YqException {
