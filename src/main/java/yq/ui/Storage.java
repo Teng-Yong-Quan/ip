@@ -100,8 +100,14 @@ public class Storage {
     private static void checkValidTaskLine(String taskLine) {
         try {
             makeTask(taskLine);
-        } catch (YqException yqException) {
-            UI.showError(yqException.getMessage());
+        } catch (Exception exception) {
+            if (exception instanceof YqException) {
+                UI.showError(exception.getMessage());
+            } else {
+                UI.printStraightLine();
+                UI.processForOneSecond();
+                UI.showError("    Unable to carry out the operation. It will be skipped.");
+            }
         }
     }
 
@@ -191,7 +197,7 @@ public class Storage {
         String modifiedTaskLine;
         String finalizedCommand = "";
         if (taskLine.charAt(TASK_TYPE_INDEX) == DEADLINE_CHARACTER) {
-            String trimmedTaskLine= taskLine.substring(TASK_DESCRIPTION_INDEX).trim();
+            String trimmedTaskLine = taskLine.substring(TASK_DESCRIPTION_INDEX).trim();
             modifiedTaskLine = modifyDeadlineFormat(trimmedTaskLine);
             finalizedCommand = DEADLINE_WORD + modifiedTaskLine.trim();
         }
@@ -293,6 +299,7 @@ public class Storage {
         DateTimeHandler dateTimeHandler = new DateTimeHandler();
         return dateTimeHandler.compareDates(from, to);
     }
+
     private static String getEditedDescription(String eventDescription, int startIndex, int endIndex)
             throws YqException {
         DateTimeHandler dateTimeHandler = new DateTimeHandler();
