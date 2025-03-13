@@ -28,8 +28,14 @@ public class Yq {
             taskList = new TaskList();
         } catch (IOException ioException) {
             System.out.println("Something went wrong: " + ioException.getMessage() + "\n");
-        } catch (YqException yqException) {
-            UI.showError(yqException.getMessage());
+        } catch (Exception exception) {
+            if (exception instanceof YqException) {
+                UI.showError(exception.getMessage());
+            } else {
+                UI.printStraightLine();
+                UI.processForOneSecond();
+                UI.showError("    Unable to carry out the operation. It will be skipped.");
+            }
         }
     }
 
@@ -49,8 +55,14 @@ public class Yq {
                 Command parsedCommand = Parser.parse(fullCommand);
                 parsedCommand.execute(taskList, UI, STORAGE);
                 isExit = parsedCommand.isExit();
-            } catch (YqException yqException) {
-                UI.showError(yqException.getMessage());
+            } catch (Exception exception) {
+                if (exception instanceof YqException) {
+                    UI.showError(exception.getMessage());
+                } else {
+                    UI.printStraightLine();
+                    UI.processForOneSecond();
+                    UI.showError("    Unable to carry out the operation. It will be skipped.");
+                }
             } finally {
                 if (!isExit) {
                     UI.printPrompt();
